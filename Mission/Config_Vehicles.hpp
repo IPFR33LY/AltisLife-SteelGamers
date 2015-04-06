@@ -176,12 +176,10 @@ class CarShops {
 			{ "Sab_ee_An2", 1353000, "pilot" },			
 			{ "Sab_cz_An2", 1553000, "pilot" },			
 			{ "sab_BI_An2", 1053000, "pilot" },
-			{ "Sab_An2_b", 1123000, "pilot" },
 			{ "Sab_yel_An2", 1453000, "pilot" },
 			{ "Sab_ana_An2", 1253000, "pilot" },	
 			{ "sab_ca_An2", 1653000, "pilot" },	
-			{ "Sab_tk_An2", 1242000, "pilot" },				
-			{ "Sab_An2_o", 1450000, "pilot" }
+			{ "Sab_tk_An2", 1242000, "pilot" }
 		};
 	};
 	

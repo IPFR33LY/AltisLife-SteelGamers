@@ -273,6 +273,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 320 },
 			{ "ToolKit", "Kit de Réparation", 1800 },
 			{ "FirstAidKit", "Kit de soin", 1000 },
+			{ "Binocular", "JVN", 1200 },
 			{ "Chemlight_red", "Baton Lumineux Rouge", 300 },
 			{ "Chemlight_yellow", "Baton Lumineux Jaunes", 300 },
 			{ "Chemlight_green", "Baton Lumineux Vert", 300 },
@@ -287,8 +288,8 @@ class WeaponShops {
         level = 1;
         msg = "";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
 		    { "Radar_Gun", "Radar Mobile", 0 },
 		    { "radar_record_tape", "Bande Radar mobile", 0 },
         	{ "hgun_mas_m9_F", "M9", 0 },
@@ -311,8 +312,8 @@ class WeaponShops {
         level = 2;
         msg = "Vous devez etre Brigadier ";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
 		    { "arifle_mas_mp5", "MP5A5", 0 },
 		    { "30Rnd_mas_9x21_Stanag", "Munition MP5A5", 0 },
 			{ "HandGrenade_Stone", "Grenade Flash", 0 },
@@ -340,8 +341,8 @@ class WeaponShops {
         level = 3;
         msg = "Vous devez etre Brigadier-Chef";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
 		    { "arifle_mas_mk16", "SCAR-LS", 0 },
 		    { "30Rnd_mas_556x45_Stanag", "Munition SCAR-LS", 0 },
 			{ "HandGrenade_Stone", "Grenade Flash", 0 },
@@ -369,8 +370,8 @@ class WeaponShops {
         level = 4;
         msg = "Vous devez etre Sergent";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -402,8 +403,8 @@ class WeaponShops {
         level = 5;
         msg = "Vous devez etre Adjudant";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -441,8 +442,8 @@ class WeaponShops {
         level = 6;
         msg = "Vous devez etre Adjudant-Chef";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -480,8 +481,8 @@ class WeaponShops {
         level = 7;
         msg = "Vous devez etre Major";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },	
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -519,8 +520,8 @@ class WeaponShops {
         level = 8;
         msg = "Vous devez etre Lieutenant";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -561,8 +562,8 @@ class WeaponShops {
         level = 9;
         msg = "Vous devez etre Capitaine";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -604,8 +605,8 @@ class WeaponShops {
         level = 10;
         msg = "Vous devez etre Commandant";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -649,8 +650,8 @@ class WeaponShops {
         level = 11;
         msg = "Vous devez etre Général";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },
@@ -699,8 +700,8 @@ class WeaponShops {
         level = 12;
         msg = "Vous devez faire partie du G.I.G.N";
         items[] = {
-		    { "DDOPP_X26", "Tazer", 0 },
-		    { "DDOPP_1Rnd_X26", "Munition Taser", 0 },
+		    { "kosmos_taser_pistol", "Tazer", 0 },
+		    { "KMS_Taser_Mag", "Munition Taser", 0 },
             { "R3F_HK416M_HG", "HK416", 0 },
 		    { "R3F_30Rnd_556x45_HK416", "Munition HK416", 0 },
 			{ "R3F_HK417M_HG", "HK417 16 pouces", 0 },

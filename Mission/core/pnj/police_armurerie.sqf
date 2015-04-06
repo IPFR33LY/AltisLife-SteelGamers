@@ -14,6 +14,6 @@ _this addAction["Armurerie Capitaine",life_fnc_weaponShopMenu,"cop_capitaine"];
 _this addAction["Armurerie Commandant",life_fnc_weaponShopMenu,"cop_commandant"];  
 _this addAction["Armurerie Généraux",life_fnc_weaponShopMenu,"cop_general"];  
 _this addAction["Armurerie G.I.G.N",life_fnc_weaponShopMenu,"cop_gign"];  
-_this addAction[format["%1 ($%2)",localize (getText(missionConfigFile >> "Licenses" >> "cAir" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "cAir" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cAir",0,false,false,"",' !license_cop_cAir && playerSide == west '];  
-_this addAction[format["%1 ($%2)",localize (getText(missionConfigFile >> "Licenses" >> "coastguard" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "coastguard" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"coastguard",0,false,false,"",' !license_cop_cg && playerSide == west ']; 
+_this addAction[format["%1 (%2€)",localize (getText(missionConfigFile >> "Licenses" >> "cAir" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "cAir" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cAir",0,false,false,"",' !license_cop_cAir && playerSide == west '];  
+_this addAction[format["%1 (%2€)",localize (getText(missionConfigFile >> "Licenses" >> "coastguard" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "coastguard" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"coastguard",0,false,false,"",' !license_cop_coastguard && playerSide == west ']; 
 _this addAction["<t color='#ADFF2F'>ATM</t>",life_fnc_atmMenu,"",0,FALSE,FALSE,"",' vehicle player == player && player distance _target < 4 '];
