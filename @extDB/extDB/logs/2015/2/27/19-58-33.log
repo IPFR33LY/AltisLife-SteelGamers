@@ -1,0 +1,26 @@
+[20:58:33 +02:00] [Thread 2364443398] extDB: Version: 35
+[20:58:33 +02:00] [Thread 2364443398] extDB: Windows Version
+[20:58:33 +02:00] [Thread 2364443398] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[20:58:33 +02:00] [Thread 2364443398] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[20:58:33 +02:00] [Thread 2364443398] Message: Note currently most/all development for extDB is done on a Linux Server
+[20:58:33 +02:00] [Thread 2364443398] Message: Torndeco: 24/01/15
+[20:58:33 +02:00] [Thread 2364443398] 
+[20:58:33 +02:00] [Thread 2364443398] extDB: Found extdb-conf.ini
+[20:58:33 +02:00] [Thread 2364443398] extDB: Detected 4 Cores, Setting up 4 Worker Threads
+[20:58:33 +02:00] [Thread 2364443398] extDB: Database Type: MySQL
+[20:58:34 +02:00] [Thread 2364443398] extDB: Database Session Pool Started
+[20:58:34 +02:00] [Thread 2364443398] extDB: DB_RAW_V3: Initialized: ADD_QUOTES True
+[20:58:34 +02:00] [Thread 1957637706] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[20:58:34 +02:00] [Thread 1957637706] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles
+[11:52:43 +02:00] [Thread 2028689897] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[11:52:43 +02:00] [Thread 2028689897] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles
+[15:29:17 +02:00] [Thread 1451012640] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[15:29:17 +02:00] [Thread 1451012640] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles
+[15:54:18 +02:00] [Thread 2028689897] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[15:54:18 +02:00] [Thread 2028689897] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles
+[19:16:03 +02:00] [Thread 1709297891] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[19:16:03 +02:00] [Thread 1709297891] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles
+[19:18:39 +02:00] [Thread 1957637706] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[19:18:39 +02:00] [Thread 1957637706] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles
+[20:12:09 +02:00] [Thread 1709297891] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[20:12:09 +02:00] [Thread 1709297891] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles

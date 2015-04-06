@@ -1,0 +1,11 @@
+[20:50:24 +02:00] [Thread 1451012640] extDB: Version: 35
+[20:50:24 +02:00] [Thread 1451012640] extDB: Windows Version
+[20:50:24 +02:00] [Thread 1451012640] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[20:50:24 +02:00] [Thread 1451012640] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[20:50:24 +02:00] [Thread 1451012640] Message: Note currently most/all development for extDB is done on a Linux Server
+[20:50:24 +02:00] [Thread 1451012640] Message: Torndeco: 24/01/15
+[20:50:24 +02:00] [Thread 1451012640] 
+[20:50:24 +02:00] [Thread 1451012640] extDB: Found extdb-conf.ini
+[20:50:24 +02:00] [Thread 1451012640] extDB: Detected 4 Cores, Setting up 4 Worker Threads
+[20:50:24 +02:00] [Thread 1451012640] extDB: No Config Option Found: AltisLife
+[20:51:49 +02:00] [Thread 1451012640] extDB: Stopping ...
