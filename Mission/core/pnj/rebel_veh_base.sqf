@@ -1,0 +1,10 @@
+_this enableSimulation false;
+_this allowDamage false;
+_this addAction["Concessionnaire Véhicule LV1",life_fnc_vehicleShopMenu,["reb_car",civilian,"crim_v_1","reb","Rebel Motorpool - Western Side"],0,false,false,"",'license_civ_rebel'];
+_this addAction["Concessionnaire Véhicule LV2",life_fnc_vehicleShopMenu,["reb_car",civilian,"crim_v_1","reb","Rebel Motorpool - Western Side"],0,false,false,"",'license_civ_rebel_lvl_2'];
+_this addAction["Concessionnaire Véhicule LV3",life_fnc_vehicleShopMenu,["reb_car",civilian,"crim_v_1","reb","Rebel Motorpool - Western Side"],0,false,false,"",'license_civ_rebel_lvl_3'];
+_this addAction["Concessionnaire Véhicule LV4",life_fnc_vehicleShopMenu,["reb_car",civilian,"crim_v_1","reb","Rebel Motorpool - Western Side"],0,false,false,"",'license_civ_rebel_lvl_4'];
+_this addAction["Concessionnaire Véhicule LV5",life_fnc_vehicleShopMenu,["reb_car",civilian,"crim_v_1","reb","Rebel Motorpool - Western Side"],0,false,false,"",'license_civ_rebel_lvl_5'];
+_this addAction["Mon Garage auto",  {   [[getPlayerUID player,playerSide,"Car",player],"TON_fnc_getVehicles",false,false] spawn life_fnc_MP; life_garage_type = "Car";   createDialog "Life_impound_menu";   disableSerialization;   ctrlSetText[2802,"Obtention du Vehicles...."];   life_garage_sp = "crim_v_1";  }]; 
+_this addAction["Mon Garage Helico",  {   [[getPlayerUID player,playerSide,"Air",player],"TON_fnc_getVehicles",false,false] spawn life_fnc_MP;  life_garage_type = "Air"; createDialog "Life_impound_menu";   disableSerialization;   ctrlSetText[2802,"Obtention du Vehicles...."];   life_garage_sp = "crim_v_1";  }];
+_this addAction["Stocker le véhicule",life_fnc_storeVehicle,"",0,false,false,"",'!life_garage_store'];
