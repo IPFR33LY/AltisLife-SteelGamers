@@ -110,9 +110,8 @@ class Clothing {
 			{ "U_Rangemaster", "Cop Uniform", 0, { "", "", -1 } },
 			{ "U_B_CombatUniform_mcam_tshirt", "", 0, { "life_coplevel", "SCALAR", 1 } },
 			{ "U_B_survival_uniform", "", 0, { "life_coplevel", "SCALAR", 1 } },
-			{ "U_B_CombatUniform_mcam_worn", "", 0, { "life_coplevel", "SCALAR", 2 } },
-			{ "CL3_etu_uniform", "", 0, { "life_coplevel", "SCALAR", 3 } },			
-			{ "gign_uniform", "Uniforme G.I.G.N", 0, { "life_coplevel", "SCALAR", 8 } },			
+			{ "U_B_CombatUniform_mcam_worn", "", 0, { "life_coplevel", "SCALAR", 2 } },	
+			{ "gign_uniform", "Uniforme G.I.G.N", 0, { "life_coplevel", "SCALAR", 8 } }	
 		};
 
 		headgear[] = {
@@ -152,14 +151,14 @@ class Clothing {
 		vests[] = {
 			{ "NONE", "Enlever le Gilet", 0, { "", "", -1 } },
 			{ "V_Rangemaster_belt", "", 0, { "", "", -1 } },
-			{ "V_PlateCarrier2_rgr", "", 0, { "life_coplevel", "SCALAR", 1 } },
-			{ "gign_HeavyVest", "", 0, { "life_coplevel", "SCALAR", 8 } },
-			{ "gign_BlackVest", "", 0, { "life_coplevel", "SCALAR", 8 } }			
+			{ "V_PlateCarrier2_rgr", "", 0, { "", "", -1 } },
+			{ "gign_HeavyVest", "", 0, { "", "", -1 } },
+			{ "gign_BlackVest", "", 0, { "", "", -1 } }			
 		};
 
 		backpacks[] = {
 			{ "NONE", "Enlever le Sac a Dos", 0, { "", "", -1 } },
-			{ "cl3_police_tacticalbelt", "", 800, { "", "", -1 } }
+			{ "cl3_police_tacticalbelt", "", 0, { "", "", -1 } }
 		};
 	};
 
