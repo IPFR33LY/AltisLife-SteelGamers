@@ -123,6 +123,8 @@ class Clothing {
 			{ "H_PilotHelmetFighter_B", "", 0, { "life_coplevel", "SCALAR", 5 } },
 			{ "H_PilotHelmetHeli_B", "", 0, { "life_coplevel", "SCALAR", 5 } },
 			{ "gign_Balaclava", "", 0, { "life_coplevel", "SCALAR", 8 } },
+			{ "H_Beret_blk", "", 0, { "life_coplevel", "SCALAR", 7 } },
+			{ "H_Beret_02", "", 0, { "life_coplevel", "SCALAR", 9 } },
 			{ "Mask_M40", "", 0, { "life_coplevel", "SCALAR", 12 } },			
 			{ "gign_helm", "", 0, { "life_coplevel", "SCALAR", 8 } },
 			{ "gign_helm3", "", 0, { "life_coplevel", "SCALAR", 8 } },
