@@ -9,4 +9,4 @@ life_versionInfo = "Altis Life RPG v4.0";
 [] execVM "Scripts\Bar.sqf";
 StartProgress = true;
 
-_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
+//_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
