@@ -27,7 +27,7 @@ class statusBar {
 			text="Merci d'attendre quelque instants...";
 			class Attributes {
 				align="right";
-				color = "#086A87";
+				color = "#0080FF";
 			};
 		};
 	};
