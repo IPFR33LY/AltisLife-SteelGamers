@@ -117,6 +117,7 @@ class Clothing {
 		headgear[] = {
 			{ "NONE", "Enlever le Chapeau", 0, { "", "", -1 } },
 			{ "H_HelmetB_plain_mcamo", "", 0, { "life_coplevel", "SCALAR", 1 } },
+			{ "Straat_sniper_cap", "", 0, { "life_coplevel", "SCALAR", 1 } },			
 			{ "H_Booniehat_mcamo", "", 0, { "life_coplevel", "SCALAR", 1 } },
 			{ "H_MilCap_mcamo", "", 0, { "life_coplevel", "SCALAR", 2 } },
 			{ "H_PilotHelmetFighter_B", "", 0, { "life_coplevel", "SCALAR", 5 } },
@@ -264,7 +265,7 @@ class Clothing {
 		};
 	};
 
-		class criminel {
+	class criminel {
 		title = "STR_Shops_C_Rebel";
 		license = "criminel";
 		side = "civ";
