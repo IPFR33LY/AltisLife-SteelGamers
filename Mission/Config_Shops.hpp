@@ -275,7 +275,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 320 },
 			{ "ToolKit", "Kit de Réparation", 1800 },
 			{ "FirstAidKit", "Kit de soin", 1000 },
-			{ "Binocular", "JVN", 1200 },
+			{ "NVGoggles", "JVN", 1200 },
 			{ "Chemlight_red", "Baton Lumineux Rouge", 300 },
 			{ "Chemlight_yellow", "Baton Lumineux Jaunes", 300 },
 			{ "Chemlight_green", "Baton Lumineux Vert", 300 },
