@@ -36,6 +36,7 @@ class RscTitles
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
+	#include "Scripts\Bar.hpp"
 };
 
 class CfgFunctions 
@@ -125,8 +126,8 @@ class CfgDebriefing
 	class NotWhitelisted
 	{
 		title = "Echec de Mission";
-		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		subtitle = "Vous n'êtes pas Whitelisté pour utiliser ce slot";
+		description = "Pour utilisez ce slot, vous devez avoir été whiteliste, merci de choisir un autre slot dans la partie Civile.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -135,8 +136,8 @@ class CfgDebriefing
 	class Blacklisted
 	{
 		title = "Echec de Mission";
-		subtitle = "You are blacklisted from cops";
-		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		subtitle = "Vous avez été blacklisté des force de l'ordre";
+		description = "Vous avez été blacklisté soit à cause d'un mauvais comportement soit c'est le choix d'un admin.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -184,7 +185,7 @@ class CfgNotifications
 	
 	class DeliverySucceeded
 	{
-		title = "Delivery Job Completed";
+		title = "Job Reussi";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
 		description = "%1";
 		duration = 6;
@@ -193,7 +194,7 @@ class CfgNotifications
 	
 	class TextMessage
 	{
-		title = "Received A Text Message";
+		title = "Nouveau Message";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;
@@ -202,7 +203,7 @@ class CfgNotifications
 	
 	class PoliceDispatch
 	{
-		title = "911 Dispatch Center";
+		title = "Messsage de Dispatch";
 		iconPicture = "icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
@@ -211,7 +212,7 @@ class CfgNotifications
 	
 	class AdminDispatch
 	{
-		title = "Admin Dispatch Center";
+		title = "Message d'Admin";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
