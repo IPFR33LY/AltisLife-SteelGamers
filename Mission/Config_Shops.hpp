@@ -301,7 +301,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 }
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
     };
     class cop_brigadier {
@@ -329,7 +329,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 }
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
     };
     class cop_brigadierchef {
@@ -356,7 +356,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -389,7 +389,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -428,7 +428,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -467,7 +467,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -506,7 +506,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -548,7 +548,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -590,7 +590,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -636,7 +636,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -686,7 +686,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
@@ -749,7 +749,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
+			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 },
 			{ "Laserdesignator", "Désignateur Laser", 0 }
         };
     };
