@@ -149,13 +149,12 @@ class CarShops {
 			{ "DAR_ChargerPoliceState", 0, "", { "life_coplevel", 2 } },
 			{ "cl3_q7_clpd_patrol", 0, "", { "life_coplevel", 2 } },
 			{ "DAR_ImpalaPolice", 0, "", { "life_coplevel", 2 } },
-			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },
-			{ "Orel_Agora", 0, "", { "life_coplevel", 6 } },			
+			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },			
 			{ "cl3_reventon_clpd", 0, "", { "life_coplevel", 6 } },
 			{ "CL3_bus_cl_jail", 0, "", { "life_coplevel", 6 } },
-                        { "cl3_transit", 0, "", { "life_coplevel", 8 } },
-                        { "dar_explorer_f", 0, "", { "life_coplevel", 8 } },
-                        { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },			
+            { "cl3_transit", 0, "", { "life_coplevel", 8 } },
+            { "dar_explorer_f", 0, "", { "life_coplevel", 8 } },
+            { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },			
 			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 5 } }
 		};
 	};
