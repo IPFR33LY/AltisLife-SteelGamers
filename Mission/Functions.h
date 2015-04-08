@@ -59,6 +59,12 @@ class Life_Client_Core
         class adminMarkers {};
 	};
 	
+	class Scripts
+ 	{
+ 		file = "Scripts";
+ 		class skyDive {};
+ 	};
+	
 	class Medical_System
 	{
 		file = "core\medical";
