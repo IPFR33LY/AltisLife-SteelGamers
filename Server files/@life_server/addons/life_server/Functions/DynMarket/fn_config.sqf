@@ -17,32 +17,73 @@ DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Dat
 DYNMARKET_PriceUpdateInterval  = 01;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
 DYNMARKET_CreateBackupInterval = 03;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
-DYNMARKET_UserNotification     = true; // Should the user be informed with a hint whenever the prices got updated?
+DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
 
 // █████████████████ USER NOTIFICATION TEXTS  █████████████████
 
 DYNMARKET_UserNotification_Text = 
 [
-	"Your prices have been updated!",
-	"The new prices are being calculated by the server..."
+	"Vos prix ont été mis à jour !",
+	"Les nouveaux prix sont calculés par le serveur ..."
 ];
 
 // █████████████████ ITEM GROUP CONFIGURATION █████████████████
 
 DYNMARKET_Items_Groups =
 [
-	["Legal",
+	["default",
 		[
-			["apple",-1,10,50],
-			["peach",-1,30,100]
+			["apple",-1,20,80],
+			["peach",-1,30,90],
+			["coffee",-1,50,120]
 		],
 		0.5
 	],
+	["Mine",
+		[
+			["oil_processed",-1,1200,3100],
+			["copper_refined",-1,1900,3500],
+			["iron_refined",-1,1500,2900],
+			["salt_refined",-1,900,2500],
+			["glass",-1,1210,1550],
+			["diamond_cut",-1,2500,4800],
+			["cement",-1,1000,2300]
+		],
+		0.6
+	],
+	["hunt",
+	[
+			["rabbit_grilled",-1,10,50],
+			["hen_fried",-1,30,80],
+			["rooster_grilled",-1,30,80],
+			["sheep_grilled",-1,30,80],
+			["goat_grilled",-1,30,80]
+		],
+		0.7
+	],
+	["Fish",
+		[
+			["salema_grilled",-1,10,50],
+			["ornate_grilled",-1,30,80],
+			["mackerel_grilled",-1,30,80],
+			["tuna_grilled",-1,30,80],
+			["mullet_fried",-1,30,80],
+			["catshark_fried",-1,30,80]
+		],
+		0.7
+	],
 	["Illegal", 
 		[
-			/*["peach",1,30,100]*/
+			["heroin_processed",-1,2000,5000],
+			["marijuana",-1,1500,4000],
+			["cocaine_processed",-1,4500,7000],
+			["methu",-1,4900,5500],
+			["uraniumt",-1,3200,6800],
+			["goldbar",-1,85000,105000],
+			["turtle_raw",-1,1100,2500],
+			["turtle_soup",-1,1230,2600]
 		],
-		0.5
+		0.8
 	]
 ];
 
@@ -50,7 +91,6 @@ DYNMARKET_Items_Groups =
 
 DYNMARKET_Items_ToTrack        = 
 [
-
 	["apple",25],
 	["peach",50],
 	["tbacon",125],
@@ -98,7 +138,8 @@ DYNMARKET_Items_ToTrack        =
 	["glass",1450],
 	["diamond_cut",2530],
 	["cement",2350],
-	
+	["methu",4900],
+	["uraniumt",6800],	
 	["heroin_processed",5000],
 	["marijuana",5250],
 	["cocaine_processed",5300]
