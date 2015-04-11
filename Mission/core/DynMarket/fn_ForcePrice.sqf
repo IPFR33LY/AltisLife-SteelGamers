@@ -16,7 +16,7 @@ _tochangeNameText = ctrlText _tochangeName;
 _tochangePriceText = ctrlText _tochangePrice;
 _tochangePriceNumber = parseNumber _tochangePriceText;
 
-if ((_tochangeNameText=="")||(_tochangePriceText=="")) exitWith {hint parseText "<t color='#FF0000'>--ERREUR--</t><br/><t color='#FF0000'>INVALID INPUT</t>";};
+if ((_tochangeNameText=="")||(_tochangePriceText=="")) exitWith {hint parseText "<t color='#FF0000'>--ERROR--</t><br/><t color='#FF0000'>INVALID INPUT</t>";};
 
 _exists = false;
 
@@ -25,8 +25,8 @@ _exists = false;
 } forEach DYNMARKET_prices;
 
 if (_exists) then {
-	hint parseText "<t color='#01DF01'>--MAJ--</t><br/><t color='#01DF01'>SUCCESSFULLY ADJUSTED THE PRICE, IT WILL UPDATE WITH THE NEXT PRICEUPDATES!</t>";
+	hint parseText "<t color='#01DF01'>--UPDATED--</t><br/><t color='#01DF01'>SUCCESSFULLY ADJUSTED THE PRICE, IT WILL UPDATE WITH THE NEXT PRICEUPDATES!</t>";
 	[[_tochangeNameText,_tochangePriceNumber],"TON_fnc_changePrice",false,false] spawn life_fnc_MP;
 } else {
-	hint parseText "<t color='#FF0000'>--ERREUR--</t><br/><t color='#FF0000'>THE REQUESTED ITEM DOES NOT EXIST, MAYBE YOU MISSPELLED IT?</t>";
+	hint parseText "<t color='#FF0000'>--ERROR--</t><br/><t color='#FF0000'>THE REQUESTED ITEM DOES NOT EXIST, MAYBE YOU MISSPELLED IT?</t>";
 };
