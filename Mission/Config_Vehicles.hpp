@@ -266,6 +266,15 @@ class CfgVehicles {
 		textures[] = {};
 	};
 	
+	class cl3_reventon_clpd {
+	vItemSpace = 100;
+    storageFee[] = { 0, 450, 0, 0 };
+	garageSell[] = { 2500, 850, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };	
+	
 	class cl3_s1203_blue {
         vItemSpace = 100;
         storageFee[] = { 0, 450, 0, 0 };
