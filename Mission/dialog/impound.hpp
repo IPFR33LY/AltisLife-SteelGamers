@@ -80,7 +80,6 @@ class Life_impound_menu
 			h = (1 / 25);
 		};
 		
-		class BuyCar : life_RscButtonMenu 
 		//class BuyCar : life_RscButtonMenu 
 		//{
 		//	idc = -1;

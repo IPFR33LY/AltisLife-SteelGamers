@@ -1,3 +1,4 @@
+#include <macro.h>
 waitUntil {!(isNull (findDisplay 46))};
 disableSerialization;
 
@@ -17,7 +18,7 @@ systemChat format["Steel Gamer's Life", _rscLayer];
 		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText
     format["elysium-gaming.ddns.net:9996 | Fps: %2 | Police: %3 | Civil: %4 | Secours: %5 | Argent: %6 | Banque: %7 | %8", _statusText, round diag_fps, 
     west countSide playableUnits, civilian countSide playableUnits,
-    independent countSide playableUnits,[life_cash] call life_fnc_numberText,[life_atmcash] call   
+    independent countSide playableUnits,[CASH] call life_fnc_numberText,[BANK] call   
     life_fnc_numberText, mapGridPosition player, _counter];
 	}; 
 };
