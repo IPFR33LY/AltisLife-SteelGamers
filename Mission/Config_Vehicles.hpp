@@ -149,8 +149,7 @@ class CarShops {
 			{ "DAR_ChargerPoliceState", 0, "", { "life_coplevel", 2 } },
 			{ "cl3_q7_clpd_patrol", 0, "", { "life_coplevel", 2 } },
 			{ "DAR_ImpalaPolice", 0, "", { "life_coplevel", 2 } },
-			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },	
-			{ "insignia_police", 0, "", { "life_coplevel", 3 } },			
+			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },				
 			{ "cl3_reventon_clpd", 0, "", { "life_coplevel", 6 } },
 			{ "CL3_bus_cl_jail", 0, "", { "life_coplevel", 6 } },
             { "dar_explorer_f", 0, "", { "life_coplevel", 8 } },
@@ -468,15 +467,6 @@ class CfgVehicles {
 	garageSell[] = { 2500, 850, 0, 0 };
     insurance = 2500;
     chopShop = 650000;
-    textures[] = { };
-    };	
-	
-	class insignia_police {
-	vItemSpace = 55;
-    storageFee[] = { 0, 2500, 0, 0 };
-	garageSell[] = { 2500, 850, 0, 0 };
-    insurance = 2500;
-    chopShop = 50000;
     textures[] = { };
     };	
 	
