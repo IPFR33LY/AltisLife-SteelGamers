@@ -15,10 +15,6 @@ systemChat format["Steel Gamer's Life", _rscLayer];
 	{
 		sleep 1;
 		_counter = _counter - 1;
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText
-    format["elysium-gaming.ddns.net:9996 | Fps: %2 | Police: %3 | Civil: %4 | Secours: %5 | Argent: %6 | Banque: %7 | %8", _statusText, round diag_fps, 
-    west countSide playableUnits, civilian countSide playableUnits,
-    independent countSide playableUnits,[CASH] call life_fnc_numberText,[BANK] call   
-    life_fnc_numberText, mapGridPosition player, _counter];
-	}; 
-};
+		_statusText = "Steel Gamer's Life";
+		((uiNamespace getVariable "statusBar")displayCtrl 1000)ctrlSetText format["%3 | FPS: %1 | Joueur connecté : %2 | TS3 : tsaltis.steel-gamers.com", round diag_fps, count playableUnits, _statusText, _counter];
+	};
