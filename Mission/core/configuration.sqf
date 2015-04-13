@@ -7,6 +7,9 @@
 ****** Backend Variables *****
 *****************************
 */
+life_god = false; //Add this
+life_frozen = false; //And this
+life_markers = false; //Finally this
 last_position = [];
 life_query_time = time;
 life_action_delay = time;
@@ -58,6 +61,7 @@ life_delivery_in_progress = false;
 life_thirst = 100;
 life_hunger = 100;
 CASH = 0;
+life_drink = 0;
 
 life_istazed = false;
 life_vehicles = [];
