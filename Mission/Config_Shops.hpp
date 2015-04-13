@@ -310,7 +310,7 @@ class WeaponShops {
 	class criminel {
         name = "Magasin d'équipement Criminel";
         side = "civ";
-        license = "rebel";
+        license = "criminel";
         level = -1;
         msg = "";
         items[] = {
