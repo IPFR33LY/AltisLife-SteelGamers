@@ -7,6 +7,7 @@
 ****** Backend Variables *****
 *****************************
 */
+last_position = [];
 life_query_time = time;
 life_action_delay = time;
 life_trunk_vehicle = Objnull;
@@ -23,7 +24,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 0.1; //Scaled in minutes
+life_respawn_timer = 1; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;

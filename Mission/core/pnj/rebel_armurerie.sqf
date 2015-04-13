@@ -1,6 +1,6 @@
 _this enableSimulation false;
 _this allowDamage false;
-_this enableSimulation false; this addAction["Marché Rebel",life_fnc_virt_menu,"rebel"]; this allowDamage false;  
+_this addAction["Marché Rebel",life_fnc_virt_menu,"rebel"]; 
 _this addAction["Vendeur Vétements Rebel",life_fnc_clothingMenu,"reb",0,false,false,"",' license_civ_rebel && playerSide == civilian']; 
 _this addAction["Armes Rebel lvl 1",life_fnc_weaponShopMenu,"rebel",0,false,false,"",' license_civ_rebel && playerSide == civilian']; 
 _this addAction["Armes Rebel lvl 2",life_fnc_weaponShopMenu,"rebel_lvl_2",0,false,false,"",' license_civ_rebel_lvl_2 && playerSide == civilian']; 

@@ -1,4 +1,3 @@
-#include <macro.h>
 waitUntil {!(isNull (findDisplay 46))};
 disableSerialization;
 
@@ -16,5 +15,6 @@ systemChat format["Steel Gamer's Life", _rscLayer];
 		sleep 1;
 		_counter = _counter - 1;
 		_statusText = "Steel Gamer's Life";
-		((uiNamespace getVariable "statusBar")displayCtrl 1000)ctrlSetText format["%3 | FPS: %1 | Joueur connecté : %2 | TS3 : tsaltis.steel-gamers.com", round diag_fps, count playableUnits, _statusText, _counter];
+		((uiNamespace getVariable "statusBar")displayCtrl 1000)ctrlSetText format["%3 | FPS: %1 | Joueur connecte : %2 | TS3 : tsaltis.steel-gamers.com", round diag_fps, count playableUnits, _statusText, _counter];
 	};
+};
