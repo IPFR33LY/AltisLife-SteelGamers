@@ -2547,6 +2547,34 @@
 		</Key>
 	</Package>
 	<Package name="MISC_Strings">
+		<Key ID="STR_MISC_StPubIntox">
+			<Original>%1 has passed out drunk in public!</Original>
+			<English>%1 has passed out drunk in public!</English>
+			<French>%1 il est passé en état d'ébriété en public!</French>
+			<German>%1 hat sich betrunken im öffentlichen bestanden!</German>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>You are already drinking some booze</Original>
+			<English>You are already drinking some booze</English>
+			<French>Vous êtes déjà bu un peu l'alcool</French>
+			<German>Du bist schon etwas trinken Alkohol</German>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>No drinking on duty</Original>
+			<English>No drinking on duty</English>
+			<German>Kein Trinkwasser im Dienst</German>
+			<French>Pas d'alcool pendant le travail</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut">
+			<Original>You have passed out</Original>
+			<English>You have passed out</English>
+			<French>Vous avez réussi à</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut1">
+			<Original>What the hell happened to me??</Original>
+			<English>What the hell happened to me??</English>
+			<French>Qu'est-ce qui me est arrivé ??</French>
+		</Key>
 		<Key ID="STR_MISC_TooMuch">
 			<Original>You tried to give %1 %2 %3 but they couldn't hold that so it was returned.</Original>
 			<German>Du wolltest %1 %2 %3 geben, aber er hat keinen Platz in seinem Inventar und hat es darum zurückgegeben.</German>
@@ -2944,6 +2972,42 @@
 		</Key>
 	</Package>
 	<Package name="Life_Items">
+		<Key ID="STR_Item_Bottles">
+			<Original>Bouteille en Verre</Original>
+		</Key>
+		<Key ID="STR_Item_BottledShine">
+				<Original>Bouteille d'alcool illégal</Original>
+		</Key>
+		<Key ID="STR_Item_BottledWhiskey">
+			<Original>Bouteille de Whiskey</Original>
+		</Key>
+		<Key ID="STR_Item_BottledBeer">
+			<Original>Canette de Bière</Original>
+		</Key>
+		<Key ID="STR_Item_Moonshine">
+			<Original>Alcool Illégal</Original>
+		</Key>
+		<Key ID="STR_Item_Whiskey">
+			<Original>Whiskey Distillé</Original>
+		</Key>
+		<Key ID="STR_Item_Beerp">
+			<Original>Bière Fermenté</Original>
+		</Key>
+		<Key ID="STR_Item_Mash">
+			<Original>Ecraser</Original>
+		</Key>
+		<Key ID="STR_Item_Rye">
+			<Original>Seigle</Original>
+		</Key>
+		<Key ID="STR_Item_Hops">
+			<Original>Houblon</Original>
+		</Key>
+		<Key ID="STR_Item_Yeast">
+			<Original>Levure</Original>
+		</Key>
+		<Key ID="STR_Item_Cornmeal">
+			<Original>Semoule de maïs</Original>
+		</Key>
 		<Key ID="STR_Item_Cannabis">
 			<Original>Cannabis</Original>
 			<German>Kannabis</German>
@@ -3471,6 +3535,18 @@
 		</Key>
 	</Package>
 	<Package name="Life_License">
+		<Key ID="STR_License_Stiller">
+			<Original>Permis de Distiller</Original>
+		</Key>
+		<Key ID="STR_License_Liquor">
+			<Original>Permis d'alcool</Original>
+		</Key>
+		<Key ID="STR_License_Bottler">
+			<Original>License Embouteillage</Original>
+		</Key>
+		<Key ID = "STR_License_Mash">
+			<Original>License Ecrasement</Original>
+		</Key>
 		<Key ID="STR_License_Driver">
 			<Original>Driver License</Original>
 			<German>Führerschein</German>
@@ -3951,6 +4027,27 @@
 		</Key>
 	</Package>
 		<Package name="Process_Action">
+		<Key ID = "STR_Process_Mash">
+			<Original>Ecrasement</Original>
+		</Key>
+		<Key ID = "STR_Process_Whiskey">
+			<Original>Fermentation du Whiskey</Original>
+		</Key>
+		<Key ID = "STR_Process_Beer">
+			<Original>Brassage de la bière</Orginal>
+		</Key>
+		<Key ID = "STR_Process_Moonshine">
+			<Original>Conception d'alcool illégal</Original>
+		</Key>
+		<Key ID = "STR_Process_BottledShine">
+			<Original>Embouteillage d'alcool illégal</Original>
+		</Key>
+		<Key ID = "STR_Process_BottledBeer">
+			<Original>Embouteillage de la Bière</Original>
+		</Key>
+		<Key ID = "STR_Process_BottleWhiskey">
+			<Original>Embouteillage du Whiskey</Original>
+		</Key>
 		<Key ID="STR_Process_Oil">
 			<Original>Processing Oil</Original>
 			<German>Öl wird verarbeite</German>
@@ -4079,6 +4176,21 @@
 		</Key>
 	</Package>
 	<Package name="Gather_Items">
+		<Key ID="STR_Gather_Rye">
+			<Original>Gather Rye</Original>
+			<English>Gather Rye</English>
+			<French>Ramasser des Seigles</French>
+		</Key>
+		<Key ID="STR_Gather_Hops">
+			<Original>Pick Hops</Original>
+			<English>Pick Hops</English>
+			<French>Ramasser du Houblon</French>
+		</Key>
+		<Key ID="STR_Gather_Yeast">
+			<Original>Gather Yeast</Original>
+			<English>Gather Yeast</English>
+			<French>Ramasser de la Levure</French>
+		</Key>
 		<Key ID="STR_Gather_Apples">
 			<Original>Gather Apples</Original>
 			<German>Äpfel sammeln</German>

@@ -12,7 +12,7 @@ closeDialog 0; //Close the interaction menu.
 life_action_inUse = true; //Lock out the interaction menu for a bit..
 _weight = [_vehicle] call life_fnc_vehicleWeight;
 if((_weight select 1) >= (_weight select 0)) exitWith {hint localize "STR_NOTF_DeviceFull"; life_action_inUse = false;};
-_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","lead_1","iron_1","salt_1","sand_1","diamond_1","oil_1","oil_2","rock_1","uranium_1","coffee_1","coffee_2","coffee_3"];
+_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","lead_1","iron_1","salt_1","sand_1","diamond_1","oil_1","oil_2","rock_1","uranium_1","coffee_1","coffee_2","coffee_3","rye_1","hops_1","yeast_1"];
 _zone = "";
 
 //Find out what zone we're near
@@ -41,6 +41,9 @@ _item = switch(true) do {
 	case (_zone in ["oil_1","oil_2"]): {"oil_unprocessed"};
 	case (_zone in ["rock_1"]): {"rock"};
 	case (_zone in ["uranium_1"]): {"uranium"};	
+	case (_zone in ["rye_1"]): {"rye"};
+	case (_zone in ["yeast_1"]): {"yeast"};
+	case (_zone in ["hops_1"]): {"hops"}; 
 	default {""};
 };
 

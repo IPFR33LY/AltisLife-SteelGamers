@@ -165,6 +165,18 @@ class VirtualItems {
 	VITEMMACRO(redgull, "STR_Item_RedGull", "redgull", 1, 1500, 200, false, 100, "icons\ico_redgull.paa")
 	VITEMMACRO(coffee, "STR_Item_Coffee", "coffee", 1, 120, 40, false, 100, "")
 	VITEMMACRO(waterBottle, "STR_Item_WaterBottle", "waterBottle", 1, 10, 5, false, 100, "icons\ico_waterBottle.paa")
+	VITEMMACRO(bottledshine, "STR_Item_BottledShine","bottledshine",2,12500,10000,true,-1,"")
+	VITEMMACRO(bottledwhiskey, "STR_Item_BottledWhiskey","bottledwhiskey",2,8000,5000,false,-1,"")
+	VITEMMACRO(bottledbeer, "STR_Item_BottledBeer","bottledbeer",2,6000,4000,false,-1,"")
+	VITEMMACRO(moonshine, "STR_Item_Moonshine","moonshine",2,-1,7000,true,-1,"")
+	VITEMMACRO(whiskey, "STR_Item_Whiskey","whiskey",2,5000,4500,false,-1,"")
+	VITEMMACRO(beerp, "STR_Item_Beerp","beerp",2,5000,4500,false,-1,"")
+	VITEMMACRO(mash, "STR_Item_Mash","mash",2,3000,2500,true,-1,"")
+	VITEMMACRO(rye, "STR_Item_Rye","rye",2,2500,2000,false,-1,"")
+	VITEMMACRO(hops, "STR_Item_Hops","hops",2,2000,1800,false,-1,"")
+	VITEMMACRO(yeast, "STR_Item_Yeast","yeast",2,2100,2000,false,-1,"")
+	VITEMMACRO(cornmeal, "STR_Item_Cornmeal","cornmeal",2,500,200,false,-1,"")
+	VITEMMACRO(bottles, "STR_Item_Bottles","bottles",2,100,75,false,-1,"")
 
 	//Food
 	VITEMMACRO(apple, "STR_Item_Apple", "apple", 1, 90, 50, false, 10, "icons\food.paa")
@@ -240,6 +252,10 @@ class Licenses {
 	LICENSEMACRO(donateur_lvl_2,"STR_License_Donateur2","donateur_lvl_2",15450000,false,"civ")
 	LICENSEMACRO(donateur_lvl_3,"STR_License_Donateur3","donateur_lvl_3",15450000,false,"civ")	
 	LICENSEMACRO(uranium,"STR_License_Uranium","uranium",40000,false,"civ")	
+	LICENSEMACRO(stiller,"STR_License_Stiller","stiller",50000,false,"civ")
+	LICENSEMACRO(liquor,"STR_License_Liquor","liquor",100000,false,"civ")
+	LICENSEMACRO(bottler,"STR_License_Bottler","bottler",100000,false,"civ")
+	LICENSEMACRO(mash,"STR_License_Mash","mash",100000,false,"civ")
 };
 
 class VirtualShops {
@@ -311,6 +327,11 @@ class VirtualShops {
 	class cement {
 		name = "STR_Shops_Cement";
 		items[] = { "cement" };
+	};
+
+	class bar {
+		name = "STR_Shops_Cement";
+		items[] = { "bottledshine", "bottledwhiskey", "bottledbeer", "moonshine", "whiskey", "beerp"};
 	};
 
 	class gold {

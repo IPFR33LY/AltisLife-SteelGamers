@@ -4259,7 +4259,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=8365;
+		items=8383;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -88241,10 +88241,190 @@ class Mission
 			skill=0.60000002;
 			init="_null=this execVM ""core\pnj\atm.sqf"";";
 		};
+		class Item8365
+		{
+			position[]={17028.721,3.7358081,21989.1};
+			azimut=55.743847;
+			id=8579;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_empty_F";
+			skill=0.60000002;
+			init=" this allowDamage false;";
+		};
+		class Item8366
+		{
+			position[]={17028.695,3.8003075,21986.256};
+			azimut=55.743847;
+			id=8580;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_empty_F";
+			skill=0.60000002;
+			init=" this allowDamage false;";
+		};
+		class Item8367
+		{
+			position[]={17030.969,3.7543774,21986.826};
+			azimut=-14.83917;
+			id=8581;
+			side="EMPTY";
+			vehicle="Land_Sacks_heap_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item8368
+		{
+			position[]={17030.965,3.7139232,21988.613};
+			azimut=-36.325363;
+			id=8582;
+			side="EMPTY";
+			vehicle="Land_Sacks_heap_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item8369
+		{
+			position[]={17030.432,3.7353101,21988.014};
+			azimut=90.743843;
+			id=8583;
+			side="EMPTY";
+			vehicle="Land_cargo_addon02_V1_F";
+			skill=0.60000002;
+		};
+		class Item8370
+		{
+			position[]={17028.914,3.7602711,21987.895};
+			azimut=270.74399;
+			id=8584;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			lock="LOCKED";
+			skill=0.60000002;
+			init="_null=this execVM ""core\pnj\distillerie.sqf"";";
+		};
+		class Item8371
+		{
+			position[]={16804.768,22.529951,15036.446};
+			azimut=55.743847;
+			id=8585;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_empty_F";
+			skill=0.60000002;
+			init=" this allowDamage false;";
+		};
+		class Item8372
+		{
+			position[]={16804.742,22.5154,15033.603};
+			azimut=55.743847;
+			id=8586;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_empty_F";
+			skill=0.60000002;
+			init=" this allowDamage false;";
+		};
+		class Item8373
+		{
+			position[]={16807.016,22.463863,15034.173};
+			azimut=-14.83917;
+			id=8587;
+			side="EMPTY";
+			vehicle="Land_Sacks_heap_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item8374
+		{
+			position[]={16807.012,22.473482,15035.96};
+			azimut=-36.325363;
+			id=8588;
+			side="EMPTY";
+			vehicle="Land_Sacks_heap_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item8375
+		{
+			position[]={16806.479,22.48307,15035.36};
+			azimut=90.743843;
+			id=8589;
+			side="EMPTY";
+			vehicle="Land_cargo_addon02_V1_F";
+			skill=0.60000002;
+		};
+		class Item8376
+		{
+			position[]={16804.961,22.518866,15035.241};
+			azimut=270.74399;
+			id=8590;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			lock="LOCKED";
+			skill=0.60000002;
+			init="_null=this execVM ""core\pnj\brasserie.sqf"";";
+		};
+		class Item8377
+		{
+			position[]={8280.5381,77.425064,10070.643};
+			azimut=-155.39799;
+			id=8591;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_empty_F";
+			skill=0.60000002;
+			init=" this allowDamage false;";
+		};
+		class Item8378
+		{
+			position[]={8279.0908,77.364105,10073.091};
+			azimut=-155.39799;
+			id=8592;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_empty_F";
+			skill=0.60000002;
+			init=" this allowDamage false;";
+		};
+		class Item8379
+		{
+			position[]={8277.4395,77.373886,10071.422};
+			azimut=-225.981;
+			id=8593;
+			side="EMPTY";
+			vehicle="Land_Sacks_heap_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item8380
+		{
+			position[]={8278.3643,77.437889,10069.9};
+			azimut=-247.46719;
+			id=8594;
+			side="EMPTY";
+			vehicle="Land_Sacks_heap_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item8381
+		{
+			position[]={8278.5107,77.420631,10070.687};
+			azimut=-120.39797;
+			id=8595;
+			side="EMPTY";
+			vehicle="Land_cargo_addon02_V1_F";
+			skill=0.60000002;
+		};
+		class Item8382
+		{
+			position[]={8279.7412,77.428078,10071.576};
+			azimut=59.6021;
+			id=8596;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			lock="LOCKED";
+			skill=0.60000002;
+			init="_null=this execVM ""core\pnj\embouteilleur.sqf"";";
+		};
 	};
 	class Markers
 	{
-		items=288;
+		items=297;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -88717,7 +88897,7 @@ class Mission
 			text="Revendeur Archéologie";
 			type="b_unknown";
 			colorName="ColorCIV";
-			angle=-24.049265;
+			angle=0.93861759;
 		};
 		class Item61
 		{
@@ -89963,7 +90143,7 @@ class Mission
 		{
 			position[]={23513.869,90.31498,21165.32};
 			name="heroin_p";
-			text="Traitement d'Héroinne";
+			text="Traitement d'Héroine";
 			type="mil_dot";
 			colorName="ColorRed";
 		};
@@ -90511,6 +90691,87 @@ class Mission
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=39.481449;
+		};
+		class Item288
+		{
+			position[]={23787.105,61.584343,24302.186};
+			name="rye_area_1";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWhite";
+			a=100;
+			b=100;
+		};
+		class Item289
+		{
+			position[]={23780.967,62.425148,24303.84};
+			name="rye_1";
+			text="Champs de Seigle";
+			type="mil_dot";
+			colorName="ColorWhite";
+		};
+		class Item290
+		{
+			position[]={3283.4395,52.752655,18734.342};
+			name="hops_area_1";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWhite";
+			a=100;
+			b=100;
+		};
+		class Item291
+		{
+			position[]={3277.3008,49.688564,18735.996};
+			name="hops_1";
+			text="Champs de Houblon";
+			type="mil_dot";
+			colorName="ColorWhite";
+		};
+		class Item292
+		{
+			position[]={17580.119,104.47485,9727.0566};
+			name="yeast_area_1";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWhite";
+			a=100;
+			b=100;
+		};
+		class Item293
+		{
+			position[]={17573.979,101.80328,9728.7109};
+			name="yeast_1";
+			text="Champs de Levure";
+			type="mil_dot";
+			colorName="ColorWhite";
+		};
+		class Item294
+		{
+			position[]={17030.25,3.7385499,21987.988};
+			name="97_1_1";
+			text="Distillerie";
+			type="mil_triangle";
+			colorName="ColorGUER";
+			angle=-272.586;
+		};
+		class Item295
+		{
+			position[]={16806.297,22.487328,15035.335};
+			name="97_1_1_1";
+			text="Brasserie";
+			type="mil_triangle";
+			colorName="ColorGUER";
+			angle=-272.586;
+		};
+		class Item296
+		{
+			position[]={8278.6523,77.421074,10070.804};
+			name="97_1_1_1_1";
+			text="Embouteilleur";
+			type="mil_triangle";
+			colorName="ColorGUER";
+			angle=-624.53601;
 		};
 	};
 };

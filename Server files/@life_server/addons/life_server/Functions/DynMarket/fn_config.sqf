@@ -72,6 +72,17 @@ DYNMARKET_Items_Groups =
 		],
 		0.7
 	],
+	["Alcool",
+		[
+			["bottledshine",-1,4500,10000],
+			["bottledwhiskey",-1,2500,5000],
+			["bottledbeer",-1,3200,4000],
+			["moonshine",-1,5500,7000],
+			["whiskey",-1,2450,4500],
+			["beerp",-1,2000,4500]
+		],
+		0.7
+	],
 	["Illegal", 
 		[
 			["heroin_processed",-1,2000,5000],
@@ -119,6 +130,18 @@ DYNMARKET_Items_ToTrack        =
 	["redgull",1500],
 	["coffee",10],
 	["waterBottle",10],
+	["bottledshine",9000],
+	["bottledwhiskey",5000],
+	["bottledbeer",4000],
+	["moonshine",7000],
+	["whiskey",4500],
+	["beerp",4000],
+	["mash",2500],
+	["rye",2000],
+	["hops",1800],
+	["yeast",2000],
+	["cornmeal",200],
+	["bottles",75],
 	
 	["pickaxe",350],
 	["fuelFull",500],

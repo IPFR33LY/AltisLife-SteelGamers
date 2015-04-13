@@ -297,6 +297,7 @@ class Life_Client_Core
 		class ticketPaid {};
 		class copentrer {};
 		class wantedGrab {};
+		class breathalyzer {};
 	};
 	
 	class Gangs
@@ -353,6 +354,9 @@ class Life_Client_Core
 		class defuseKit {};
 		class storageBox {};
 		class gpsTracker {};
+		class drinkbeer {};
+		class drinkmoonshine {};
+		class drinkwhiskey {};
 	};
 	
 	class Dialog_Controls
