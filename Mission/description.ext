@@ -1,5 +1,5 @@
 author = "Tonic";
-onLoadName = "Altis Life Steel-Gamers v4.0";
+onLoadName = "Altis Life Steel-Gamers BETA v4.1";
 onLoadMission = "Tonic et Steel-Gamers";
 joinUnassigned = 1;
 respawn = BASE;
@@ -8,6 +8,7 @@ disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
+LoadScreen = "chargement.jpg";
 
 class Header
 {

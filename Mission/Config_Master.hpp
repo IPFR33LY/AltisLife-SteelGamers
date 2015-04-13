@@ -331,7 +331,7 @@ class VirtualShops {
 
 	class bar {
 		name = "STR_Shops_Cement";
-		items[] = { "bottledshine", "bottledwhiskey", "bottledbeer", "moonshine", "whiskey", "beerp"};
+		items[] = { "bottledshine", "bottledwhiskey", "bottledbeer", "moonshine", "whiskey", "beerp", "mash", "cornmeal", "bottles"};
 	};
 
 	class gold {

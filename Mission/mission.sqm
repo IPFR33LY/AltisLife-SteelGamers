@@ -129,7 +129,8 @@ class Mission
 		"A3_Structures_F_Civ_SportsGrounds",
 		"A3_Structures_F_Ind_FuelStation",
 		"Skyline_Prison",
-		"orel_objects"
+		"orel_objects",
+		"A3_Characters_F_Kart"
 	};
 	addOnsAuto[]=
 	{
@@ -138,6 +139,7 @@ class Mission
 		"A3_Characters_F_Civil",
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_INDEP",
+		"A3_Characters_F_Kart",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_EPC",
 		"A3_Modules_F",
@@ -261,16 +263,12 @@ class Mission
 	{
 		briefingName="Altis Life RPG";
 		overviewText="Altis Life RPG 4.0";
-		startWeather=0.099999994;
-		startWind=0.29999998;
-		startWindDir=20;
-		startWaves=0.12;
-		startGust=0.099999994;
-		forecastWeather=0.099999994;
-		forecastWind=0.29999998;
-		forecastWaves=0.12;
-		forecastGust=0.099999994;
-		forecastWindDir=360;
+		timeOfChanges=28800;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
 		wavesForced=1;
 		windForced=1;
 		year=2035;
@@ -2593,10 +2591,10 @@ class Mission
 					special="NONE";
 					id=122;
 					side="CIV";
-					vehicle="C_man_1";
+					vehicle="C_Marshal_F";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction [""Boire de la bierre"",""disco\bierre.sqf""]; this enableSimulation false; this addAction [""Boire une Vodka Redbull"",""disco\vodka.sqf""]; this addAction [""Boire un Whisky"",""disco\sky.sqf""]; this addAction [""Boire de la liqueur"",""disco\liqueur.sqf""]; this addAction [""Boire une coupe de Champage"",""disco\champage.sqf""];   ";
+					init="_null=this execVM ""core\pnj\bar.sqf"";";
 				};
 			};
 		};
@@ -2665,7 +2663,7 @@ class Mission
 					azimut=79.664398;
 					id=126;
 					side="CIV";
-					vehicle="C_man_1";
+					vehicle="C_Marshal_F";
 					leader=1;
 					skill=0.60000002;
 					init="_null=this execVM ""core\pnj\market.sqf"";";
