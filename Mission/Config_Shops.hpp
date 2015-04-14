@@ -910,7 +910,7 @@ class WeaponShops {
 			{ "B_FieldPack_ocamo", "", 3000 }
         };
     };	
-	class donateur {
+	class donateur_lvl_1 {
         name = "Magasin donateur LVL1";
         side = "civ";
         license = "donateur_lvl_1";
