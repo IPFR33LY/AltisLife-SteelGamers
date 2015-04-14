@@ -153,6 +153,7 @@ class CarShops {
 			{ "cl3_reventon_clpd", 0, "", { "life_coplevel", 6 } },
 			{ "CL3_bus_cl_jail", 0, "", { "life_coplevel", 6 } },
             { "dar_explorer_f", 0, "", { "life_coplevel", 8 } },
+            { "Orel_Master", 0, "", { "life_coplevel", 5 } },
             { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },			
 			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 5 } }
 		};
@@ -222,7 +223,19 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 			{ "cl3_dodge_charger_s_darkred", 85000, "donateur_lvl_1" },
-			{ "cl3_veyron_black", 800000, "donateur_lvl_1" },			
+			{ "cl3_veyron_black", 700000, "donateur_lvl_1" },	
+			{ "cl3_veyron_blk_wht", 700000, "donateur_lvl_2" },					
+			{ "cl3_arielatom_race_gold", 120000, "donateur_lvl_2" },
+			{ "cl3_r8_spyder_black", 650000, "donateur_lvl_1" },
+			{ "cl3_458_black", 650000, "donateur_lvl_1" },
+			{ "cl3_murcielago_black", 650000, "donateur_lvl_1" },	
+			{ "cl3_aventador_lp7004_black", 943000, "donateur_lvl_1" },	
+			{ "cl3_reventon_black", 943000, "donateur_lvl_1" },	
+			{ "cl3_reventon_camo_urban", 950000, "donateur_lvl_2" },
+			{ "cl3_z4_2008_black", 610000, "donateur_lvl_1" },			
+			{ "cl3_dbs_volante_silver", 920000, "donateur_lvl_1" },
+			{ "Orel_Quad", 4000, "donateur_lvl_1" },
+			{ "cl3_batmobile", 920000, "donateur_lvl_3" },		
 			{ "cl3_lamborghini_gt1_flame", 1500000, "donateur_lvl_2" }		
 		};	
 	};
@@ -317,6 +330,24 @@ class CfgVehicles {
     textures[] = { };
     };
 	
+	class cl3_arielatom_race_gold {
+	vItemSpace = 45;
+    storageFee[] = { 8500, 0, 0, 0 };
+	garageSell[] = { 55000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 80000;
+    textures[] = { };
+    };
+	
+	class cl3_veyron_blk_wht {
+	vItemSpace = 45;
+    storageFee[] = { 8500, 0, 0, 0 };
+	garageSell[] = { 55000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 850000;
+    textures[] = { };
+    };
+	
 	class cl3_veyron_black {
 	vItemSpace = 45;
     storageFee[] = { 8500, 0, 0, 0 };
@@ -332,6 +363,15 @@ class CfgVehicles {
 	garageSell[] = { 18000, 850, 0, 0 };
     insurance = 2500;
     chopShop = 230000;
+    textures[] = { };
+    };
+	
+	class cl3_dbs_volante_silver {
+	vItemSpace = 45;
+    storageFee[] = { 4250, 0, 0, 0 };
+	garageSell[] = { 25000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 235000;
     textures[] = { };
     };
 	
@@ -359,6 +399,15 @@ class CfgVehicles {
 	garageSell[] = { 25000, 0, 0, 0 };
     insurance = 2500;
     chopShop = 215000;
+    textures[] = { };
+    };
+	
+	class cl3_reventon_camo_urban {
+	vItemSpace = 45;
+    storageFee[] = { 4350, 0, 0, 0 };
+	garageSell[] = { 25000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 225000;
     textures[] = { };
     };
 	
@@ -473,6 +522,15 @@ class CfgVehicles {
 	class DAR_TahoePolice {
 	vItemSpace = 55;
     storageFee[] = { 0, 2500, 0, 0 };
+	garageSell[] = { 2500, 850, 0, 0 };
+    insurance = 2500;
+    chopShop = 50000;
+    textures[] = { };
+    };	
+	
+	class Orel_Master {
+	vItemSpace = 300;
+    storageFee[] = { 0, 3000, 0, 0 };
 	garageSell[] = { 2500, 850, 0, 0 };
     insurance = 2500;
     chopShop = 50000;

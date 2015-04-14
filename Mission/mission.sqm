@@ -4257,7 +4257,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=8383;
+		items=8392;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -88419,10 +88419,101 @@ class Mission
 			skill=0.60000002;
 			init="_null=this execVM ""core\pnj\embouteilleur.sqf"";";
 		};
+		class Item8383
+		{
+			position[]={27205.201,16.159988,24549.881};
+			azimut=590.91998;
+			id=8597;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V1_F";
+			lock="LOCKED";
+			skill=0.60000002;
+			init="_null=this execVM ""core\pnj\donateur_antalya.sqf"";";
+		};
+		class Item8384
+		{
+			position[]={27203.865,16.216106,24548.482};
+			azimut=500.92032;
+			id=8598;
+			side="EMPTY";
+			vehicle="Land_Sacks_heap_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item8385
+		{
+			position[]={27204.172,16.240551,24551.352};
+			azimut=375.92007;
+			id=8599;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_empty_F";
+			skill=0.60000002;
+			init=" this allowDamage false;";
+		};
+		class Item8386
+		{
+			position[]={27205.355,16.140804,24549.174};
+			azimut=405.91992;
+			id=8600;
+			side="EMPTY";
+			vehicle="CamoNet_INDP_open_F";
+			skill=0.60000002;
+			init="this allowdamage false;";
+		};
+		class Item8387
+		{
+			position[]={27206.768,16.044744,24548.143};
+			azimut=375.92007;
+			id=8601;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item8388
+		{
+			position[]={27206.223,16.063297,24546.309};
+			azimut=555.92041;
+			id=8602;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item8389
+		{
+			position[]={27207.361,15.997041,24545.949};
+			azimut=555.92041;
+			id=8603;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item8390
+		{
+			position[]={27206.982,16.021688,24547.043};
+			azimut=375.92007;
+			id=8604;
+			side="EMPTY";
+			vehicle="Land_CampingTable_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item8391
+		{
+			position[]={27207.934,15.972607,24547.785};
+			azimut=375.92007;
+			id=8605;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
 	};
 	class Markers
 	{
-		items=297;
+		items=299;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -88876,7 +88967,7 @@ class Mission
 		};
 		class Item58
 		{
-			position[]={3701.0081,27.066528,12204.947};
+			position[]={3700.4263,27.064768,12204.287};
 			name="don_g_1";
 			type="Empty";
 			angle=220;
@@ -90554,7 +90645,7 @@ class Mission
 		{
 			position[]={27092.838,23.932026,24891.064};
 			name="swat_spawn";
-			text="Base du SWAT";
+			text="Base du G.I.G.N";
 			type="mil_dot";
 			colorName="ColorWEST";
 		};
@@ -90770,6 +90861,22 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorGUER";
 			angle=-624.53601;
+		};
+		class Item297
+		{
+			position[]={27205.313,16.156,24550.045};
+			name="Magasin Donateur_1";
+			text="Magasin Donateur";
+			type="b_uav";
+			colorName="ColorUNKNOWN";
+			angle=361.57596;
+		};
+		class Item298
+		{
+			position[]={27196.461,16.678858,24557.975};
+			name="donateur_antalya";
+			type="Empty";
+			angle=-124.78683;
 		};
 	};
 };
