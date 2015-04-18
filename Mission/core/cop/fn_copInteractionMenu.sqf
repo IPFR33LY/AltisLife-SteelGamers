@@ -35,7 +35,6 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 = _display displayCtrl Btn5;
 		_Btn6 = _display displayCtrl Btn6;
 		_Btn7 = _display displayCtrl Btn7;
-		_Btn9 = _display displayCtrl Btn9;
 		life_pInact_curTarget = _curTarget;
 		
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
@@ -48,7 +47,6 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 ctrlShow false;
 		_Btn6 ctrlShow false;
 		_Btn7 ctrlShow false;
-		_Btn9 ctrlShow false;
 	} else {
 		closeDialog 0;
 	};
@@ -102,6 +100,6 @@ if(!((player distance (getMarkerPos "police_hq_1") < 50) OR  (player distance (g
 	_Btn6 ctrlEnable false;
 };
 
-//alcooltest
+//Breathalyser button
 _Btn9 ctrlSetText localize "STR_pInAct_Breathalyzer";
 _Btn9 buttonSetAction "[[player],""life_fnc_breathalyzer"",life_pInact_curTarget,FALSE] spawn life_fnc_MP;closeDialog 0";

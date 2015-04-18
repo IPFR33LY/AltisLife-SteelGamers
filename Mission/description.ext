@@ -110,7 +110,7 @@ class CfgSounds
 	class intro
 	{
 		name = "intro";
-		sound[] = {"\sounds\intro.ogg", 0.8, 1};
+		sound[] = {"\sounds\intro.ogg", 0.5, 1};
 		titles[] = {};
 	};
 	

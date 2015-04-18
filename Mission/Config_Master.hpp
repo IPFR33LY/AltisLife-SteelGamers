@@ -252,9 +252,9 @@ class Licenses {
 	LICENSEMACRO(donateur_lvl_2,"STR_License_Donateur2","donateur_lvl_2",15450000,false,"civ")
 	LICENSEMACRO(donateur_lvl_3,"STR_License_Donateur3","donateur_lvl_3",15450000,false,"civ")	
 	LICENSEMACRO(uranium,"STR_License_Uranium","uranium",40000,false,"civ")	
-	LICENSEMACRO(stiller,"STR_License_Stiller","stiller",50000,false,"civ")
-	LICENSEMACRO(liquor,"STR_License_Liquor","liquor",100000,false,"civ")
-	LICENSEMACRO(bottler,"STR_License_Bottler","bottler",100000,false,"civ")
+	LICENSEMACRO(stiller,"STR_License_Stiller","stiller",40000,false,"civ")
+	LICENSEMACRO(liquor,"STR_License_Liquor","liquor",40000,false,"civ")
+	LICENSEMACRO(bottler,"STR_License_Bottler","bottler",40000,false,"civ")
 	LICENSEMACRO(mash,"STR_License_Mash","mash",100000,false,"civ")
 };
 
@@ -289,6 +289,11 @@ class VirtualShops {
 		items[] = { "cocaine_processed", "heroin_processed", "marijuana" , "uraniumt"};
 	};
 
+	class uranium {
+		name = "STR_Shops_DrugDealer";
+		items[] = { "uraniumt" };
+	};
+	
 	class oil {
 		name = "STR_Shops_Oil";
 		items[] = { "oil_processed", "pickaxe", "fuelFull" };

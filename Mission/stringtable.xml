@@ -2550,13 +2550,13 @@
 		<Key ID="STR_MISC_StPubIntox">
 			<Original>%1 has passed out drunk in public!</Original>
 			<English>%1 has passed out drunk in public!</English>
-			<French>%1 il est passé en état d'ébriété en public!</French>
+			<French>%1 est passé en état d'ébriété en public!</French>
 			<German>%1 hat sich betrunken im öffentlichen bestanden!</German>
 		</Key>
 		<Key ID="STR_MISC_AlreadyDrinking">
 			<Original>You are already drinking some booze</Original>
 			<English>You are already drinking some booze</English>
-			<French>Vous êtes déjà bu un peu l'alcool</French>
+			<French>Vous avez déjà bu de l'alcool</French>
 			<German>Du bist schon etwas trinken Alkohol</German>
 		</Key>
 		<Key ID="STR_MISC_WestIndNoNo">
@@ -2568,12 +2568,12 @@
 		<Key ID="STR_MISC_DrunkBlackOut">
 			<Original>You have passed out</Original>
 			<English>You have passed out</English>
-			<French>Vous avez réussi à</French>
+			<French>Vous êtes tombé dans un Coma éthylique</French>
 		</Key>
 		<Key ID="STR_MISC_DrunkBlackOut1">
 			<Original>What the hell happened to me??</Original>
 			<English>What the hell happened to me??</English>
-			<French>Qu'est-ce qui me est arrivé ??</French>
+			<French>Bordel, Qu'est-ce qui me est arrivé ??</French>
 		</Key>
 		<Key ID="STR_MISC_TooMuch">
 			<Original>You tried to give %1 %2 %3 but they couldn't hold that so it was returned.</Original>
@@ -2994,7 +2994,7 @@
 			<Original>Bière Fermenté</Original>
 		</Key>
 		<Key ID="STR_Item_Mash">
-			<Original>Ecraser</Original>
+			<Original>Eau de vie</Original>
 		</Key>
 		<Key ID="STR_Item_Rye">
 			<Original>Seigle</Original>

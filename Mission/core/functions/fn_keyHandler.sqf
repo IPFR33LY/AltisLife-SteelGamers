@@ -223,25 +223,28 @@ switch (_code) do {
                 {
                     if( _str == "Spitzhacke" || _str == "pickaxe" || _str == "pioche" ) then
                     {
-                        [] spawn life_fnc_pickAxeUse;
+                        [] spawn life_fnc_pickaxeUse;
                     };
                 };
             } foreach life_inv_items;
         }
     };
 	
-	//Shift + G (surrender)
-	case 34:
+	// Se rendre
+	case 47:
 	{
+		//get out of restraints just v
+		if(playerSide != west && (player getVariable "restrained") OR (player getVariable "transporting")) then {_handled = true;};
+		
+		//shift + v surrender
 		if(_shift) then {_handled = true;};
-
 		if (_shift) then
 		{
-			if (vehicle player == player && !(player GVAR ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
 			{
-				if (player GVAR ["surrender", false]) then
+				if (player getVariable ["surrender", false]) then
 				{
-					player SVAR ["surrender", false, true];
+					player setVariable ["surrender", false, true];
 				} else
 				{
 					[] spawn life_fnc_surrender;

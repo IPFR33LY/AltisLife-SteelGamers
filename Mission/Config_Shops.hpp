@@ -7,6 +7,8 @@ class WeaponShops {
         level = -1;
         msg = "";
         items[] = {
+			{ "arifle_SDAR_F", "", 20000 },
+            { "30Rnd_556x45_Stanag", "", 300 },
             { "hgun_Rook40_F", "", 6500 },
             { "hgun_Pistol_heavy_02_F", "", 9850 },
             { "hgun_ACPC2_F", "", 11500 },
@@ -346,7 +348,6 @@ class WeaponShops {
             { "arifle_TRG20_F", "", 25000 },
             { "arifle_Katiba_F", "", 30000 },
             { "srifle_DMR_01_F", "", 50000 },
-            { "arifle_SDAR_F", "", 20000 },
             { "optic_ACO_grn", "", 3500 },
             { "optic_Holosight", "", 3600 },
             { "acc_flashlight", "", 1000 },
