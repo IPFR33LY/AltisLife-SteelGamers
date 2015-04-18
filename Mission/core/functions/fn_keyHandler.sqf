@@ -216,17 +216,11 @@ switch (_code) do {
     {    
         if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
 		{
+			_item = CONTROL_DATA(2005);
+            (EQUAL(_item,"pickaxe")): 
             {
-                _str = [_x] call life_fnc_varToStr;
-                _val = missionNameSpace getVariable _x;
-                if(_val > 0 ) then
-                {
-                    if( _str == "Spitzhacke" || _str == "pickaxe" || _str == "pioche" ) then
-                    {
-                        [] spawn life_fnc_pickaxeUse;
-                    };
-                };
-            } foreach life_inv_items;
+               [] spawn life_fnc_pickAxeUse;
+            };
         }
     };
 	

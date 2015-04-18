@@ -27,7 +27,6 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	if(EQUAL(_valid,true)) then {
 		if(BANK < (_houseCfg select 0)) exitWith {hint format [localize "STR_House_NotEnough"]};
 		[[_uid,_house],"TON_fnc_addHouse",false,false] call life_fnc_MP;
 		_house SVAR ["house_owner",[_uid,profileName],true];
@@ -50,5 +49,4 @@ if(_action) then {
 		};
 	} else {
 		hint "Someone already own's this building.";
-	};
 };

@@ -153,7 +153,6 @@ class CarShops {
 			{ "cl3_reventon_clpd", 0, "", { "life_coplevel", 6 } },
 			{ "CL3_bus_cl_jail", 0, "", { "life_coplevel", 6 } },
             { "dar_explorer_f", 0, "", { "life_coplevel", 8 } },
-            { "Orel_Master", 0, "", { "life_coplevel", 5 } },
             { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },			
 			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 5 } }
 		};
@@ -309,6 +308,15 @@ class CfgVehicles {
 	garageSell[] = { 120, 0, 0, 0 };
     insurance = 2500;
     chopShop = 100;
+    textures[] = { };
+    };
+	
+	class cl3_batmobile {
+	vItemSpace = 150;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
     textures[] = { };
     };
 	
@@ -995,6 +1003,14 @@ class CfgVehicles {
             } }
         };
     };
+	
+	class Orel_Quad {
+		vItemSpace = 25;
+        storageFee[] = { 1000, 0, 0, 0 };
+		garageSell[] = { 950, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+	};
 
 	class B_Quadbike_01_F {
         vItemSpace = 25;
