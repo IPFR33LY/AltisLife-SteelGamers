@@ -151,8 +151,8 @@ DYNMARKET_Items_ToTrack        =
 	["blastingcharge",35000],
 	["boltcutter",7500],
 	["defusekit",2500],
-	["storagesmall",75000],
-	["storagebig",15000],
+	["storagesmall",15000],
+	["storagebig",75000],
 	
 	["oil_processed",1200],
 	["copper_refined",1700],
