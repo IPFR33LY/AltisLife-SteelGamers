@@ -57,6 +57,12 @@
 			<Italian>Spacciatore</Italian>
 			<French>Dealer de Drogue</French>
 		</Key>
+		<Key ID="STR_Shops_Uranium">
+			<Original>Tonic's Narcotics</Original>
+			<German>Drogendealer</German>
+			<Italian>Spacciatore</Italian>
+			<French>Acheteur d'uranium</French>
+		</Key>
 		<Key ID="STR_Shops_Oil">
 			<Original>Oil Trader</Original>
 			<German>Ölhändler</German>

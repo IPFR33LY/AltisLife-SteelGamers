@@ -124,9 +124,18 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 2500, "" },
 			{ "B_G_Offroad_01_F", 15000, "" },
-			{ "O_MRAP_02_F", 150000, "" },
-			{ "B_Heli_Light_01_F", 325000, "" },
-			{ "B_G_Offroad_01_armed_F", 750000, "rebel" }
+			{ "cl3_458_camo_urban", 850000, "rebel_lvl_3" },
+			{ "cl3_murcielago_camo_urban", 850000, "rebel_lvl_3" },	
+			{ "cl3_dodge_charger_o_camourban", 35000, "rebel_lvl_3" },	
+			{ "BH_pickup", 15000, "rebel_lvl_3" },		
+			{ "cl3_reventon_camo_urban", 1350000, "rebel_lvl_3" },		
+			{ "cl3_dbs_volante_camo", 1320000, "rebel_lvl_3" },
+			{ "cl3_carrera_gt_camo_urban", 1250000, "rebel_lvl_3" },	
+			{ "O_MRAP_02_F", 150000, "rebel_lvl_3" },
+			{ "B_Heli_Light_01_F", 325000, "rebel_lvl_3" },
+			{ "O_Heli_Light_02_unarmed_F", 750000, "rebel_lvl_3" },
+			{ "B_Heli_Transport_01_camo_F", 1225000, "rebel_lvl_3" },
+			{ "B_G_Offroad_01_armed_F", 750000, "rebel_lvl_3" }
 		};
 	};
 
@@ -135,8 +144,12 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 2500, "" },
 			{ "B_G_Offroad_01_F", 15000, "" },
+			{ "cl3_458_camo_urban", 850000, "" },
+			{ "BH_pickup", 15000, "" },	
+			{ "cl3_dodge_charger_o_camourban", 35000, "" },	
 			{ "O_MRAP_02_F", 150000, "" },
 			{ "B_Heli_Light_01_F", 325000, "" },
+			{ "O_Heli_Light_02_unarmed_F", 750000, "" }			
 		};
 	};
 	
@@ -165,6 +178,20 @@ class CarShops {
 			{ "O_Heli_Light_02_unarmed_F", 750000, "pilot" }
 		};
 	};
+	
+	class civ_air_dlc {
+		side = "civ";
+		vehicles[] = {
+			{ "C_Heli_Light_01_civil_F", 253000, "pilot" },
+			{ "O_Heli_Transport_04_bench_F", 1000000, "pilot" },
+			{ "O_Heli_Transport_04_F", 1000000, "pilot" },
+			{ "O_Heli_Transport_04_fuel_F", 1000000, "pilot" },
+			{ "O_Heli_Transport_04_box_F", 1000000, "pilot" },
+			{ "O_Heli_Transport_04_repair_F", 1000000, "pilot" },
+			{ "O_Heli_Transport_04_covered_F", 1000000, "pilot" },
+			{ "B_Heli_Transport_03_unarmed_F", 2000000, "pilot" }
+		};
+	};
 
 	class civ_avion {
 		side = "civ";
@@ -185,7 +212,8 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 0, "cAir" },
-			{ "B_Heli_Transport_01_F", 0, "cAir", { "life_coplevel", 3 } }
+			{ "B_Heli_Transport_01_F", 0, "cAir", { "life_coplevel", 3 } },
+			{ "I_Heli_light_03_unarmed_F", 0, "cAir", { "life_coplevel", 4 } }
 		};
 	};
 
@@ -233,6 +261,7 @@ class CarShops {
 			{ "cl3_reventon_camo_urban", 950000, "donateur_lvl_2" },
 			{ "cl3_z4_2008_black", 610000, "donateur_lvl_1" },			
 			{ "cl3_dbs_volante_silver", 920000, "donateur_lvl_1" },
+			{ "I_Heli_Transport_02_F", 1200000, "donateur_lvl_1" },
 			{ "Orel_Quad", 4000, "donateur_lvl_1" },
 			{ "cl3_batmobile", 920000, "donateur_lvl_3" },		
 			{ "cl3_lamborghini_gt1_flame", 1500000, "donateur_lvl_2" }		
@@ -320,6 +349,15 @@ class CfgVehicles {
     textures[] = { };
     };
 	
+	class cl3_dodge_charger_o_camourban {
+	vItemSpace = 55;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };
+	
 	class cl3_dodge_charger_s_darkred {
 	vItemSpace = 55;
     storageFee[] = { 1000, 0, 0, 0 };
@@ -365,12 +403,30 @@ class CfgVehicles {
     textures[] = { };
     };
 	
+	class cl3_carrera_gt_camo_urban {
+	vItemSpace = 45;
+    storageFee[] = { 4200, 0, 0, 0 };
+	garageSell[] = { 18000, 850, 0, 0 };
+    insurance = 2500;
+    chopShop = 230000;
+    textures[] = { };
+    };
+	
 	class cl3_carrera_gt_yellow {
 	vItemSpace = 45;
     storageFee[] = { 4200, 0, 0, 0 };
 	garageSell[] = { 18000, 850, 0, 0 };
     insurance = 2500;
     chopShop = 230000;
+    textures[] = { };
+    };
+	
+	class cl3_dbs_volante_camo {
+	vItemSpace = 45;
+    storageFee[] = { 4250, 0, 0, 0 };
+	garageSell[] = { 25000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 235000;
     textures[] = { };
     };
 	
@@ -437,7 +493,25 @@ class CfgVehicles {
     textures[] = { };
     };
 	
+	class cl3_murcielago_camo_urban {
+	vItemSpace = 45;
+    storageFee[] = { 2150, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };
+	
 	class cl3_458_black {
+	vItemSpace = 45;
+    storageFee[] = { 3540, 0, 0, 0 };
+	garageSell[] = { 200000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 215000;
+    textures[] = { };
+    };
+	
+	class cl3_458_camo_urban {
 	vItemSpace = 45;
     storageFee[] = { 3540, 0, 0, 0 };
 	garageSell[] = { 200000, 0, 0, 0 };
@@ -829,6 +903,15 @@ class CfgVehicles {
 
 	class B_supplyCrate_F {
         vItemSpace = 700;
+    };
+	
+	class BH_pickup {
+        vItemSpace = 65;
+        storageFee[] = { 1000, 0, 0, 0 };
+		garageSell[] = { 3500, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
     };
 
 	class B_G_Offroad_01_F {
@@ -1300,7 +1383,7 @@ class CfgVehicles {
     };
 
 	class I_Heli_Transport_02_F {
-        vItemSpace = 375;
+        vItemSpace = 410;
         storageFee[] = { 75000, 0, 0, 0 };
 		garageSell[] = { 125000, 0, 0, 0 };
         insurance = 2500;
@@ -1317,5 +1400,86 @@ class CfgVehicles {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
             } }
         };
+    };
+	
+	class O_Heli_Transport_04_bench_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class O_Heli_Transport_04_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class O_Heli_Transport_04_fuel_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class O_Heli_Transport_04_box_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class O_Heli_Transport_04_repair_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class O_Heli_Transport_04_covered_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class I_Heli_light_03_unarmed_F {
+        vItemSpace = 210;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class B_Heli_Transport_03_unarmed_F {
+        vItemSpace = 410;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class B_Heli_Transport_01_camo_F {
+        vItemSpace = 300;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
     };
 };
