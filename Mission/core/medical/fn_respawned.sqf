@@ -28,6 +28,7 @@ switch(playerSide) do
 {
 	case west: {
 		_handle = [] spawn life_fnc_copLoadout;
+		barrierMain = player addaction [("<t color=""#3333CC"">" + ("Barrières") +"</t>"),"core\items\barrierMenu.sqf"]; 
 	};
 	case civilian: {
 		_handle = [] spawn life_fnc_civLoadout;

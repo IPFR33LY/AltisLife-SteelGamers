@@ -27,7 +27,8 @@ class CarShops {
 			{ "cl3_transit_black", 75000, "driver" },	
 			{ "cl3_e63_amg_black", 24000, "driver" },
 			{ "cl3_range_rover_black", 45000, "driver" },			
-			{ "cl3_insignia_black", 84000, "driver" },	
+			{ "cl3_insignia_black", 60000, "driver" },	
+			{ "wirk_cayenne", 75000, "driver" },	
 			{ "cl3_dodge_chargerum_o_black", 95000, "driver" },			
 			{ "cl3_suv_black", 55000, "driver" },
 			{ "cl3_civic_vti_black", 41000, "driver" }			
@@ -42,7 +43,8 @@ class CarShops {
 			{ "cl3_murcielago_black", 850000, "luxe" },	
 			{ "cl3_aventador_lp7004_black", 1250000, "luxe" },			
 			{ "cl3_reventon_black", 1350000, "luxe" },
-			{ "cl3_z4_2008_black", 710000, "luxe" },			
+			{ "cl3_z4_2008_black", 710000, "luxe" },
+			{ "ALFR_GeK_Panamera", 950000, "luxe" },				
 			{ "cl3_dbs_volante_black", 1320000, "luxe" },
 			{ "cl3_carrera_gt_yellow", 1250000, "luxe" }			
 		};
@@ -114,8 +116,11 @@ class CarShops {
 			{ "I_Truck_02_covered_F", 100000, "truck" },
 			{ "B_Truck_01_transport_F", 275000, "truck" },
 			{ "O_Truck_03_covered_F", 450000, "truck" },
-			{ "B_Truck_01_box_F", 350000, "truck" },
-			{ "O_Truck_03_device_F", 450000, "truck" }
+			{ "B_Truck_01_box_F", 300000, "truck" },
+			{ "DAR_MK23", 280000, "truck" },
+			{ "DAR_MK27T", 350000, "truck" },
+			{ "ALFR_GeK_Volvo_FH16_2012", 450000, "truck" },
+			{ "O_Truck_03_device_F", 310000, "truck" }
 		};
 	};
 
@@ -132,6 +137,7 @@ class CarShops {
 			{ "cl3_dbs_volante_camo", 1320000, "rebel_lvl_3" },
 			{ "cl3_carrera_gt_camo_urban", 1250000, "rebel_lvl_3" },	
 			{ "O_MRAP_02_F", 150000, "rebel_lvl_3" },
+			{ "ivory_b206", 600000, "rebel_lvl_3" },
 			{ "B_Heli_Light_01_F", 325000, "rebel_lvl_3" },
 			{ "O_Heli_Light_02_unarmed_F", 750000, "rebel_lvl_3" },
 			{ "B_Heli_Transport_01_camo_F", 1225000, "rebel_lvl_3" },
@@ -142,14 +148,15 @@ class CarShops {
 	class criminel {
 		side = "civ";
 		vehicles[] = {
-			{ "B_Quadbike_01_F", 2500, "" },
-			{ "B_G_Offroad_01_F", 15000, "" },
-			{ "cl3_458_camo_urban", 850000, "" },
-			{ "BH_pickup", 15000, "" },	
-			{ "cl3_dodge_charger_o_camourban", 35000, "" },	
-			{ "O_MRAP_02_F", 150000, "" },
-			{ "B_Heli_Light_01_F", 325000, "" },
-			{ "O_Heli_Light_02_unarmed_F", 750000, "" }			
+			{ "B_Quadbike_01_F", 2500, "criminel" },
+			{ "B_G_Offroad_01_F", 15000, "criminel" },
+			{ "cl3_458_camo_urban", 850000, "criminel" },
+			{ "BH_pickup", 15000, "criminel" },	
+			{ "cl3_dodge_charger_o_camourban", 35000, "criminel" },	
+			{ "O_MRAP_02_F", 150000, "criminel" },
+			{ "B_Heli_Light_01_F", 325000, "criminel" },
+			{ "ivory_b206", 600000, "criminel" },
+			{ "O_Heli_Light_02_unarmed_F", 750000, "criminel" }			
 		};
 	};
 	
@@ -160,6 +167,7 @@ class CarShops {
 			{ "C_SUV_01_F", 0, "" },
 			{ "C_Hatchback_01_sport_F", 0, "" },
 			{ "DAR_ChargerPoliceState", 0, "", { "life_coplevel", 2 } },
+			{ "ALFR_GeK_Panamera_Police", 0, "", { "life_coplevel", 3 } },
 			{ "cl3_q7_clpd_patrol", 0, "", { "life_coplevel", 2 } },
 			{ "DAR_ImpalaPolice", 0, "", { "life_coplevel", 2 } },
 			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },				
@@ -175,6 +183,7 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "pilot" },
+			{ "ivory_b206", 600000, "pilot" },
 			{ "O_Heli_Light_02_unarmed_F", 750000, "pilot" }
 		};
 	};
@@ -212,6 +221,7 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 0, "cAir" },
+			{ "ivory_b206_police", 0, "cAir", { "life_coplevel", 2 } },
 			{ "B_Heli_Transport_01_F", 0, "cAir", { "life_coplevel", 3 } },
 			{ "I_Heli_light_03_unarmed_F", 0, "cAir", { "life_coplevel", 4 } }
 		};
@@ -474,6 +484,24 @@ class CfgVehicles {
     chopShop = 225000;
     textures[] = { };
     };
+
+	class ALFR_GeK_Panamera {
+	vItemSpace = 45;
+    storageFee[] = { 4350, 0, 0, 0 };
+	garageSell[] = { 25000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 225000;
+    textures[] = { };
+    };
+	
+	class ALFR_GeK_Panamera_Police {
+	vItemSpace = 45;
+    storageFee[] = { 4350, 0, 0, 0 };
+	garageSell[] = { 25000, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 0;
+    textures[] = { };
+    };
 	
 	class cl3_reventon_black {
 	vItemSpace = 45;
@@ -717,6 +745,15 @@ class CfgVehicles {
         chopShop = 4000;
         textures[] = { };
     };
+
+	class wirk_cayenne {
+        vItemSpace = 75;
+        storageFee[] = { 0, 1000, 0, 0 };
+		garageSell[] = { 2500, 850, 0, 0 };
+        insurance = 2500;
+        chopShop = 50000;
+        textures[] = { };
+    };
 	
 	class cl3_insignia_black {
         vItemSpace = 55;
@@ -958,11 +995,38 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
+	
+	class DAR_MK23 {
+        vItemSpace = 400;
+        storageFee[] = { 35000, 0, 0, 0 };
+		garageSell[] = { 150000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class DAR_MK27T {
+        vItemSpace = 500;
+        storageFee[] = { 35000, 0, 0, 0 };
+		garageSell[] = { 150000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
 
 	class B_Truck_01_box_F {
         vItemSpace = 450;
         storageFee[] = { 35000, 0, 0, 0 };
 		garageSell[] = { 150000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class ALFR_GeK_Volvo_FH16_2012 {
+        vItemSpace = 550;
+        storageFee[] = { 35000, 0, 0, 0 };
+		garageSell[] = { 200000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
@@ -1357,6 +1421,24 @@ class CfgVehicles {
         };
     };
 
+	class ivory_b206_police {
+        vItemSpace = 200;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 0;
+        textures[] = {};
+    };
+	
+	class ivory_b206 {
+        vItemSpace = 200;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {};
+    };
+	
 	class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
         storageFee[] = { 55000, 0, 22000, 0 };
