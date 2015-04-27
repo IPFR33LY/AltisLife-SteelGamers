@@ -214,13 +214,9 @@ switch (_code) do {
 	//C Key + shift
     case 46:
     {    
-        if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
-		{
-			_item = CONTROL_DATA(2005);
-            (EQUAL(_item,"pickaxe")): 
-            {
-               [] spawn life_fnc_pickAxeUse;
-            };
+        if(_shift && (!life_action_gathering) && (EQUAL(_item,"pickaxe")) && (vehicle player == player) ) then
+        {
+            [] spawn life_fnc_pickAxeUse;
         }
     };
 	

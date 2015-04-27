@@ -1,5 +1,5 @@
 author = "Tonic";
-onLoadName = "Altis Life Steel-Gamers BETA v4.1";
+onLoadName = "Steel-Gamers Life's v4.2";
 onLoadMission = "Tonic et Steel-Gamers";
 joinUnassigned = 1;
 respawn = BASE;
@@ -8,7 +8,7 @@ disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
-LoadScreen = "chargement.jpg";
+LoadScreen = "sg_pack01\textures\chargement.jpg";
 
 class Header
 {
@@ -45,8 +45,8 @@ class CfgFunctions
 	#include "Functions.h"
 };
 
-class CfgSounds
-{
+class CfgSounds {
+	
 	sounds[] = {};
 	class SirenLong
 	{
