@@ -14,6 +14,7 @@ _item = CONTROL_DATA(2005);
 switch (true) do {
 	case (_item in ["waterBottle","coffee","redgull"]): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
+			playSound "drink";
 			life_thirst = 100;
 			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
 			if(EQUAL(_item,"redgull") && {EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)}) then {
@@ -63,7 +64,7 @@ switch (true) do {
 		[] spawn life_fnc_lockpick;
 	};
 	
-	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]): {
+	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","rabbit_grilled"]): {
 		if(!(EQUAL(M_CONFIG(getNumber,"VirtualItems",_item,"edible"),-1))) then {
 			if([false,_item,1] call life_fnc_handleInv) then {
 				_val = M_CONFIG(getNumber,"VirtualItems",_item,"edible");
@@ -71,6 +72,7 @@ switch (true) do {
 				switch (true) do {
 					case (_val < 0 && _sum < 1): {life_hunger = 5;}; //This adds the ability to set the entry edible to a negative value and decrease the hunger without death
 					case (_sum > 100): {life_hunger = 100;};
+					playSound "eat";
 					default {life_hunger = _sum;};
 				};
 			};
@@ -86,6 +88,7 @@ switch (true) do {
 			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.06;
 			if (life_drink < 0.07) exitWith {};
+			playSound "drink";
 			[] spawn life_fnc_drinkwhiskey;
 		};
 	};
@@ -99,6 +102,7 @@ switch (true) do {
 			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.08;
 			if (life_drink < 0.09) exitWith {};
+			playSound "drink";
 			[] spawn life_fnc_drinkmoonshine;
 		};
 	};
@@ -113,17 +117,39 @@ switch (true) do {
 			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.02;
 			if (life_drink < 0.06) exitWith {};
+			playSound "drink";
 			[] spawn life_fnc_drinkbeer;
 		};
 	};
 
 	case (EQUAL(_item,"pickaxe")): {
 		[] spawn life_fnc_pickAxeUse;
+		playSound "mining";
 	};
 	
 	case (EQUAL(_item,"gpstracker")): 
 	{
 		[cursorTarget] spawn life_fnc_gpsTracker;
+	}; 
+	
+	case (EQUAL(_item,"marijuana")): 
+	{
+		[_item] spawn life_fnc_marijuana;
+	}; 
+	
+	case (EQUAL(_item,"cocainep")): 
+	{
+		[] spawn life_fnc_cocaine;
+	}; 
+	
+	case (EQUAL(_item,"heroinp")): 
+	{
+		[] spawn life_fnc_heroin;
+	}; 
+	
+	case (EQUAL(_item,"methp")): 
+	{
+		[] spawn life_fnc_meth;
 	}; 
 	
 	default {

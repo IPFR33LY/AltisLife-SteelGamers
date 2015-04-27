@@ -11,7 +11,7 @@ waitUntil { alive player };
 //waituntil {!isnull (finddisplay 46)};
 showCinemaBorder true;
 camUseNVG false;
-playsound "intro";
+playSound "intro";
 _camera = "camera" camCreate [(position player select 0)-2, position player select 1,(position player select 2)+_camDistance];
 _camera cameraEffect ["internal","back"];
  
@@ -35,7 +35,6 @@ sleep 1;
 _onScreenTime = 5;
 
 sleep 3; //Wait in seconds before the credits start after player is in-game
-//player say "introSong";
  
 _role1 = "Bienvenue sur Steel-Gamers Life's Mods";
 _role1names = ["Serveur FR"];

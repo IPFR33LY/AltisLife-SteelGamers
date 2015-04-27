@@ -105,7 +105,7 @@ class playerHUD {
 	class LIFE_PICTURE_FOOD: life_RscPicture
 	{
 		idc = IDC_LIFE_PICTURE_FOOD;
-		text = "icons\food.paa";
+		text = "sg_pack01\sg-icons\food.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.83 * safezoneH + safezoneY;
 		w = 0.03; h = 0.04;
@@ -113,7 +113,7 @@ class playerHUD {
 	class LIFE_PICTURE_WATER: life_RscPicture
 	{
 		idc = IDC_LIFE_PICTURE_WATER;
-		text = "icons\water.paa";
+		text = "sg_pack01\sg-icons\water.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.863 * safezoneH + safezoneY;
 		w = 0.03; h = 0.04;
@@ -121,7 +121,7 @@ class playerHUD {
 	class LIFE_PICTURE_HEALTH: life_RscPicture
 	{
 		idc = IDC_LIFE_PICTURE_HEALTH;
-		text = "icons\health.paa";
+		text = "sg_pack01\sg-icons\health.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.896 * safezoneH + safezoneY;
 		w = 0.03; h = 0.04;

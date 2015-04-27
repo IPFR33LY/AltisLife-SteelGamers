@@ -157,3 +157,61 @@ while {true} do {
 		
 	};
 };
+
+[] spawn
+{
+	waitUntil {life_session_completed};
+	for "_i" from 0 to (count life_addiction)-1 do
+	{
+		_new = life_addiction select _i;
+		if (_new > 0) then
+		{
+			_new = _new - 0.02;
+			if (_new < 0) then 
+			{ 
+				_new = 0; 
+			};
+			life_addiction set [_i, _new];
+			if (_new > 0 && (time - (life_used_drug select _i)) > 600) then
+			{
+				switch (true) do
+				{
+					case (_new > 0.4): 
+					{ 
+						systemChat "Vous êtes fortement en manque."; 
+						life_drug_withdrawl = false; 
+					};
+					case (_new > 0.6): 
+					{ 
+						systemChat "Obtenez de la drogue avant que votre addiction occupe toutes vos pensées."; 
+						life_drug_withdrawl = false; 
+					};
+					case (_new > 0.9):
+					{
+						systemChat "You feel shakey and anxious! You need a fix! Vous vous sentez chancelants et anxieux! Vous avez besoin d'une dose!";
+						if (!life_drug_withdrawl) then 
+						{ 
+							[] spawn 
+							{ 
+								while {life_drug_withdrawl} do 
+								{ 
+									resetCamShake;
+									addCamShake [1, 4, 10];
+									sleep 3.5;
+								}; 
+								resetCamShake;
+							}
+						};
+						life_drug_withdrawl = true;
+					};
+				};
+			};
+		};
+	};
+	sleep 240;
+	life_drug_level = life_drug_level - 0.05;
+	if (life_drug_level < 0) then 
+	{ 
+		life_drug_level = 0; 
+	};
+};

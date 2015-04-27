@@ -162,7 +162,7 @@ switch (_code) do {
 	case 38: {
 		//If cop run checks for turning lights on.
 		if(_shift && playerSide in [west,independent]) then {
-			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
+			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","cl3_reventon_clpd"]) then {
 				if(!isNil {vehicle player GVAR "lights"}) then {
 					if(playerSide == west) then {
 						[vehicle player] call life_fnc_sirenLights;
@@ -211,15 +211,6 @@ switch (_code) do {
 		};
 	};
 	
-	//C Key + shift
-    case 46:
-    {    
-        if(_shift && (!life_action_gathering) && (EQUAL(_item,"pickaxe")) && (vehicle player == player) ) then
-        {
-            [] spawn life_fnc_pickAxeUse;
-        }
-    };
-	
 	// Se rendre
 	case 47:
 	{
@@ -262,10 +253,12 @@ switch (_code) do {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
 						_veh animate [format["door_%1_rot",_door],0];
 						systemChat localize "STR_House_Door_Lock";
+						[[player,"key_jangling",15],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					} else {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],0,true];
 						_veh animate [format["door_%1_rot",_door],1];
 						systemChat localize "STR_House_Door_Unlock";
+						[[player,"key_jangling",15],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					};
 				};
 			} else {
@@ -281,7 +274,7 @@ switch (_code) do {
 							{_veh animateDoor [_x,1];} forEach _doors;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
-						[[player, "car_lock",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
+						[[player, "unlock",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					} else {
 						if(local _veh) then {
 							_veh lock 2;

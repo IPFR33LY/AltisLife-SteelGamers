@@ -62,6 +62,12 @@ life_thirst = 100;
 life_hunger = 100;
 CASH = 0;
 life_drink = 0;
+life_drug_level = 0;
+life_cocaine_effect = 0;
+life_heroin_effect = 0;
+life_meth_effect = 0;
+life_used_drug = [0,0,0,0];
+life_addiction = [0,0,0,0];
 
 life_istazed = false;
 life_vehicles = [];

@@ -17,12 +17,12 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Poste de Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["police_hq_2_1","Poste de Pyrgos","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
-			["cop_spawn_3","Poste d'Athira","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_4","Centre de Formation","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","Poste de Contrôle","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["gign_spawn","Base du G.I.G.N","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]		
+			["cop_spawn_1","Poste de Kavala","sg_pack01\sg-icons\police.paa"],
+			["police_hq_2_1","Poste de Pyrgos","sg_pack01\sg-icons\police.paa"],
+			["cop_spawn_3","Poste d'Athira","sg_pack01\sg-icons\police.paa"],
+			["cop_spawn_4","Centre de Formation","sg_pack01\sg-icons\police.paa"],
+			["cop_spawn_5","Poste de Contrôle","sg_pack01\sg-icons\police.paa"],
+			["gign_spawn","Base du G.I.G.N","sg_pack01\sg-icons\police.paa"]		
 		];
 	};
 	
@@ -72,11 +72,11 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_1","Kavala Hôpital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3_1","Antalya Hôpital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],			
-			["medic_spawn_2","Athira Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_5","Sofia Hôpital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_4","Pygros Hôpital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_1","Kavala Hôpital","sg_pack01\sg-icons\spawn.paa"],
+			["medic_spawn_3_1","Antalya Hôpital","sg_pack01\sg-icons\spawn.paa"],			
+			["medic_spawn_2","Athira Regional","sg_pack01\sg-icons\spawn.paa"],
+			["medic_spawn_5","Sofia Hôpital","sg_pack01\sg-icons\spawn.paa"],
+			["medic_spawn_4","Pygros Hôpital","sg_pack01\sg-icons\spawn.paa"]
 		];
 		
 		if(license_med_pompier && playerSide == independent) then {

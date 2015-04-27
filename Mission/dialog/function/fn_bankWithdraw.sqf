@@ -16,5 +16,6 @@ if(_val < 100 && BANK > 20000000) exitWith {hint localize "STR_ATM_WithdrawMin"}
 ADD(CASH,_val);
 SUB(BANK,_val);
 hint format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText];
+playSound "atm";
 [] call life_fnc_atmMenu;
 [6] call SOCK_fnc_updatePartial;

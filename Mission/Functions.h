@@ -83,6 +83,18 @@ class Life_Client_Core
 		class medicSiren {};
 	};
 	
+	class Drugs
+	{
+		file = "core\drugs";
+		class cocaine {};
+		class attachSmoke {};
+		class drugUsed {};
+		class heroin {};
+		class marijuana {};
+		class meth {};
+		class overdose {};
+	};
+	
 	class Actions
 	{
 		file = "core\actions";
@@ -118,6 +130,7 @@ class Life_Client_Core
 		class gather {};
 		class robShops {};
 		class gutAnimal {};
+		class robATM {};
 		class surrender {};		
 	};
 	

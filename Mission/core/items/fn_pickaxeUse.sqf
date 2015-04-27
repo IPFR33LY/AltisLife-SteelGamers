@@ -33,6 +33,7 @@ life_action_inUse = true;
 for "_i" from 0 to 2 do {
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
+	playSound "mining";
 	sleep 2.5;
 };
 
