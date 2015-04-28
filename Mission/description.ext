@@ -161,10 +161,10 @@ class CfgSounds {
 		titles[] = {};
 	};
 	
-	class alert
+	class message
 	{
-		name = "alert";
-		sound[] = {"\sounds\alert.ogg", 1.0, 1};
+		name = "message";
+		sound[] = {"\sounds\message.ogg", 1.0, 1};
 		titles[] = {};
 	};
 };

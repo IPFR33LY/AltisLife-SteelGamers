@@ -44,5 +44,5 @@ Fonts file \core\data\fonts\lucidaConsoleB8 not found
 Cannot load font core\data\fonts\lucidaconsoleb11
 Fonts file \core\data\fonts\lucidaConsoleB11 not found
 Creating texture headers file...
-124 texture headers saved to file "C:\Users\jordan\AppData\Local\Temp\ARMAaddons\sg_pack01\texHeaders.bin"
+121 texture headers saved to file "C:\Users\jordan\AppData\Local\Temp\ARMAaddons\sg_pack01\texHeaders.bin"
 w:\C_branch\Poseidon\Arrowhead\El\FileServer\fileServer.cpp(2513) : Assertion failed 'req->RefCounter()==1'
