@@ -119,7 +119,7 @@ class Life_Settings {
 //Virtual Items
 class VirtualItems {
 	//Misc
-	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "")
+	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "sg_pack01\sg-icons\items\pickaxe.paa")
 	VITEMMACRO(fuelEmpty, "STR_Item_FuelE", "fuelEmpty", 2, -1, -1, false, -1, "sg_pack01\sg-icons\items\fuelempty.paa")
 	VITEMMACRO(fuelFull, "STR_Item_FuelF", "fuelFull", 5, 850, 500, false, -1, "sg_pack01\sg-icons\items\fuel_can.paa")
 	VITEMMACRO(spikeStrip, "STR_Item_SpikeStrip", "spikeStrip", 15, 2500, 1200, false, -1, "sg_pack01\sg-icons\items\spikestrip.paa")
