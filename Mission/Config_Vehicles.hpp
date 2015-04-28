@@ -119,7 +119,6 @@ class CarShops {
 			{ "B_Truck_01_box_F", 300000, "truck" },
 			{ "DAR_MK23", 280000, "truck" },
 			{ "DAR_MK27T", 350000, "truck" },
-			{ "ALFR_GeK_Volvo_FH16_2012", 450000, "truck" },
 			{ "O_Truck_03_device_F", 310000, "truck" }
 		};
 	};
@@ -1018,15 +1017,6 @@ class CfgVehicles {
         vItemSpace = 450;
         storageFee[] = { 35000, 0, 0, 0 };
 		garageSell[] = { 150000, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
-    };
-	
-	class ALFR_GeK_Volvo_FH16_2012 {
-        vItemSpace = 550;
-        storageFee[] = { 35000, 0, 0, 0 };
-		garageSell[] = { 200000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };

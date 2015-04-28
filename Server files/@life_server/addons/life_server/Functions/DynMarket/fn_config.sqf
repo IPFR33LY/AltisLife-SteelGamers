@@ -46,9 +46,9 @@ DYNMARKET_Items_Groups =
 			["iron_refined",-1,1500,2900],
 			["salt_refined",-1,900,2500],
 			["glass",-1,1210,1550],
-			["tresor",-1,4250,8400],
+			["tresor",-1,4950,6750],
 			["diamond_cut",-1,2500,4800],
-			["cement",-1,1000,2300]
+			["cement",-1,2350,2800]
 		],
 		0.6
 	],
@@ -149,7 +149,7 @@ DYNMARKET_Items_ToTrack        =
 	["spikeStrip",1200],
 	["lockpick",75],
 	["goldbar",95000],
-	["tresor",4000],
+	["tresor",4950],
 	["blastingcharge",35000],
 	["boltcutter",7500],
 	["defusekit",2500],
