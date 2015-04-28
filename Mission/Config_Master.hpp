@@ -149,6 +149,7 @@ class VirtualItems {
 	VITEMMACRO(uranium, "STR_Item_Uranium", "uranium", 6, -1, 1950, false, -1, "sg_pack01\sg-icons\items\uranium.paa")
 	VITEMMACRO(uraniumu, "STR_Item_Uraniumu", "uraniumu", 5, -1, 1950, false, -1, "sg_pack01\sg-icons\items\uranium.paa")
 	VITEMMACRO(uraniumt, "STR_Item_Uraniumt", "uraniumt", 3, -1, 5000, false, -1, "sg_pack01\sg-icons\items\uranium.paa")
+	VITEMMACRO(tresor, "STR_Item_Tresor", "tresor", 5, -1, 4450, false, -1, "sg_pack01\sg-icons\items\goldbar.paa")
 	
 	//Drugs
 	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "sg_pack01\sg-icons\items\heroin_unprocessed.paa")
@@ -263,6 +264,11 @@ class VirtualShops {
 		name = "STR_Shops_Market";
 		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "coffee", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig" };
 	};
+	
+	class artefact {
+		name = "STR_Shops_Artefact";
+		items[] = { "tresor" };
+	};		
 
 	class rebel {
 		name = "STR_Shops_Rebel";

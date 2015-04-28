@@ -27,6 +27,12 @@
 			<Italian>Mercato</Italian>
 			<French>Marché</French>
 		</Key>
+		<Key ID="STR_Shops_Artefact">
+			<Original>Revendeur Archéologie</Original>
+			<German>Revendeur Archéologie</German>
+			<Italian>Revendeur Archéologie</Italian>
+			<French>Revendeur Archéologie</French>
+		</Key>
 		<Key ID="STR_Shops_Rebel">
 			<Original>Rebel Market</Original>
 			<German>Rebellen Markt</German>
@@ -3062,6 +3068,13 @@
 			<French>Uranium Traité</French>
 			<Italian>Uranium Traité</Italian>
 			<Portuguese>Uranium Traité</Portuguese>
+		</Key>	
+		<Key ID="STR_Item_Tresor">
+			<Original>Trésor</Original>
+			<German>Trésor</German>
+			<French>Trésor</French>
+			<Italian>Trésor</Italian>
+			<Portuguese>Trésor</Portuguese>
 		</Key>	
 		<Key ID="STR_Item_Plutonium">
 			<Original>Plutonium</Original>

@@ -26,6 +26,15 @@ if(isNull _curTarget) exitWith {
 		if(!isNil "_fish") then {
 			[_fish] call life_fnc_catchFish;
 		};
+	    if(player distance (getMarkerPos "artefact_area_1" ) < 30) then
+        {
+			if(playerSide == civilian && !life_action_gathering) then {
+			_handle = [] spawn life_fnc_gather;
+			waitUntil {scriptDone _handle};
+			life_action_gathering = false;
+            };
+
+		};
 	} else {
 		if(playerSide == civilian && !life_action_gathering) then {
 			_handle = [] spawn life_fnc_gather;
