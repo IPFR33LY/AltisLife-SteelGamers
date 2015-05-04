@@ -173,8 +173,13 @@ class CarShops {
 			{ "cl3_reventon_clpd", 0, "", { "life_coplevel", 6 } },
 			{ "CL3_bus_cl_jail", 0, "", { "life_coplevel", 6 } },
             { "dar_explorer_f", 0, "", { "life_coplevel", 8 } },
-            { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },			
-			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 5 } }
+            { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },
+            { "DAR_ExplorerPoliceStealth", 0, "", { "life_coplevel", 12 } },
+            { "DAR_ImpalaPoliceDet", 0, "", { "life_coplevel", 12 } },
+            { "DAR_TahoePoliceDet", 0, "", { "life_coplevel", 12 } },
+            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },			
+			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 8 } }
+			{ "I_MRAP_03_F", 0, "", { "life_coplevel", 12 } }
 		};
 	};
 
@@ -223,6 +228,7 @@ class CarShops {
 			{ "ivory_b206_police", 0, "cAir", { "life_coplevel", 2 } },
 			{ "B_Heli_Transport_01_F", 0, "cAir", { "life_coplevel", 3 } },
 			{ "I_Heli_light_03_unarmed_F", 0, "cAir", { "life_coplevel", 4 } }
+			{ "B_Heli_Transport_03_black_F", 0, "cAir", { "life_coplevel", 12 } }
 		};
 	};
 
@@ -599,6 +605,34 @@ class CfgVehicles {
     insurance = 2500;
     chopShop = 2500;
     textures[] = { };
+    };
+
+    class DAR_TahoePoliceDet {
+    vItemSpace = 45;
+    storageFee[] = { 0, 450, 0, 0 };
+    garageSell[] = { 2500, 850, 0, 0 };
+    insurance = 2500;
+    chopShop = 650;
+    textures[] = { };
+    };
+			
+	class DAR_ImpalaPoliceDet {
+    vItemSpace = 45;
+    storageFee[] = { 0, 450, 0, 0 };
+	garageSell[] = { 2500, 850, 0, 0 };
+    insurance = 2500;
+    chopShop = 650;
+    textures[] = { };
+    };
+		
+		
+	class DAR_ExplorerPoliceStealth {
+    vItemSpace = 45;
+    storageFee[] = { 0, 450, 0, 0 };
+	garageSell[] = { 2500, 850, 0, 0 };
+    insurance = 2500;
+    chopShop = 650;
+    textures[] = { };
     };	
 	
 	class dar_tahoe_f {
@@ -610,10 +644,10 @@ class CfgVehicles {
     textures[] = { };
     };	
 	
-	class dar_explorer_f {
-	vItemSpace = 55;
+    class dar_explorer_f {
+    vItemSpace = 55;
     storageFee[] = { 0, 2500, 0, 0 };
-	garageSell[] = { 2500, 850, 0, 0 };
+    garageSell[] = { 2500, 850, 0, 0 };
     insurance = 2500;
     chopShop = 50000;
     textures[] = { };
@@ -1041,6 +1075,14 @@ class CfgVehicles {
     };
 
 	class I_MRAP_03_F {
+        vItemSpace = 58;
+        storageFee[] = { 1000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class B_Heli_Transport_03_black_F {
         vItemSpace = 58;
         storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
