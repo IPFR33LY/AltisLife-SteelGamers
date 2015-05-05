@@ -178,7 +178,7 @@ class CarShops {
             { "DAR_ImpalaPoliceDet", 0, "", { "life_coplevel", 12 } },
             { "DAR_TahoePoliceDet", 0, "", { "life_coplevel", 12 } },
             { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },			
-			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 8 } }
+			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 8 } },
 			{ "I_MRAP_03_F", 0, "", { "life_coplevel", 12 } }
 		};
 	};
@@ -227,7 +227,7 @@ class CarShops {
 			{ "B_Heli_Light_01_F", 0, "cAir" },
 			{ "ivory_b206_police", 0, "cAir", { "life_coplevel", 2 } },
 			{ "B_Heli_Transport_01_F", 0, "cAir", { "life_coplevel", 3 } },
-			{ "I_Heli_light_03_unarmed_F", 0, "cAir", { "life_coplevel", 4 } }
+			{ "I_Heli_light_03_unarmed_F", 0, "cAir", { "life_coplevel", 4 } },
 			{ "B_Heli_Transport_03_black_F", 0, "cAir", { "life_coplevel", 12 } }
 		};
 	};
