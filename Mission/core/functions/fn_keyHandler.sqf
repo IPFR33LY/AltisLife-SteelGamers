@@ -211,6 +211,36 @@ switch (_code) do {
 		};
 	};
 	
+    // Système Minage SHIFT + C
+    case 46:
+    {    
+        if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
+        {
+            {
+                _str = [_x] call life_fnc_varToStr;
+                _val = missionNameSpace getVariable _x;
+                if(_val > 0 ) then
+                {
+                    if( _str == "Spitzhacke" || _str == "pickaxe" || _str == "pioche" ) then
+                    {
+                        [] spawn life_fnc_pickAxeUse;
+                    };
+                };
+            } foreach life_inv_items;
+        }
+    };
+	
+	// Système anti "²"
+	case 41:
+    {
+		if((_code in (actionKeys "SelectAll") || _code in (actionKeys "ForceCommandingMode"))) then 
+		{
+			[] call life_fnc_p_openIphone;
+			player setDamage ((getDammage player) + 0.1);
+			hint parseText format["Attention !!!<br/>N'essaye pas de tricher !<br/>Tu as compris la leçon ???<br/><t size='1.4'><t color='#0a8cb2'>Tu viens de perdre 10 points de vie !</t></t>"];
+		};
+	};
+	
 	// Se rendre
 	case 47:
 	{
