@@ -233,6 +233,7 @@ class Life_Client_Core
 		class playSound {};
 		class seizeObjects {};
 		class emptyFuel {};
+		class zonesafe {};
 	};
 	
 	class Network
