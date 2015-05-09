@@ -9,28 +9,29 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 2500, "" }, 
-			{ "cl3_s1203_blue", 3900, "driver" }, 
-			{ "cl3_lada_red", 4100, "driver" }, 
-			{ "cl3_lada_white", 4050, "driver" },			
-			{ "cl3_volha_grey", 4500, "driver" }, 		
-			{ "C_Hatchback_01_F", 9500, "driver" }, 
-			{ "C_Offroad_01_F", 12500, "driver" },
+			{ "cl3_s1203_blue", 5000, "driver" }, 
+			{ "cl3_lada_red", 7500, "driver" }, 
+			{ "cl3_lada_white", 7500, "driver" },			
+			{ "cl3_volha_grey", 8000, "driver" }, 		
+			{ "C_Hatchback_01_F", 12500, "driver" }, 
+			{ "C_Offroad_01_F", 10000, "driver" },
 			{ "C_SUV_01_F", 20000, "driver" },
 			{ "C_Hatchback_01_sport_F", 40000, "driver" },
 			{ "C_Van_01_transport_F", 45000, "driver" },
 			{ "cl3_e60_m5_black", 280000, "driver" },
 			{ "cl3_taurus_black", 120000, "driver" },	
-			{ "cl3_golf_mk2_black", 24000, "driver" },	
-			{ "cl3_polo_gti_black", 44000, "driver" },
-			{ "cl3_polo_gti_orange", 44000, "driver" },	
-			{ "cl3_polo_gti_white", 44000, "driver" },			
+			{ "cl3_golf_mk2_black", 50000, "driver" },	
+			{ "cl3_polo_gti_black", 50000, "driver" },
+			{ "cl3_polo_gti_orange", 50000, "driver" },	
+			{ "cl3_polo_gti_white", 50000, "driver" },			
 			{ "cl3_transit_black", 75000, "driver" },	
-			{ "cl3_e63_amg_black", 24000, "driver" },
-			{ "cl3_range_rover_black", 45000, "driver" },			
-			{ "cl3_insignia_black", 60000, "driver" },	
-			{ "wirk_cayenne", 75000, "driver" },	
+			{ "cl3_e63_amg_black", 50000, "driver" },
+			{ "cl3_range_rover_black", 75000, "driver" },			
+			{ "cl3_insignia_black", 80000, "driver" },	
+			{ "wirk_cayenne", 80000, "driver" },	
 			{ "cl3_dodge_chargerum_o_black", 95000, "driver" },			
-			{ "cl3_suv_black", 55000, "driver" },
+			{ "cl3_suv_black", 60000, "driver" },
+			{ "cl3_defender_110_yellow", 55000, "driver" },
 			{ "cl3_civic_vti_black", 41000, "driver" }			
 		};
 	};
@@ -55,8 +56,7 @@ class CarShops {
 		vehicles[] = {
 			{ "C_Kart_01_Blu_F", 15000 , "driver" },
 			{ "C_Kart_01_Fuel_F", 15000, "driver" },
-			{ "C_Kart_01_Red_F", 15000, "driver" },
-			{ "cl3_arielatom_race_black", 15000, "driver" },			
+			{ "C_Kart_01_Red_F", 15000, "driver" },			
 			{ "C_Kart_01_Vrana_F", 15000, "driver" }
 		};
 	};
@@ -64,10 +64,8 @@ class CarShops {
 	class med_shop {
 		side = "med";
 		vehicles[] = {
-			{ "C_Offroad_01_F", 10000, "" },
-			{ "I_Truck_02_medical_F", 25000, "" },
-			{ "O_Truck_03_medical_F", 45000, "" },
-			{ "B_Truck_01_medical_F", 60000, "" }
+			{ "DAR_TahoeEMS", 10000, "" },
+			{ "cl3_dodge_charger_emt", 10000, "" }
 		};
 	};
 
@@ -111,7 +109,7 @@ class CarShops {
 	class civ_truck {
 		side = "civ";
 		vehicles[] = {
-			{ "C_Van_01_box_F", 60000, "truck" },
+			{ "DAR_4X4", 60000, "truck" },
 			{ "I_Truck_02_transport_F", 75000, "truck" },
 			{ "I_Truck_02_covered_F", 100000, "truck" },
 			{ "B_Truck_01_transport_F", 275000, "truck" },
@@ -152,7 +150,6 @@ class CarShops {
 			{ "cl3_458_camo_urban", 850000, "criminel" },
 			{ "BH_pickup", 15000, "criminel" },	
 			{ "cl3_dodge_charger_o_camourban", 35000, "criminel" },	
-			{ "O_MRAP_02_F", 150000, "criminel" },
 			{ "B_Heli_Light_01_F", 325000, "criminel" },
 			{ "ivory_b206", 600000, "criminel" },
 			{ "O_Heli_Light_02_unarmed_F", 750000, "criminel" }			
@@ -165,19 +162,21 @@ class CarShops {
 			{ "C_Offroad_01_F", 0, ""},
 			{ "C_SUV_01_F", 0, "" },
 			{ "C_Hatchback_01_sport_F", 0, "" },
-			{ "DAR_ChargerPoliceState", 0, "", { "life_coplevel", 2 } },
+			{ "DAR_ChargerPolice", 0, "", { "life_coplevel", 2 } }, 
 			{ "ALFR_GeK_Panamera_Police", 0, "", { "life_coplevel", 3 } },
 			{ "cl3_q7_clpd_patrol", 0, "", { "life_coplevel", 2 } },
 			{ "DAR_ImpalaPolice", 0, "", { "life_coplevel", 2 } },
-			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },				
+			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },		
 			{ "cl3_reventon_clpd", 0, "", { "life_coplevel", 6 } },
+			{ "DAR_TaurusPolice", 0, "", { "life_coplevel", 6 } }, 
 			{ "CL3_bus_cl_jail", 0, "", { "life_coplevel", 6 } },
-            { "dar_explorer_f", 0, "", { "life_coplevel", 8 } },
+            { "dar_explorer_f", 0, "", { "life_coplevel", 8 } }, 
             { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },
             { "DAR_ExplorerPoliceStealth", 0, "", { "life_coplevel", 12 } },
             { "DAR_ImpalaPoliceDet", 0, "", { "life_coplevel", 12 } },
             { "DAR_TahoePoliceDet", 0, "", { "life_coplevel", 12 } },
-            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },			
+            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },
+            { "insignia_police_st", 0, "", { "life_coplevel", 12 } },				
 			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 8 } },
 			{ "I_MRAP_03_F", 0, "", { "life_coplevel", 12 } }
 		};
@@ -388,6 +387,60 @@ class CfgVehicles {
 	garageSell[] = { 19500, 0, 0, 0 };
     insurance = 2500;
     chopShop = 500000;
+    textures[] = { };
+    };
+	
+	class dar_explorer_f {
+	vItemSpace = 55;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };
+	
+	class DAR_TaurusPolice {
+	vItemSpace = 55;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };
+	
+	class DAR_ChargerPolice {
+	vItemSpace = 55;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };
+	
+	class cl3_dodge_charger_emt {
+	vItemSpace = 55;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };
+	
+	class DAR_TahoeEMS {
+	vItemSpace = 55;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
+    textures[] = { };
+    };
+	
+	class insignia_police_st {
+	vItemSpace = 55;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 3000;
     textures[] = { };
     };
 	
@@ -1038,6 +1091,15 @@ class CfgVehicles {
         textures[] = { };
     };
 	
+	class DAR_4X4 {
+        vItemSpace = 175;
+        storageFee[] = { 0, 16500, 0, 0 };
+		garageSell[] = { 0, 21000, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
 	class DAR_MK27T {
         vItemSpace = 500;
         storageFee[] = { 35000, 0, 0, 0 };
@@ -1047,7 +1109,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_Truck_01_box_F {
+	class DAR_LHS_16 {
         vItemSpace = 450;
         storageFee[] = { 35000, 0, 0, 0 };
 		garageSell[] = { 150000, 0, 0, 0 };
