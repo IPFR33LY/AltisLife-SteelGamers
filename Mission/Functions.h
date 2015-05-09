@@ -39,6 +39,7 @@ class Life_Client_Core
         class LoadIntoListbox {};
         class ForcePrice {};
         class DYNMARKET_getPrice {};
+        class DYNMARKET_getIcon {};
     };
 	
 	class Admin
@@ -83,6 +84,7 @@ class Life_Client_Core
 		class medicSiren {};
 	};
 	
+	//Make by Shems
 	class Drugs
 	{
 		file = "core\drugs";
