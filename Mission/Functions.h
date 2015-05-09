@@ -31,16 +31,15 @@ class Life_Client_Core
 	};
 
 	class DynMarket
-    {
-        file = "core\DynMarket";
-        class bought {};
-        class update {};
-        class DisplayPrices {};
-        class LoadIntoListbox {};
-        class ForcePrice {};
-        class DYNMARKET_getPrice {};
-        class DYNMARKET_getIcon {};
-    };
+    	{
+	        file = "core\DynMarket";
+	        class bought {};
+	        class update {};
+	        class DisplayPrices {};
+	        class LoadIntoListbox {};
+	        class ForcePrice {};
+	        class DYNMARKET_getPrice {};
+    	};
 	
 	class Admin
 	{
