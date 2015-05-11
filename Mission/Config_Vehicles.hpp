@@ -174,8 +174,7 @@ class CarShops {
             { "DAR_ExplorerPoliceStealth", 0, "", { "life_coplevel", 12 } },
             { "DAR_ImpalaPoliceDet", 0, "", { "life_coplevel", 12 } },
             { "DAR_TahoePoliceDet", 0, "", { "life_coplevel", 12 } },
-            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },
-            { "insignia_police_st", 0, "", { "life_coplevel", 12 } },				
+            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },				
 			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 8 } },
 			{ "I_MRAP_03_F", 0, "", { "life_coplevel", 12 } }
 		};
@@ -408,15 +407,6 @@ class CfgVehicles {
     };
 	
 	class DAR_TahoeEMS {
-	vItemSpace = 55;
-    storageFee[] = { 1000, 0, 0, 0 };
-	garageSell[] = { 2500, 0, 0, 0 };
-    insurance = 2500;
-    chopShop = 3000;
-    textures[] = { };
-    };
-	
-	class insignia_police_st {
 	vItemSpace = 55;
     storageFee[] = { 1000, 0, 0, 0 };
 	garageSell[] = { 2500, 0, 0, 0 };
