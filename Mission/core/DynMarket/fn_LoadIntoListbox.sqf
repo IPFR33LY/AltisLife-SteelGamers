@@ -16,7 +16,7 @@ _dialog = findDisplay 7100;
 _listbox = _dialog displayCtrl 7055;
 _blacklist =
 [
-	//"apple"
+	"apple"
 ];
 
 {

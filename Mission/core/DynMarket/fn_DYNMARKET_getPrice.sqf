@@ -8,13 +8,11 @@
 #################################################################
 */
 
-_itemName = [_this,0,""] call BIS_fnc_param;
-
-_iconPath = "";
-
-switch (_itemName) do {
-	//case "apple": {_iconPath = "icons\apple.paa";};
-	case default {_iconPath = "";};
-};
-
-_iconPath;
+_price = 0;
+_kind = _this select 0;
+{
+	_curItemName = _x select 0;
+	_curItemPrice = _x select 1;
+	if (_curItemName==_kind) then {_price=_curItemPrice};
+} forEach DYNMARKET_prices;
+_price;
