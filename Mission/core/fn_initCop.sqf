@@ -26,9 +26,9 @@ if(!(str(player) in [""])) then {
 
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
-[] execVM "core\msgbienvenue.sqf";
 barrierMain = player addaction [("<t color=""#3333CC"">" + ("Barrières") +"</t>"),"core\items\barrierMenu.sqf"]; 
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
 [] call life_fnc_uniform; 
+playSound "intro";

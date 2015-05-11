@@ -389,16 +389,7 @@ class CfgVehicles {
     chopShop = 500000;
     textures[] = { };
     };
-	
-	class dar_explorer_f {
-	vItemSpace = 55;
-    storageFee[] = { 1000, 0, 0, 0 };
-	garageSell[] = { 2500, 0, 0, 0 };
-    insurance = 2500;
-    chopShop = 3000;
-    textures[] = { };
-    };
-	
+
 	class DAR_TaurusPolice {
 	vItemSpace = 55;
     storageFee[] = { 1000, 0, 0, 0 };
