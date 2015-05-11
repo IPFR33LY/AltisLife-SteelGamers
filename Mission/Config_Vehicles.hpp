@@ -72,7 +72,6 @@ class CarShops {
 	class decathlon {
 		side = "civ";
 		vehicles[] = {
-			{ "cl3_bike_mountain2tone1", 80, "" },
 			{ "cl_skatec", 80, "" },
 			{ "cl3_bike_Road2tone5", 80, "" },
 			{ "cl3_bike_bmx_Road2tone2", 80, "" }
@@ -338,15 +337,6 @@ class CfgVehicles {
 	
 	class cl3_bike_Road2tone5 {
 	vItemSpace = -1;
-    storageFee[] = { 50, 0, 0, 0 };
-	garageSell[] = { 120, 0, 0, 0 };
-    insurance = 2500;
-    chopShop = 100;
-    textures[] = { };
-    };
-	
-	class cl3_bike_mountain2tone1 {
-	vItemSpace = 100;
     storageFee[] = { 50, 0, 0, 0 };
 	garageSell[] = { 120, 0, 0, 0 };
     insurance = 2500;
