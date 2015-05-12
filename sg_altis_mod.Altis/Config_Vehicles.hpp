@@ -32,6 +32,7 @@ class CarShops {
 			{ "cl3_dodge_chargerum_o_black", 95000, "driver" },			
 			{ "cl3_suv_black", 60000, "driver" },
 			{ "cl3_defender_110_yellow", 55000, "driver" },
+			{ "GeK_TLC100", 110000, "driver" },
 			{ "cl3_civic_vti_black", 41000, "driver" }			
 		};
 	};
@@ -116,6 +117,7 @@ class CarShops {
 			{ "B_Truck_01_box_F", 300000, "truck" },
 			{ "DAR_MK23", 280000, "truck" },
 			{ "DAR_MK27T", 350000, "truck" },
+			{ "ALFR_GeK_Volvo_FH16_2012", 500000, "truck" },
 			{ "O_Truck_03_device_F", 310000, "truck" }
 		};
 	};
@@ -275,6 +277,7 @@ class CarShops {
 			{ "cl3_dbs_volante_silver", 920000, "donateur_lvl_1" },
 			{ "I_Heli_Transport_02_F", 1200000, "donateur_lvl_1" },
 			{ "Orel_Quad", 4000, "donateur_lvl_1" },
+			{ "ALFR_GeK_Pagani_Zonda", 915000, "donateur_lvl_2" },
 			{ "cl3_batmobile", 920000, "donateur_lvl_3" },		
 			{ "cl3_lamborghini_gt1_flame", 1500000, "donateur_lvl_2" }		
 		};	
@@ -285,6 +288,7 @@ class CarShops {
 		vehicles[] = {
 			{ "D41_Trawler", 1250000, "donateur_lvl_1" },			
 			{ "Sab_Amphi_An2", 1210000, "donateur_lvl_2" },
+			{ "Burnes_LCAC_1", 2210000, "donateur_lvl_3" },
 			{ "Sab_sea_An2", 1100000, "donateur_lvl_2" }	
 		};	
 	};
@@ -343,6 +347,15 @@ class CfgVehicles {
     textures[] = { };
     };
 	
+	class GeK_TLC100 {
+	vItemSpace = 150;
+    storageFee[] = { 1000, 0, 0, 0 };
+	garageSell[] = { 2500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 45000;
+    textures[] = { };
+    };
+	
 	class cl3_batmobile {
 	vItemSpace = 150;
     storageFee[] = { 1000, 0, 0, 0 };
@@ -367,6 +380,15 @@ class CfgVehicles {
 	garageSell[] = { 2500, 0, 0, 0 };
     insurance = 2500;
     chopShop = 3000;
+    textures[] = { };
+    };
+	
+	class ALFR_GeK_Pagani_Zonda {
+	vItemSpace = 45;
+    storageFee[] = { 5500, 0, 0, 0 };
+	garageSell[] = { 19500, 0, 0, 0 };
+    insurance = 2500;
+    chopShop = 500000;
     textures[] = { };
     };
 	
@@ -875,6 +897,15 @@ class CfgVehicles {
         textures[] = { };
     };
 	
+	class Burnes_LCAC_1 {
+        vItemSpace = 800;
+        storageFee[] = { 0, 1200, 0, 0 };
+		garageSell[] = { 0, 850, 0, 0 };
+        insurance = 2500;
+        chopShop = 750000;
+        textures[] = { };
+    };
+	
 	class D41_Trawler {
         vItemSpace = 800;
         storageFee[] = { 0, 1200, 0, 0 };
@@ -1300,9 +1331,19 @@ class CfgVehicles {
         storageFee[] = { 12000, 0, 0, 0 };
 		garageSell[] = { 49800, 3500, 0, 0 };
     };
+	
+	class ALFR_GeK_Volvo_FH16_2012 {
+		vItemSpace = 550;
+		storageFee[] = { 25000, 0, 0, 0 };
+		garageSell[] = { 65000, 0, 0, 0 };
+		insurance = 2500;
+		chopShop = 195000;
+		textures[] = {};
+	};
+
 
 	class O_Truck_03_covered_F {
-		vItemSpace = 500;
+		vItemSpace = 430;
 		storageFee[] = { 25000, 0, 0, 0 };
 		garageSell[] = { 65000, 0, 0, 0 };
 		insurance = 2500;
