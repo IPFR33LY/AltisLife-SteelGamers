@@ -177,7 +177,8 @@ class CarShops {
             { "DAR_ExplorerPoliceStealth", 0, "", { "life_coplevel", 12 } },
             { "DAR_ImpalaPoliceDet", 0, "", { "life_coplevel", 12 } },
             { "DAR_TahoePoliceDet", 0, "", { "life_coplevel", 12 } },
-            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },				
+			{ "GeK_TLC100", 0, "", { "life_coplevel", 8 } },
+            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },			
 			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 8 } },
 			{ "I_MRAP_03_F", 0, "", { "life_coplevel", 12 } }
 		};

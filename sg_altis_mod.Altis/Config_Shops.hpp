@@ -414,6 +414,7 @@ class WeaponShops {
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
             { "Binocular", "", 0 },	
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
@@ -444,6 +445,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -472,6 +474,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -505,6 +508,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -544,6 +548,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -583,6 +588,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -622,6 +628,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -664,6 +671,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -705,6 +713,7 @@ class WeaponShops {
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
             { "Binocular", "", 0 },	
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
@@ -750,6 +759,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 0 },
             { "Binocular", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
@@ -797,6 +807,7 @@ class WeaponShops {
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
+			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
             { "Binocular", "", 0 },	
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
