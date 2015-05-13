@@ -115,6 +115,7 @@ class CarShops {
 			{ "B_Truck_01_transport_F", 275000, "truck" },
 			{ "O_Truck_03_covered_F", 450000, "truck" },
 			{ "B_Truck_01_box_F", 300000, "truck" },
+			{ "DAR_LHS_16", 280000, "truck" },
 			{ "DAR_MK23", 280000, "truck" },
 			{ "DAR_MK27T", 350000, "truck" },
 			{ "ALFR_GeK_Volvo_FH16_2012", 500000, "truck" },
@@ -1655,6 +1656,24 @@ class CfgVehicles {
 	
 	class B_Heli_Transport_03_unarmed_F {
         vItemSpace = 410;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class B_Truck_01_box_F{
+        vItemSpace = 450;
+        storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class DAR_LHS_16{
+        vItemSpace = 480;
         storageFee[] = { 55000, 0, 22000, 0 };
 		garageSell[] = { 72500, 0, 35000, 0 };
         insurance = 2500;
