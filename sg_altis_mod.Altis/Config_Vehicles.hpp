@@ -1113,15 +1113,6 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class DAR_LHS_16 {
-        vItemSpace = 450;
-        storageFee[] = { 35000, 0, 0, 0 };
-		garageSell[] = { 150000, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
-    };
-
 	class B_Truck_01_transport_F {
         vItemSpace = 325;
         storageFee[] = { 25650, 0, 0, 0 };
