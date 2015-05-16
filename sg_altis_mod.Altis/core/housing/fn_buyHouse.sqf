@@ -50,6 +50,6 @@ if(_action) then {
 			_house SVAR [format["bis_disabled_Door_%1",_i],1,true];
 		};
 	} else {
-		hint "Someone already own's this building.";
+		hint "Quelqu'un est déjà propriétaire de ce bâtiment .";
 	};
 };
