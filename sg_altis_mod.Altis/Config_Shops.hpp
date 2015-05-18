@@ -56,7 +56,7 @@ class WeaponShops {
 			{ "hlc_muzzle_762SUP_AK", "Silencieux AK 7.62", 250 },
             { "hlc_muzzle_545SUP_AK", "Silencieux AK 5.45", 250 },
             { "muzzle_mas_snds_Mc", "Silencieux L119A1", 250 },
-			{ "Binocular ", "", 150 },
+			{ "Rangefinder", "", 250 },
 			{ "ItemMap", "Carte d’Altis", 50 },
 			{ "ItemWatch", "Montre", 40 },
 			{ "ItemRadio", "Radio", 100 },
@@ -116,7 +116,7 @@ class WeaponShops {
             { "hlc_muzzle_545SUP_AK", "Silencieux AK 5.45", 250 },
             { "muzzle_mas_snds_Mc", "Silencieux L119A1", 250 },
 			{ "ItemMap", "Carte d’Altis", 50 },
-			{ "Binocular ", "", 150 },
+			{ "Rangefinder", "", 250 },
 			{ "ItemWatch", "Montre", 40 },
 			{ "ItemRadio", "Radio", 100 },
 			{ "ItemGPS", "GPS", 320 },
@@ -182,7 +182,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 40 },
 			{ "ItemRadio", "Radio", 100 },
 			{ "ItemGPS", "GPS", 320 },
-			{ "Binocular ", "", 150 },
+			{ "Rangefinder", "", 250 },
 			{ "ToolKit", "Kit de Réparation", 10000 },
 			{ "FirstAidKit", "Kit de soin", 150 },
 			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
@@ -246,7 +246,7 @@ class WeaponShops {
             { "hlc_muzzle_545SUP_AK", "Silencieux AK 5.45", 250 },
             { "muzzle_mas_snds_Mc", "Silencieux L119A1", 250 },
 			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
-			{ "Binocular ", "", 150 },
+			{ "Rangefinder", "", 250 },
 			{ "ItemMap", "Carte d’Altis", 50 },
 			{ "ItemWatch", "Montre", 40 },
 			{ "ItemRadio", "Radio", 100 },
@@ -324,7 +324,7 @@ class WeaponShops {
 			{ "ItemGPS", "GPS", 320 },
 			{ "ToolKit", "Kit de Réparation", 10000 },
 			{ "FirstAidKit", "Kit de soin", 150 },
-			{ "Binocular ", "", 150 },
+			{ "Rangefinder", "", 250 },
 			{ "NVGoggles", "Lunette de Vision nocturne", 0 },
 			{ "Chemlight_red", "Baton Lumineux Rouge", 300 },
 			{ "Chemlight_yellow", "Baton Lumineux Jaunes", 300 },
@@ -352,10 +352,10 @@ class WeaponShops {
             { "optic_Hamr", "Viseur RCO", 3500 },
             { "optic_mas_Arco_blk", "Viseur ARCO", 3500 },
             { "acc_flashlight", "Lampe Torche", 1000 },
-            { "acc_pointer_IR", "Viseur Laser", 1000 }	
+            { "acc_pointer_IR", "Viseur Laser", 1000 },
+            { "Rangefinder", "", 250 }			
         };
     };
-	
     class gang {
         name = "Armurerie Planque de Gang";
         side = "civ";
@@ -416,7 +416,7 @@ class WeaponShops {
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },,	
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
     };
@@ -443,7 +443,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -472,7 +472,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -506,7 +506,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -546,7 +546,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -586,7 +586,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -626,7 +626,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -669,7 +669,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -715,7 +715,7 @@ class WeaponShops {
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
     };
@@ -757,7 +757,7 @@ class WeaponShops {
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },
 			{ "ItemGPS", "GPS", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },	
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
@@ -809,7 +809,7 @@ class WeaponShops {
 			{ "ToolKit", "Kit de Réparation", 0 },
 			{ "Medikit", "Trousse de soin", 0 },
 			{ "FirstAidKit", "Kit de soin", 0 },
-            { "Binocular", "", 0 },	
+            { "Rangefinder", "", 0 },	
 			{ "NVGoggles_OPFOR", "Lunette de Vision nocturne", 0 }
         };
     };
@@ -873,9 +873,8 @@ class WeaponShops {
 			{ "R3F_SILENCIEUX_FAMAS", "Silencieux FAMAS", 0 },
 			{ "muzzle_mas_snds_SM", "Silencieux SCAR-H/SR25", 0 },
 			{ "R3F_SILENCIEUX_FRF2", "Silencieux FRF2", 0 },
+			{ "Rangefinder", "", 0 },
 			{ "ItemCompass", "Boussole", 0 },
-			{ "B_UavTerminal ", "", 0 },
-			{ "B_UAV_01_backpack_F ", "", 0 },
 			{ "ItemMap", "Carte d’Altis", 0 },
 			{ "ItemWatch", "Montre", 0 },
 			{ "ItemRadio", "Radio", 0 },

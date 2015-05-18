@@ -16,4 +16,4 @@ do
         sleep 0.056;
 };
 
-titleText[format["Tu as saisis %1 et il a été detruit.", _destroyed],"PLAIN"];
+titleText[format["Tu as saisie tout les objets.", _destroyed],"PLAIN"];

@@ -210,26 +210,7 @@ switch (_code) do {
 			};
 		};
 	};
-	
-    // Système Minage SHIFT + C
-    case 46:
-    {    
-        if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
-        {
-            {
-                _str = [_x] call life_fnc_varToStr;
-                _val = missionNameSpace getVariable _x;
-                if(_val > 0 ) then
-                {
-                    if( _str == "Spitzhacke" || _str == "pickaxe" || _str == "pioche" ) then
-                    {
-                        [] spawn life_fnc_pickAxeUse;
-                    };
-                };
-            } foreach life_inv_items;
-        }
-    };
-	
+
 	// Système anti "²"
 	case 41:
     {
