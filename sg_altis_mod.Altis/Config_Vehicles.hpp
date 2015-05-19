@@ -138,7 +138,6 @@ class CarShops {
 			{ "ivory_b206", 600000, "rebel_lvl_3" },
 			{ "B_Heli_Light_01_F", 325000, "rebel_lvl_3" },
 			{ "O_Heli_Light_02_unarmed_F", 750000, "rebel_lvl_3" },
-			{ "B_Heli_Transport_01_camo_F", 1225000, "rebel_lvl_3" },
 			{ "B_G_Offroad_01_armed_F", 750000, "rebel_lvl_3" }
 		};
 	};
