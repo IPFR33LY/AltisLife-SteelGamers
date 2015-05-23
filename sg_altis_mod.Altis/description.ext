@@ -174,9 +174,9 @@ class CfgSounds {
 	
 	class bank_alarm
 	{
-		name = "bank_alarm";
-		sound[] = {"\sounds\bank.ogg", 1.0, 1};
-		titles[] = {};
+	    name = "bank_alarm";
+	    sound[] = {"\sounds\bank.ogg", 1.0, 1};
+	    titles[] = {};
 	};
 	
 	class intro
