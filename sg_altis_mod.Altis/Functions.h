@@ -184,6 +184,7 @@ class Life_Client_Core
 		class s_onSliderChange {};
 		class updateViewDistance {};
 		class settingsMenu {};
+		class AAN {};
 		class s_onChar {};
 		class s_onCheckedChange {};
 	};
@@ -398,6 +399,8 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class calldialog {};
+	    class sendChannel {};
 		class wireTransfer {};
 	};
 };

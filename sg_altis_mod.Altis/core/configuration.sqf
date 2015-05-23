@@ -36,6 +36,7 @@ life_action_gathering = false;
 life_vdFoot = viewDistance;
 life_vdCar = viewDistance;
 life_vdAir = viewDistance;
+life_channel_send = true; 
 tawvd_addon_disable = true;
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
