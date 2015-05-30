@@ -131,7 +131,6 @@ class Life_Client_Core
 		class gather {};
 		class robShops {};
 		class gutAnimal {};
-		class robATM {};
 		class surrender {};		
 	};
 	
