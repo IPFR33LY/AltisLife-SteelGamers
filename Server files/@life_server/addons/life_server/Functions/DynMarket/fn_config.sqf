@@ -41,14 +41,14 @@ DYNMARKET_Items_Groups =
 	],
 	["Mine",
 		[
-			["oil_processed",-1,1200,3100],
-			["copper_refined",-1,1900,3500],
-			["iron_refined",-1,1500,2900],
+			["oil_processed",-1,1200,4800],
+			["copper_refined",-1,1900,4900],
+			["iron_refined",-1,1500,3900],
 			["salt_refined",-1,900,2500],
 			["glass",-1,1210,1550],
 			["tresor",-1,4950,6750],
-			["diamond_cut",-1,2500,4800],
-			["cement",-1,2350,2800]
+			["diamond_cut",-1,2500,5700],
+			["cement",-1,2350,3800]
 		],
 		0.6
 	],
@@ -86,14 +86,14 @@ DYNMARKET_Items_Groups =
 	],
 	["Illegal", 
 		[
-			["heroin_processed",-1,2000,5000],
-			["marijuana",-1,1500,4000],
-			["cocaine_processed",-1,4500,7000],
-			["methu",-1,4900,5500],
-			["uraniumt",-1,3200,6800],
-			["goldbar",-1,85000,105000],
-			["turtle_raw",-1,1100,2500],
-			["turtle_soup",-1,1230,2600]
+			["heroin_processed",-1,2000,8400],
+			["marijuana",-1,1500,8000],
+			["cocaine_processed",-1,4500,8500],
+			["methu",-1,4900,7000],
+			["uraniumt",-1,3200,7700],
+			["goldbar",-1,85000,100000],
+			["turtle_raw",-1,1100,2000],
+			["turtle_soup",-1,1230,4600]
 		],
 		0.8
 	]
