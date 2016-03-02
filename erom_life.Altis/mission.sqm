@@ -136151,7 +136151,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\raptor.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12927
 		{
@@ -136218,7 +136218,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\pc7.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12933
 		{
@@ -136261,7 +136261,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\pc6.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12937
 		{
@@ -136272,7 +136272,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\pc5.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12938
 		{
@@ -136283,7 +136283,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\pc4.jpg""]";
+			init="this enablesimulation false;";
 		};
 		class Item12939
 		{
@@ -136294,7 +136294,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\raptor.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12940
 		{
@@ -136339,7 +136339,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\pc1.jpg""]";
+			init="this enablesimulation false""]";
 		};
 		class Item12944
 		{
@@ -136406,7 +136406,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\pc3.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12950
 		{
@@ -136473,7 +136473,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\pc2.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12956
 		{
@@ -136540,7 +136540,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\TOMB.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12962
 		{
@@ -136617,7 +136617,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this setVectorUp[5,3,-15]; this setObjectTexture [0, ""pic\pc5.jpg""]";
+			init="this setVectorUp[5,3,-15];""]";
 		};
 		class Item12969
 		{
@@ -136757,7 +136757,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="this enablesimulation false; this setObjectTexture [0, ""pic\raptor.jpg""]";
+			init="this enablesimulation false;""]";
 		};
 		class Item12982
 		{
