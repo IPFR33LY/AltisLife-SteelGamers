@@ -1,0 +1,12 @@
+                        cutText["","BLACK OUT",4];
+			sleep 10;
+			cutText["","BLACK IN",4];
+			addCamShake [224, 28, 1];
+			sleep (6 + (random 10)); 
+                        resetCamShake;
+                        cutText["","BLACK OUT",4];
+			sleep 10;
+			cutText["","BLACK IN",4];
+			addCamShake [224, 28, 1];
+			sleep (6 + (random 10)); 
+			resetCamShake;
