@@ -1,0 +1,67 @@
+extDB2: Version: 70
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 8 Cores, Setting up 6 Worker Threads
+
+
+[22:56:46:662045 +02:00] [Thread 344] extDB2: Database Type: MySQL
+[22:56:46:673779 +02:00] [Thread 344] extDB2: Database Session Pool Started
+[22:56:46:673947 +02:00] [Thread 344] extDB2: SQL_RAW_V2: Initialized: ADD_QUOTES True
+[23:00:38:687790 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:38:687972 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:38:687986 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:38:997202 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:38:997302 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:38:997311 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:39:352353 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:39:352479 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:39:352490 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:39:615370 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:39:615465 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:39:615474 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:39:889797 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:39:889960 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:39:889975 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:40:173498 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:40:173600 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:40:173610 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:40:463056 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:40:463161 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:40:463171 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:40:725391 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:40:725489 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:40:725498 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:40:991509 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:40:991615 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:40:991625 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:41:232380 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:41:232481 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:41:232490 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:41:542422 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:41:542523 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:41:542531 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:41:853628 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:41:853734 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:41:853744 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:42:138568 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:42:138682 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:42:138692 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:42:428526 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:42:428626 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:42:428635 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:42:693749 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:42:693845 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:42:693854 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:00:42:960170 +02:00] [Thread 344] extDB2: Error Invalid Format: 2:168:
+[23:00:42:960271 +02:00] [Thread 344] extDB2: Error: Syntax error: Not a valid integer: Error Invalid Format
+[23:00:42:960280 +02:00] [Thread 344] extDB2: Error: Input String 4:Error Invalid Format
+[23:02:07:416207 +02:00] [Thread 344] extDB2: Stopping ...

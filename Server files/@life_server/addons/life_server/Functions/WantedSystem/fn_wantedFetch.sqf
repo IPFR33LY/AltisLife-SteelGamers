@@ -16,39 +16,33 @@ _ret = owner _ret;
 _inStatement = "";
 _list = [];
 _units = [];
-_tickTime = diag_tickTime;
 {if((side _x) == civilian) then {_units pushBack (getPlayerUID _x)};} foreach playableUnits;
 
+if(count _units == 0) exitWith {[_list] remoteExec ["life_fnc_wantedList",_ret];};
+
 {
-	if(_inStatement == "") then
-	{
-		_inStatement = _x;
-	}
-	else
-	{
-		_inStatement = _inStatement + "','" + _x;
-	};
+    if (count _units > 1) then {
+	if(_inStatement == "") then {
+            _inStatement = "'" + _x + "'";
+        } else {
+            _inStatement = _inStatement + ", '" + _x + "'";
+        };
+    } else {
+	_inStatement = _x;
+    };
 } forEach _units;
 
-_result = format["wantedFetchID:%1",_inStatement];
-waitUntil{!DB_Async_Active};
-_queryResult = [_result,2,true] call DB_fnc_asyncCall;
+_query = format["SELECT wantedID, wantedName FROM wanted WHERE active='1' AND wantedID in (%1)",_inStatement];
+_queryResult = [_query,2,true] call DB_fnc_asyncCall;
+if(EXTDB_SETTING(getNumber,"DebugMode") == 1) then {
+	diag_log format["Query: %1",_query];
+};
 
 {
 	_list pushBack (_x);
 }
 forEach _queryResult;
 
-if(count _list == 0) exitWith {[[_list],"life_fnc_wantedList",_ret,false] spawn life_fnc_MP;};
+if(count _list == 0) exitWith {[_list] remoteExec ["life_fnc_wantedList",_ret];};
 
-if((EQUAL(EXTDB_SETTINGS("MySQL_Query"),1))) then {
-	["diag_log",[
-		"------------- Wanted Query Request -------------",
-		format["QUERY: %1",_result],
-		format["Time to complete: %1 (in seconds)",(diag_tickTime - _tickTime)],
-		format["Result: %1",_queryResult],
-		"------------------------------------------------"
-	]] call TON_fnc_logIt;
-};
-
-[[_list],"life_fnc_wantedList",_ret,false] spawn life_fnc_MP;
+[_list] remoteExec ["life_fnc_wantedList",_ret];

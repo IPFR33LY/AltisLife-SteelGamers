@@ -13,15 +13,14 @@ disableSerialization;
 _ret = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _criminal = [_this,1,[],[]] call BIS_fnc_param;
 
-_result = format["wantedFetchCrimes:%1",_criminal select 0];
-waitUntil{!DB_Async_Active};
-_tickTime = diag_tickTime;
-_queryResult = [_result,2] call DB_fnc_asyncCall;
+_query = format["SELECT wantedCrimes, wantedBounty FROM wanted WHERE active='1' AND wantedID='%1'",_criminal select 0];
+_queryResult = [_query,2] call DB_fnc_asyncCall;
 
 _ret = owner _ret;
 _crimesArr = [];
 
-_type = _queryResult select 0;
+_type = [_queryResult select 0] call DB_fnc_mresToArray;
+if(typeName _type == "STRING") then {_type = call compile format["%1", _type];};
 {
 	switch(_x) do
 	{
@@ -54,19 +53,27 @@ _type = _queryResult select 0;
 		case "5": {_x = "STR_Crime_5"};
 		case "6": {_x = "STR_Crime_6"};
 		case "7": {_x = "STR_Crime_7"};
+		case "8": {_x = "STR_Crime_8"};
+		case "9": {_x = "STR_Crime_9"};
+		case "10": {_x = "STR_Crime_10"};
+		case "11": {_x = "STR_Crime_11"};
+		case "12": {_x = "STR_Crime_12"};
+		case "13": {_x = "STR_Crime_13"};
+		case "14": {_x = "STR_Crime_14"};
+		case "15": {_x = "STR_Crime_15"};
+		case "16": {_x = "STR_Crime_16"};
+		case "17": {_x = "STR_Crime_17"};
+		case "18": {_x = "STR_Crime_18"};
+		case "19": {_x = "STR_Crime_19"};
+		case "20": {_x = "STR_Crime_20"};
+		case "21": {_x = "STR_Crime_21"};
+		case "22": {_x = "STR_Crime_22"};
+		case "23": {_x = "STR_Crime_23"};
+		case "24": {_x = "STR_Crime_24"};
+		case "25": {_x = "STR_Crime_25"};
 	};
 	_crimesArr pushBack _x;
 }forEach _type;
 _queryResult set[0,_crimesArr];
 
-if((EQUAL(EXTDB_SETTINGS("MySQL_Query"),1))) then {
-	["diag_log",[
-		"------------- Wanted Query Request -------------",
-		format["QUERY: %1",_result],
-		format["Time to complete: %1 (in seconds)",(diag_tickTime - _tickTime)],
-		format["Result: %1",_queryResult],
-		"------------------------------------------------"
-	]] call TON_fnc_logIt;
-};
-
-[[_queryResult],"life_fnc_wantedInfo",_ret,false] spawn life_fnc_MP;
+[_queryResult] remoteExec ["life_fnc_wantedInfo",_ret];
