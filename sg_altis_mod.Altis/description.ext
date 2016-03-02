@@ -1,14 +1,15 @@
 author = "Tonic";
-onLoadName = "Steel-Gamers Life's v4.4";
-onLoadMission = "Tonic et Steel-Gamers";
+onLoadName = "Erom-Life v1.0";
+onLoadMission = "par la communauté Steel-Gamers";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
-disabledAI = true;
+disabledAI = 1;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
-LoadScreen = "sg_pack01\textures\chargement.jpg";
+saving = 0;
+loadScreen = "sg_pack01\textures\chargement.jpg";
 
 class Header
 {
@@ -24,19 +25,16 @@ corpseLimit = 150;
 corpseRemovalMinTime = 999;
 corpseRemovalMaxTime = 9999;
 
-//SpyGlass configuration
-//SPY_Enable = true;
-
 #include "Config_Spyglass.hpp"
-
-#include "dialog\MasterHandler.h"
+#include "CfgRemoteExec.hpp"
+#include "dialog\MasterHandler.hpp"
 #include "Config_Master.hpp"
 
 class RscTitles
 {
-	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
-	#include "dialog\hud_nameTags.h"
+	#include "dialog\hud_nameTags.hpp"
+	#include "dialog\hud_stats.hpp"
 	#include "Scripts\Bar.hpp"
 	
 	class introLife
@@ -65,9 +63,8 @@ class RscTitles
    }; 
 };
 
-class CfgFunctions 
-{
-	#include "Functions.h"
+class CfgFunctions {
+	#include "Functions.hpp"
 };
 
 class CfgSounds {
@@ -198,29 +195,29 @@ class CfgDebriefing
 {
 	class NotWhitelisted
 	{
-		title = "Echec de Mission";
-		subtitle = "Vous n'êtes pas Whitelisté pour utiliser ce slot";
-		description = "Pour utilisez ce slot, vous devez avoir été whiteliste, merci de choisir un autre slot dans la partie Civile.";
+		title = "Mission Failed";
+		subtitle = "You are not white-listed to use this slot";
+		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	
+
 	class Blacklisted
 	{
-		title = "Echec de Mission";
-		subtitle = "Vous avez été blacklisté des force de l'ordre";
-		description = "Vous avez été blacklisté soit à cause d'un mauvais comportement soit c'est le choix d'un admin.";
+		title = "Mission Failed";
+		subtitle = "You are blacklisted from cops";
+		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	
+
 	class SpyGlass
 	{
-		title = "SpyGlass";
-		subTitle = "Vous avez été repéré pa SpyGlass";
-		description = "Vous avez été détectées pour tricherie et rapporté au serveur. Passez une bonne journée.";
+		title = "The SpyGlass sees you";
+		subTitle = "You were detected by the SpyGlass";
+		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};

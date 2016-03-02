@@ -1,4 +1,4 @@
-#include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
 	File: fn_processAction.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -22,19 +22,8 @@ _itemInfo = switch (_type) do {
 	case "sand": {["sand","glass",650,(localize "STR_Process_Sand")];};
 	case "salt": {["salt_unrefined","salt_refined",450,(localize "STR_Process_Salt")];};
 	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,(localize "STR_Process_Cocaine")];};
-	case "meth": {["meth","methu",1500,(localize "STR_Process_Meth")];};
-	case "uranium": {["uranium","uraniumu",1500,(localize "STR_Process_Uraniumu")];};
-	case "uraniumu": {["uraniumu","uraniumt",1500,(localize "STR_Process_Uraniumt")];};	
-	case "uraniumu": {["uraniumu","plutonium",3000,(localize "STR_Process_Plutonium")];};	
 	case "marijuana": {["cannabis","marijuana",500,(localize "STR_Process_Marijuana")];};
 	case "cement": {["rock","cement",350,(localize "STR_Process_Cement")];};
-	case "mash": {["water","mash",100,(localize "STR_Process_Mash")];};
-	case "whiskey": {["yeast","whiskey",1000,(localize "STR_Process_Whiskey")];};
-	case "beer": {["yeast","beerp",1500,(localize "STR_Process_Beer")];};
-	case "moonshine": {["yeast","moonshine",250,(localize "STR_Process_Moonshine")];};
-	case "bottledshine": {["moonshine","bottledshine",500,(localize "STR_Process_BottledShine")];};
-	case "bottledbeer": {["beerp","bottledbeer",500,(localize "STR_Process_BottledBeer")];};
-	case "bottledwhiskey": {["whiskey","bottledwhiskey",500,(localize "STR_Process_BottleWhiskey")];};
 	default {[];};
 };
 

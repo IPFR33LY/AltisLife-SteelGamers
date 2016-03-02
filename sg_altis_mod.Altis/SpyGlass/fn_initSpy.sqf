@@ -1,18 +1,17 @@
-#define GVAR_UINS uiNamespace getVariable
-#define CONST(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
-#define steamid getPlayerUID player
-#define SPY "spy_log"
 /*
 	File: fn_initSpy.sqf
-	
+
 	Description:
 	Does some things that I made over-complicated / un-needed but blah.
 	Will eventually include server-side checks but it's blah at this point.
-	
+
 	Will also become a standalone system which is why it's setup like this.
 */
 private["_binConfigPatches","_cfgPatches","_endM"];
 if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
+#define GVAR_UINS uiNamespace getVariable
+#define CONST(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
+#define steamid getPlayerUID player
 
 CONST(W_O_O_K_I_E_ANTI_ANTI_HAX,"false");
 CONST(W_O_O_K_I_E_FUD_ANTI_ANTI_HAX,"false");
@@ -30,10 +29,10 @@ CONST(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"false");
 
 /*
 	Compile our list of allowed addon patches, by default this DOES NOT ALLOW ANY ADDONS.
-	
+
 	If you want to white-list addons such as JSRS or Blastcore you need to start a test instance (Host locally and not the mission) and first fill the SPY_cfg_patchList array, once you executed it (Filled it)
 	Run the following code and it will copy the list of addons / patches not in the list to your clipboard (Ctrl + V) and then add it to the array.
-	
+
 	_cfgPatches = [];
 	_binConfigPatches = configFile >> "CfgPatches";
 	for "_i" from 0 to count (_binConfigPatches)-1 do {
@@ -46,7 +45,7 @@ CONST(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"false");
 	};
 
 	copyToClipboard str(_cfgPatches);
-	
+
 	i.e
 	["cba_xeh","Extended_EventHandlers","CBA_Extended_EventHandlers","JSRS_Environment","WarFXPE","cba_common","cba_events","cba_hashes","cba_network","cba_strings","cba_ui","cba_vectors","JSRS2_120mm_Cannon","JSRS2_127","JSRS2_155mm_AMOS",
 	"JSRS2_230mm_Titan","JSRS2_30mm_Cannon","JSRS2_35mm_Autocannon","JSRS2_4Five45","JSRS2_ACPC","JSRS2_Autocannon","JSRS2_Bullethits","JSRS2_DAGR","JSRS2_DAR","JSRS2_EBR","JSRS2_Explosions","JSRS2_Explosives","JSRS2_Filters","JSRS2_FS2000",
@@ -56,8 +55,7 @@ CONST(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"false");
 	"JSRS2_FighterPlane3","JSRS2_FV720_Mora","JSRS2_Hunter","JSRS2_Ifrit","JSRS2_IFV6a_Cheetah","JSRS2_IFV6c_Panther","JSRS2_M2A1_Slammer","JSRS2_M4_Scorcher","JSRS2_M5_Sandstorm","JSRS2_MBT52_Kuma","JSRS2_Mi48_Kajman","JSRS2_MSE3_Marid","JSRS2_Offroad",
 	"JSRS2_Po30_Orca","JSRS2_Strider","JSRS2_SUV","JSRS2_T100_Varsuk","JSRS2_Truck1","JSRS2_Truck2","JSRS2_UAV_1","JSRS2_UH80_GhostHawk","JSRS2_Van","JSRS2_WY55_Hellcat","JSRS2_ZSU39_Tigris","cba_xeh_a3"]
 */
-	
-_patchList = 
+_patchList =
 ["life_server","CAData","A3_BaseConfig_F","A3_Dubbing_Radio_F","A3_Functions_F","A3_Functions_F_EPA","A3_Functions_F_EPC","A3_Data_F","A3_Data_F_ParticleEffects","A3_Editor_F","A3_Functions_F_Curator",
 "A3_Language_F","A3_Language_F_Beta","A3_Language_F_Curator","A3_Language_F_EPA","A3_Language_F_EPB","A3_Language_F_EPC","A3_Language_F_Gamma","A3_LanguageMissions_F","A3_LanguageMissions_F_Beta",
 "A3_LanguageMissions_F_Gamma","A3_Misc_F","A3_Misc_F_Helpers","A3_Modules_F","A3_Modules_F_DynO","A3_Modules_F_Effects","A3_Modules_F_Events","A3_Modules_F_GroupModifiers","A3_Modules_F_HC",
@@ -138,7 +136,7 @@ _patchList =
 "A3_Static_F_Mark_Designator_02","A3_Supplies_F_Mark","A3_Weapons_F_Mark_Acc","A3_Missions_F_Mark","A3_Missions_F_MP_Mark",
 "A3_Weapons_F_Mark","A3_Weapons_F_Mark_LongRangeRifles_DMR_02","A3_Weapons_F_Mark_LongRangeRifles_DMR_03","A3_Weapons_F_Mark_LongRangeRifles_DMR_04",
 "A3_Weapons_F_Mark_LongRangeRifles_DMR_05","A3_Weapons_F_Mark_LongRangeRifles_DMR_06","A3_Weapons_F_Mark_Machineguns_MMG_01",
-"A3_Weapons_F_Mark_Machineguns_MMG_02"
+"A3_Weapons_F_Mark_Machineguns_MMG_02","3DEN"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
@@ -151,7 +149,6 @@ for "_i" from 0 to count (_binConfigPatches)-1 do {
 		if(!((configName _patchEntry) in _patchList)) exitWith {
 			[[profileName,steamid,(configName _patchEntry)],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 			[[profileName,format["Unknown Addon Patch: %1",(configName _patchEntry)]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
-			[[SPY,[(format["Unknown Addon Patch: %1",(configName _patchEntry)])],profileName,steamid],"TON_fnc_logIt",false,false] call life_fnc_MP;
 			sleep 0.5;
 			failMission "SpyGlass";
 		};
@@ -172,16 +169,15 @@ _allowedChildren = [
 	if(!((configName _x) in _allowedChildren)) exitWith {
 		[[profileName,steamid,"Modified_MPInterrupt"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 		[[profileName,"Devcon like executor detected"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
-		[[SPY,["Devcon like executor detected"],profileName,steamid],"TON_fnc_logIt",false,false] call life_fnc_MP;
 		sleep 0.5;
 		failMission "SpyGlass";
 	};
-} foreach _children;
+} forEach _children;
 
 /*
 	Display Validator
 	Loops through and makes sure none of the displays were modified..
-	
+
 	TODO: Run check every x minutes and validate all displays.
 */
 {
@@ -190,7 +186,6 @@ _allowedChildren = [
 	if(_onLoad != (_x select 1) OR _onUnload != (_x select 2)) exitWith {
 		[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 		[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
-		[[SPY,[(format["Modified Display Method %1 (Memory Edit)",_x select 0])],profileName,steamid],"TON_fnc_logIt",false,false] call life_fnc_MP;
 		sleep 0.5;
 		vehicle player setVelocity[1e10,1e14,1e18]; //It's a surprise.
 		sleep 3;
@@ -199,7 +194,7 @@ _allowedChildren = [
 		failMission "SpyGlass";
 	};
 }
-foreach [												
+forEach [
 	["RscDisplayMainMap","[""onLoad"",_this,""RscDiary"",'MpMarkDisplays'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDiary"",'MpMarkDisplays'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')"],
 	["RscDisplayGetReady","[""onLoad"",_this,""RscDiary"",'MpMarkDisplays'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDiary"",'MpMarkDisplays'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')"],
 	["RscDisplayInventory","[""onLoad"",_this,""RscDisplayInventory"",'IGUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayInventory"",'IGUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')"],
@@ -228,7 +223,6 @@ foreach [
 if(getText(configFile >> "CfgFunctions" >> "init") != "A3\functions_f\initFunctions.sqf") then {
 	[[profileName,steamid,"Modified_Functions_Init"],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 	[[profileName,"Modified_Functions_Init"],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
-	[[SPY,["Modified_Functions_Init"],profileName,steamid],"TON_fnc_logIt",false,false] call life_fnc_MP;
 	sleep 0.5;
 	vehicle player setVelocity[1e10,1e14,1e18]; //It's a surprise.
 	sleep 3;

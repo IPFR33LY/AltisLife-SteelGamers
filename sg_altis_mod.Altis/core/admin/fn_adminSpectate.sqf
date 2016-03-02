@@ -1,12 +1,12 @@
-#include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
-    File: fn_adminSpectate.sqf
-    Author: ColinM9991
-    
-    Description:
-    Spectate the chosen player.
+	File: fn_adminSpectate.sqf
+	Author: ColinM9991
+	
+	Description:
+	Spectate the chosen player.
 */
-if(FETCH_CONST(life_adminlevel) < 2) exitWith {closeDialog 0;};
+if(FETCH_CONST(life_adminlevel) < 3) exitWith {closeDialog 0;};
 
 private["_unit"];
 _unit = lbData[2902,lbCurSel (2902)];
@@ -16,10 +16,10 @@ if(isNull _unit) exitWith {};
 if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
 
 [] spawn {
-while {dialog} do {
-closeDialog 0;
-sleep 0.01;
-};
+  while {dialog} do {
+   closeDialog 0;
+   sleep 0.01;
+  };
 };
 
 _unit switchCamera "INTERNAL";

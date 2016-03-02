@@ -1,4 +1,4 @@
-#include <macro.h>
+#include "..\script_macros.hpp"
 /*
 	Master Life Configuration File
 	This file is to setup variables for the client, there are still other configuration files in the system
@@ -7,9 +7,6 @@
 ****** Backend Variables *****
 *****************************
 */
-life_god = false; //Add this
-life_frozen = false; //And this
-life_markers = false; //Finally this
 last_position = [];
 life_query_time = time;
 life_action_delay = time;
@@ -38,6 +35,14 @@ life_vdCar = viewDistance;
 life_vdAir = viewDistance;
 life_channel_send = true; 
 tawvd_addon_disable = true;
+life_god = false;
+life_frozen = false;
+life_markers = false;
+life_fed_break = 0;
+life_save_gear = [];
+life_container_activeObj = ObjNull;
+life_disable_getIn = false;
+life_disable_getOut = false;
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
@@ -47,7 +52,6 @@ life_clothing_purchase = [-1,-1,-1,-1,-1];
 *****************************
 */
 life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");
-life_maxWeightT = LIFE_SETTINGS(getNumber,"total_maxWeightT");
 life_carryWeight = 0; //Represents the players current inventory weight (MUST START AT 0).
 
 /*
@@ -62,33 +66,16 @@ life_delivery_in_progress = false;
 life_thirst = 100;
 life_hunger = 100;
 CASH = 0;
-life_drink = 0;
+
+life_istazed = false;
+life_isknocked = false;
+life_vehicles = [];
 life_drug_level = 0;
 life_cocaine_effect = 0;
 life_heroin_effect = 0;
 life_meth_effect = 0;
 life_used_drug = [0,0,0,0];
 life_addiction = [0,0,0,0];
-
-life_istazed = false;
-life_vehicles = [];
-
-switch (playerSide) do {
-	case west: {
-		BANK = 40000;
-		life_paycheck = 3500;
-	};
-	
-	case civilian: {
-		BANK = 25000;
-		life_paycheck = 2000;
-	};
-	
-	case independent: {
-		BANK = 30000;
-		life_paycheck = 2500;
-	};
-};
 
 /*
 	Master Array of items?
@@ -102,6 +89,6 @@ switch (playerSide) do {
 {
 	_varName = getText(_x >> "variable");
 	_sideFlag = getText(_x >> "side");
-	
+
 	SVAR_MNS [LICENSE_VARNAME(_varName,_sideFlag),false];
 } foreach ("true" configClasses (missionConfigFile >> "Licenses"));

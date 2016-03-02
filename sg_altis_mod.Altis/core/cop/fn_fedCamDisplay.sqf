@@ -1,4 +1,4 @@
-#include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
 	Author: Bryan "Tonic" Boardwine
 	
@@ -42,42 +42,6 @@ switch (_mode) do {
 		life_fed_scam camSetTarget [15998.7,16939.7,0.00146866];
 		life_fed_scam camCommit 0;
 	};
-	
-	case "kavala_place": {
-		life_fed_scam camSetPos [3612.58,13143.8,6];
-		life_fed_scam camSetTarget [3663.11,13100.6,0.00146866];
-		life_fed_scam camCommit 0;
-	};
-	
-	case "kavala_barrage": {
-		life_fed_scam camSetPos [4091.72,13757.2,12];
-		life_fed_scam camSetTarget [4041.42,13683.3,0.00146866];
-		life_fed_scam camCommit 0;
-	};
-	
-	case "kavala_police": {
-		life_fed_scam camSetPos [3375.92,12967.5,15];
-		life_fed_scam camSetTarget [3260.19,12944,0.00146866];
-		life_fed_scam camCommit 0;
-	};
-	
-	case "athira_police": {
-		life_fed_scam camSetPos [13761.6,18901.1,15];
-		life_fed_scam camSetTarget [13809.7,18950.6,0.00146866];
-		life_fed_scam camCommit 0;
-	};
-	
-	case "athira_hopital": {
-		life_fed_scam camSetPos [14135.7,18901.4,15];
-		life_fed_scam camSetTarget [14075.7,18973.6,0.00146866];
-		life_fed_scam camCommit 0;
-	};
-	
-	case "athira_sat_centre": {
-		life_fed_scam camSetPos [14049.4,18741.6,60];
-		life_fed_scam camSetTarget [14049.4,18741.6,0.00146866];
-		life_fed_scam camCommit 0;
-	};	
 	
 	case "off" :{
 		life_fed_scam cameraEffect ["terminate", "back"];
