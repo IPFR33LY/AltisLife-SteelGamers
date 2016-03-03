@@ -16,7 +16,7 @@ class Socket_Reciever
 class Life_Client_Core
 {
 	tag = "life";
-	
+
 	class Master_Directory
 	{
 		file = "core";
@@ -27,20 +27,8 @@ class Life_Client_Core
 		class initMedic {};
 		class welcomeNotification {};
 		class survival {};
-		class uniform {};
 	};
 
-	class DynMarket
-    	{
-	        file = "core\DynMarket";
-	        class bought {};
-	        class update {};
-	        class DisplayPrices {};
-	        class LoadIntoListbox {};
-	        class ForcePrice {};
-	        class DYNMARKET_getPrice {};
-    	};
-	
 	class Admin
 	{
 		file = "core\admin";
@@ -58,13 +46,7 @@ class Life_Client_Core
 		class adminFreeze {};
 		class adminMarkers {};
 	};
-	
-	class Scripts
- 	{
- 		file = "Scripts";
- 		class skyDive {};
- 	};
-	
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -82,20 +64,7 @@ class Life_Client_Core
 		class medicLights {};
 		class medicSiren {};
 	};
-	
-	//Make by Shems
-	class Drugs
-	{
-		file = "core\drugs";
-		class cocaine {};
-		class attachSmoke {};
-		class drugUsed {};
-		class heroin {};
-		class marijuana {};
-		class meth {};
-		class overdose {};
-	};
-	
+
 	class Actions
 	{
 		file = "core\actions";
@@ -132,9 +101,8 @@ class Life_Client_Core
 		class gather {};
 		class gutAnimal {};
 		class removeContainer {};
-		class robShops {};	
 	};
-	
+
 	class Housing
 	{
 		file = "core\housing";
@@ -155,7 +123,7 @@ class Life_Client_Core
 		class PlayerInBuilding {};
 		class containerMenu {};
 	};
-	
+
 	class Config
 	{
 		file = "core\config";
@@ -164,7 +132,6 @@ class Life_Client_Core
 		class vehicleAnimate {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
-		class seizeCfg {};
 	};
 
 	class Player_Menu
@@ -191,7 +158,7 @@ class Life_Client_Core
 		class s_onCheckedChange {};
 		class wantedAddP {};
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
@@ -237,12 +204,8 @@ class Life_Client_Core
 		class nearATM {};
 		class playerSkins {};
 		class nearestObjects {};
-		class playSound {};
-		class seizeObjects {};
-		class emptyFuel {};
-		class zonesafe {};
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -255,7 +218,7 @@ class Life_Client_Core
 		class setFuel {};
 		class say3D {};
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -272,7 +235,7 @@ class Life_Client_Core
 		class civLoadout {};
 		class freezePlayer {};
 	};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -289,7 +252,7 @@ class Life_Client_Core
 		class addVehicle2Chain {};
 		class FuelRefuelcar {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
@@ -318,9 +281,8 @@ class Life_Client_Core
 		class ticketPaid {};
 		class containerInvSearch {};
 		class wantedGrab {};
-		class breathalyzer {};
 	};
-	
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -337,7 +299,7 @@ class Life_Client_Core
 		class gangDisband {};
 		class gangDisbanded {};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -364,7 +326,7 @@ class Life_Client_Core
 		class FuelStatOpen {};
 		class FuelLBchange {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -381,13 +343,8 @@ class Life_Client_Core
 		class placestorageBig {};
 		class placestorageSmall {};
 		class placedefinestorage {};
-		class gpsTracker {};
-		class drinkbeer {};
-		class drinkmoonshine {};
-		class drinkwhiskey {};
-		class bankalarmsound {};
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";

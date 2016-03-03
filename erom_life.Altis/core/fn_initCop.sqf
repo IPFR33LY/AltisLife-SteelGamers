@@ -2,7 +2,7 @@
 /*
 	File: fn_initCop.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Cop Initialization file.
 */
@@ -16,17 +16,15 @@ if(life_blacklisted) exitWith {
 	sleep 30;
 };
 
-if(!(str(player) in [""])) then {
+if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
 	if((FETCH_CONST(life_coplevel) == 0) && (FETCH_CONST(life_adminlevel) == 0)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
 };
 
+
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
-barrierMain = player addaction [("<t color=""#3333CC"">" + ("Barrières") +"</t>"),"core\items\barrierMenu.sqf"]; 
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
-
-[] call life_fnc_uniform;

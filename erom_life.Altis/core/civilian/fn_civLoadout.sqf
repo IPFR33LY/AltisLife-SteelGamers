@@ -9,7 +9,7 @@ private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-_clothings = ["cl3_c_poloshirt_5_uniform","cl3_c_poloshirt_2_uniform","cl3_c_poloshirt_13_uniform","cl3_c_poloshirt_1_uniform"];
+_clothings = ["U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite","U_C_Commoner1_1"];
 player addUniform (_clothings select (floor(random (count _clothings))));
 
 /* ITEMS */

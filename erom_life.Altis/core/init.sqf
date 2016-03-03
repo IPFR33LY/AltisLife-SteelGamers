@@ -124,7 +124,6 @@ life_fnc_moveIn = compileFinal
 ";
 
 [] spawn life_fnc_survival;
-[] execVM "IgiLoad\IgiLoadInit.sqf";
 
 [] spawn {
 	while {true} do {
@@ -136,8 +135,6 @@ life_fnc_moveIn = compileFinal
 
 CONSTVAR(life_paycheck); //Make the paycheck static.
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
-DYNAMICMARKET_boughtItems = [];
-[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP;
 
 if(EQUAL(LIFE_SETTINGS(getNumber,"Pump_service"),1)) then{
 	[] execVM "core\fn_Setup_Sation_Service.sqf";

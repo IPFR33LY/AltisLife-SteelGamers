@@ -7,6 +7,22 @@
 #define BANK life_atmbank
 #define GANG_FUNDS grpPlayer getVariable ["gang_bank",0];
 
+/*
+	remoteExec Section
+	When uncommented it enables proper testing via local testing
+	Otherwise leave it commented out for "LIVE" servers
+*/
+#define DEBUG 1
+
+#ifdef DEBUG
+#define RCLIENT 0
+#else
+#define RCLIENT -2
+#endif
+
+#define RSERV 2
+#define RANY 0
+
 //Namespace Macros
 #define SVAR_MNS missionNamespace setVariable 
 #define SVAR_UINS uiNamespace setVariable 
@@ -28,13 +44,12 @@
 #define PISTOL handgunWeapon player
 #define PISTOL_ITEMS handgunItems player
 #define LAUNCHER secondaryWeapon player
+#define EXTDB "extDB2" callExtension
+#define EXTDB_SETTING(TYPE,SETTING) TYPE(configFile >> "Life_Server_Settings" >> "EXTDB" >> SETTING)
 #define EXTDB_FAILED(MESSAGE) \
 	life_server_extDB_notLoaded = [true,##MESSAGE]; \
 	PVAR_ALL("life_server_extDB_notLoaded"); \
-	["diag_log",[MESSAGE]] call TON_fnc_logIt;
-#define EXTDB "extDB" callExtension
-#define RCON_SELECTION getText(configFile >> "CfgServerSettings" >> "extDB" >> "RCON_Selection")
-#define DATABASE_SELECTION getText(configFile >> "CfgServerSettings" >> "extDB" >> "Database")
+	diag_log MESSAGE;
 
 //Display Macros
 #define CONTROL(disp,ctrl) ((findDisplay ##disp) displayCtrl ##ctrl)
@@ -65,9 +80,8 @@
 #define M_CONFIG(TYPE,CFG,CLASS,ENTRY) TYPE(missionConfigFile >> CFG >> CLASS >> ENTRY)
 #define BASE_CONFIG(CFG,CLASS) inheritsFrom(configFile >> CFG >> CLASS)
 #define LIFE_SETTINGS(TYPE,SETTING) TYPE(missionConfigFile >> "Life_Settings" >> SETTING)
-#define EXTDB_SETTINGS(SETTING) getNumber(configFile >> "CfgServerSettings" >> "extDB" >> SETTING)
-#define EXTDB_LOGAR getArray(configFile >> "CfgServerSettings" >> "extDB" >> "LOG_Settings")
 #define CONFIG_VEHICLES "CfgVehicles"
+#define CONFIG_LIFE_VEHICLES "LifeCfgVehicles"
 #define CONFIG_WEAPONS "CfgWeapons"
 #define CONFIG_MAGAZINES "CfgMagazines"
 #define CONFIG_GLASSES "CfgGlasses"

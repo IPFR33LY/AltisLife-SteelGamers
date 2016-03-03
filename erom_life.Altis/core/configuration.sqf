@@ -7,7 +7,6 @@
 ****** Backend Variables *****
 *****************************
 */
-last_position = [];
 life_query_time = time;
 life_action_delay = time;
 life_trunk_vehicle = Objnull;
@@ -24,7 +23,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 1; //Scaled in minutes
+life_respawn_timer = 0.1; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -33,7 +32,6 @@ life_action_gathering = false;
 life_vdFoot = viewDistance;
 life_vdCar = viewDistance;
 life_vdAir = viewDistance;
-life_channel_send = true; 
 tawvd_addon_disable = true;
 life_god = false;
 life_frozen = false;
@@ -70,12 +68,6 @@ CASH = 0;
 life_istazed = false;
 life_isknocked = false;
 life_vehicles = [];
-life_drug_level = 0;
-life_cocaine_effect = 0;
-life_heroin_effect = 0;
-life_meth_effect = 0;
-life_used_drug = [0,0,0,0];
-life_addiction = [0,0,0,0];
 
 /*
 	Master Array of items?
