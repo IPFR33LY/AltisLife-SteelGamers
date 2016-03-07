@@ -1,0 +1,1 @@
+_this addAction ["Capture Gang Area",life_fnc_captureHideout,"",0,false,false,"",' playerSide == civilian && !isNil {(group player) getVariable "gang_owner"}'];

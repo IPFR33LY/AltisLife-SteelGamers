@@ -1,0 +1,2 @@
+_this addAction[localize"STR_Process_Salt",life_fnc_processAction,"salt",0,false,false,"",' life_inv_saltUnrefined > 0 && !life_is_processing'];  
+_this addAction[format["%1 (%2€)",localize (getText(missionConfigFile >> "Licenses" >> "salt" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "salt" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"salt",0,false,false,"",' !license_civ_salt && playerSide == civilian '];

@@ -1,0 +1,2 @@
+_this addAction[localize"STR_MAR_Process_Rock",life_fnc_processAction,"cement",0,false,false,"",' life_inv_rock > 0 && !life_is_processing'];  
+_this addAction[format["%1 (%2€)",localize (getText(missionConfigFile >> "Licenses" >> "cement" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "cement" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cement",0,false,false,"",' !license_civ_cement && playerSide == civilian '];

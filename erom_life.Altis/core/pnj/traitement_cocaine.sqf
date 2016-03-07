@@ -1,0 +1,2 @@
+_this addAction[localize"STR_Process_Cocaine",life_fnc_processAction,"cocaine",0,false,false,"",' life_inv_cocaineUnprocessed > 0 && !life_is_processing'];  
+_this addAction[format["%1 (%2€)",localize (getText(missionConfigFile >> "Licenses" >> "cocaine" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "cocaine" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cocaine",0,false,false,"",' !license_civ_cocaine && playerSide == civilian '];
