@@ -8,7 +8,7 @@ class CarShops {
 	class civ_car {
 		side = "civ";
 		vehicles[] = {
-			{ "B_Quadbike_01_F", 2500, "" }, 
+			{ "B_Quadbike_01_F", 2500, "driver" }, 
 			{ "cl3_s1203_blue", 5000, "driver" }, 
 			{ "cl3_lada_red", 7500, "driver" }, 
 			{ "cl3_lada_white", 7500, "driver" },			
@@ -159,26 +159,32 @@ class CarShops {
 	class cop_car {
 		side = "cop";
 		vehicles[] = {
-			{ "C_Offroad_01_F", 0, ""},
-			{ "C_SUV_01_F", 0, "" },
-			{ "C_Hatchback_01_sport_F", 0, "" },
-			{ "DAR_ChargerPolice", 0, "", { "life_coplevel", 2 } }, 
-			{ "ALFR_GeK_Panamera_Police", 0, "", { "life_coplevel", 3 } },
-			{ "cl3_q7_clpd_patrol", 0, "", { "life_coplevel", 2 } },
-			{ "DAR_ImpalaPolice", 0, "", { "life_coplevel", 2 } },
-			{ "DAR_TahoePolice", 0, "", { "life_coplevel", 2 } },		
-			{ "cl3_reventon_clpd", 0, "", { "life_coplevel", 6 } },
-			{ "DAR_TaurusPolice", 0, "", { "life_coplevel", 6 } }, 
-			{ "CL3_bus_cl_jail", 0, "", { "life_coplevel", 6 } },
-            { "dar_explorer_f", 0, "", { "life_coplevel", 8 } }, 
-            { "dar_tahoe_f", 0, "", { "life_coplevel", 8 } },
-            { "DAR_ExplorerPoliceStealth", 0, "", { "life_coplevel", 12 } },
-            { "DAR_ImpalaPoliceDet", 0, "", { "life_coplevel", 12 } },
-            { "DAR_TahoePoliceDet", 0, "", { "life_coplevel", 12 } },
-			{ "GeK_TLC100", 0, "", { "life_coplevel", 8 } },
-            { "cl3_transit_black", 0, "", { "life_coplevel", 12 } },			
-			{ "B_MRAP_01_F", 0, "", { "life_coplevel", 8 } },
-			{ "I_MRAP_03_F", 0, "", { "life_coplevel", 12 } }
+			{ "DAR_TahoePolice", 50000, "", { "life_coplevel", -1 } }
+			{ "DAR_CVPIPolice", 50000, "", { "life_coplevel", -1 } }
+			{ "C_Hatchback_01_sport_F", 50000, "", { "life_coplevel", -1 } }
+			{ "DAR_ChargerPolice", 50000, "", { "life_coplevel", -1 } }, 
+			{ "DAR_TaurusPolice", 50000, "", { "life_coplevel", -1 } },
+			{ "DAR_ImpalaPolice", 50000, "", { "life_coplevel", -1 } },
+			{ "cl3_dodge_charger_patrol", 50000, "", { "life_coplevel", -1 } },
+			{ "Mrshounka_a3_308_gend", 50000, "", { "life_coplevel", -1 } },		
+			{ "DAR_TahoePoliceDet", 50000, "", { "life_coplevel", 5 } },
+			{ "DAR_TaurusCiv", 50000, "", { "life_coplevel", 5 } }, 
+			{ "DAR_ImpalaPoliceDet", 50000, "", { "life_coplevel", 5 } },
+            { "Jonzie_Tow_Truck", 100000, "", { "life_coplevel", 5 } }, 
+            { "cl3_q7_clpd_patrol", 50000, "", { "life_coplevel", 5 } },
+            { "B_MRAP_01_F", 50000, "", { "life_coplevel", 5 } },
+            { "DAR_TahoePoliceDet", 50000, "raid", "bri", { "life_coplevel", 1 } },
+            { "DAR_CVPIAux", 50000, "raid", "bri", { "life_coplevel", 1 } },
+			{ "DAR_ChargerPoliceState", 50000, "raid", "bri", { "life_coplevel", 1 } },
+            { "DAR_ExplorerPolice", 50000, "raid", "bri", { "life_coplevel", 1 } },			
+			{ "DAR_TaurusPoliceState", 50000, "raid", "bri", { "life_coplevel", 1 } },
+			{ "cl3_suv_black", 50000, "raid", "bri", { "life_coplevel", 1 } }
+			{ "shounka_a3_suburbangign_transport", 50000, "raid", { "life_coplevel", 1 } }
+			{ "DAR_SWATPolice", 50000, "raid", { "life_coplevel", 1 } }
+			{ "shounka_a3_suburbangign", 50000, "raid", { "life_coplevel", 1 } }
+			{ "DAR_ImpalaPoliceDet", 50000, "bri", { "life_coplevel", 1 } }
+			{ "DAR_SWATPolice", 50000, "bri", { "life_coplevel", 1 } }
+			{ "Jonzie_Tow_Truck", 100000, "bri", { "life_coplevel", 1 } }
 		};
 	};
 
@@ -223,11 +229,13 @@ class CarShops {
 	class cop_air {
 		side = "cop";
 		vehicles[] = {
-			{ "B_Heli_Light_01_F", 0, "cAir" },
-			{ "ivory_b206_police", 0, "cAir", { "life_coplevel", 2 } },
-			{ "B_Heli_Transport_01_F", 0, "cAir", { "life_coplevel", 3 } },
-			{ "I_Heli_light_03_unarmed_F", 0, "cAir", { "life_coplevel", 4 } },
-			{ "B_Heli_Transport_03_black_F", 0, "cAir", { "life_coplevel", 12 } }
+			{ "O_Heli_Light_02_unarmed_F", 100000, "cAir" },
+			{ "ivory_b206_police", 100000, "cAir", { "life_coplevel", -1 } },
+			{ "B_Heli_Transport_01_F", 250000, "cAir", { "life_coplevel", -1 } },
+			{ "B_Heli_Transport_03_unarmed_F", 500000, "cAir", { "life_coplevel", 5 } },
+			{ "B_Heli_Transport_03_black_F", 500000, "cAir", { "life_coplevel", 5 } },
+			{ "Land_Pod_Heli_Transport_04_covered_F", 50000, "cAir", { "life_coplevel", 5 } },
+			{ "Land_Pod_Heli_Transport_04_box_F", 50000, "cAir", { "life_coplevel", 5 } }
 		};
 	};
 
@@ -235,18 +243,17 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 75000, "cAir" },
-			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 3 } },
-			{ "B_MRAP_01_hmg_F", 750000, "", { "life_coplevel", 3 } }
+			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 5 } },
 		};
 	};
 
 	class cop_ship {
 		side = "cop";
 		vehicles[] = {
-			{ "B_Boat_Transport_01_F", 3000, "coastguard" },
 			{ "C_Boat_Civil_01_police_F", 20000, "coastguard" },
-			{ "B_Boat_Armed_01_minigun_F", 75000, "coastguard" },
-			{ "B_SDV_01_F", 100000, "coastguard" }
+			{ "Burnes_LCAC_1", 5000000, "coastguard" },
+			{ "B_Boat_Armed_01_minigun_F", 100000, "coastguard", { "life_coplevel", 5 } },
+			{ "B_SDV_01_F", 100000, "raid" }
 		};
 	};
 
