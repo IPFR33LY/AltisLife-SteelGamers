@@ -462,8 +462,8 @@ class WeaponShops {
         };
     };	
 	
-    class cop_lieutnant {
-        name = "Armurerie Lieutnant";
+    class cop_lieutenant {
+        name = "Armurerie Lieutenant";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 6, "Vous devez etre Lieutenant !" };

@@ -2571,19 +2571,43 @@
       <Original>Garer le Véhicule au Garage</Original>
     </Key>
     <Key ID="STR_MAR_Cop_Item_Shop">
-      <Original>Cop Item Shop</Original>
+      <Original>Magasin Police</Original>
      </Key>
     <Key ID="STR_MAR_Cop_Clothing_Shop">
-      <Original>Cop Clothing Shop</Original>
+      <Original>Vêtement Police</Original>
     </Key>
     <Key ID="STR_MAR_Cop_Weapon_Shop">
-      <Original>Cop Weapon Shop</Original>
+      <Original>Armurerie Adjoint de Sécurité</Original>
     </Key>
-    <Key ID="STR_MAR_Patrol_Officer_Weapon_Shop">
-      <Original>Patrol Officer Weapon Shop</Original>
+    <Key ID="STR_MAR_Cop_Gardien_Weapon_Shop">
+      <Original>Armurerie Gardien de la Paix</Original>
     </Key>
-    <Key ID="STR_MAR_Sergeant_Weapon_Shop">
-      <Original>Sergeant Weapon Shop</Original>
+    <Key ID="STR_MAR_Cop_Brigadier_Weapon_Shop">
+      <Original>Armurerie Brigadier</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_BrigadierChef_Weapon_Shop">
+      <Original>Armurerie Brigadier Chef</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_Major_Weapon_Shop">
+      <Original>Armurerie Major</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_Lieutenant_Weapon_Shop">
+      <Original>Armurerie Lieutenant</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_Capitaine_Weapon_Shop">
+      <Original>Armurerie Capitaine</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_Commandant_Weapon_Shop">
+      <Original>Armurerie Commandant</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_Commissaire_Weapon_Shop">
+      <Original>Armurerie Commissaire</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_Bri_Weapon_Shop">
+      <Original>Armurerie B.R.I</Original>
+    </Key>
+	<Key ID="STR_MAR_Cop_Raid_Weapon_Shop">
+      <Original>Armurerie R.A.I.D</Original>
     </Key>
     <Key ID="STR_MAR_W_E_Vehicle Shop">
       <Original>Vehicle Shop</Original>
