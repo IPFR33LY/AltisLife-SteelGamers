@@ -1,0 +1,1 @@
+_this addAction[localize"STR_MAR_Pay_Bail",life_fnc_postBail,"",0,false,false,"",' isNil "life_canpay_bail" && life_is_arrested '];

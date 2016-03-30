@@ -1,0 +1,1 @@
+_this addAction[localize"STR_MAR_W_E_Vehicle Shop",life_fnc_vehicleShopMenu,["reb_car",civilian,["reb_v_1","reb_v_1_1"],"reb","Rebel Motorpool - Western Side"],0,false,false,"",'license_civ_rebel'];

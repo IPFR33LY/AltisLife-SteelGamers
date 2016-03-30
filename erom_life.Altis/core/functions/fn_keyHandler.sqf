@@ -102,8 +102,8 @@ switch (_code) do {
 		};
 	};
 
-	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-	case _interactionKey: {
+	//Interaction key TAB
+	case 15: {
 		if(!life_action_inUse) then {
 			[] spawn  {
 				private "_handle";
@@ -221,6 +221,17 @@ switch (_code) do {
 			};
 		};
 	};
+	
+	// Système anti "²"
+	case 41:
+    {
+		if((_code in (actionKeys "SelectAll") || _code in (actionKeys "ForceCommandingMode"))) then 
+		{
+			[] call life_fnc_p_openIphone;
+			player setDamage ((getDammage player) + 0.1);
+			hint parseText format["Attention !!!<br/>N'essaye pas de tricher !<br/>Tu as compris la leçon ???<br/><t size='1.4'><t color='#0a8cb2'>Tu viens de perdre 10 points de vie !</t></t>"];
+		};
+	};
 
 	//U Key
 	case 22: {
@@ -241,10 +252,12 @@ switch (_code) do {
 						_veh SVAR [format["bis_disabled_Door_%1",_door],1,true];
 						_veh animate [format["door_%1_rot",_door],0];
 						systemChat localize "STR_House_Door_Lock";
+						[[player,"key_jangling",15],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					} else {
 						_veh SVAR [format["bis_disabled_Door_%1",_door],0,true];
 						_veh animate [format["door_%1_rot",_door],1];
 						systemChat localize "STR_House_Door_Unlock";
+						[[player,"key_jangling",15],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					};
 				};
 			} else {
@@ -257,6 +270,7 @@ switch (_code) do {
 							[_veh,0] remoteExecCall ["life_fnc_lockVehicle",_veh];
 						};
 						systemChat localize "STR_MISC_VehUnlock";
+						[[player, "unlock",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -264,6 +278,7 @@ switch (_code) do {
 							[_veh,2] remoteExecCall ["life_fnc_lockVehicle",_veh];
 						};
 						systemChat localize "STR_MISC_VehLock";
+						[[player, "car_lock",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 					};
 				};
 			};

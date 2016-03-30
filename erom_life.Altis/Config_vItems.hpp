@@ -80,7 +80,7 @@ class VirtualShops {
 
 	class cop {
 		name = "STR_Shops_Cop";
-		items[] = { "donuts", "coffee", "tbacon", "spikeStrip", "waterBottle", "rabbit_grilled", "apple", "redgull", "fuelFull", "defusekit" , "gpstracker"};
+		items[] = { "donuts", "coffee", "tbacon", "spikeStrip", "waterBottle", "apple", "redgull", "fuelFull", "defusekit" , "gpstracker"};
 	};
 
 	class cement {
@@ -239,13 +239,13 @@ class VirtualItems {
 	
     class gpstracker {
         variable = "gpstracker";
-        displayName = "STR_Item_gpstracker";
+        displayName = "STR_Item_Gpstracker";
         weight = 2;
         buyPrice = 2000;
         sellPrice = 1350;
         illegal = false;
         edible = -1;
-        icon = "sg_pack01\sg-icons\items\gpstracker.paa";
+        icon = "sg_pack\sg-icons\items\gpstracker.paa";
     };
 
     //Mined Items

@@ -1,0 +1,1 @@
+_this addAction[localize"STR_MAR_Diamond_Trader",life_fnc_virt_menu,"diamond"];

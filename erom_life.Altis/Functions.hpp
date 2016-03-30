@@ -206,6 +206,7 @@ class Life_Client_Core
 		class nearestObjects {};
 		class callbackup {};
 		class backupCall {};
+		class playSound {};
 	};
 
 	class Network

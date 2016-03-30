@@ -1575,6 +1575,9 @@
     <Key ID="STR_Item_Pickaxe">
       <French>Pioche</French>
     </Key>
+    <Key ID="STR_Item_Gpstracker">
+      <French>Trackeur GPS</French>
+    </Key>
     <Key ID="STR_Item_CopperOre">
       <French>Minerai de Cuivre</French>
     </Key>

@@ -1,0 +1,2 @@
+_this addAction[localize"STR_MAR_Drug_Dealer",life_fnc_virt_menu,"drugdealer",0,false,false,"",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; 
+_this addAction[localize"STR_MAR_Question_Dealer",life_fnc_questionDealer,"",0,false,false,"",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse '];

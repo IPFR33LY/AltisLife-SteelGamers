@@ -1,0 +1,16 @@
+_this addAction[localize"STR_MAR_Cop_Item_Shop",life_fnc_virt_menu,"cop"];  
+_this addAction[localize"STR_MAR_Cop_Clothing_Shop",life_fnc_clothingMenu,"cop"];  
+_this addAction[localize"STR_MAR_Cop_Weapon_Shop",life_fnc_weaponShopMenu,"cop_adjoint"];  
+_this addAction[localize"STR_MAR_Cop_Gardien_Weapon_Shop",life_fnc_weaponShopMenu,"cop_gardien"];  
+_this addAction[localize"STR_MAR_Cop_Brigadier_Weapon_Shop",life_fnc_weaponShopMenu,"cop_brigadier"];  
+_this addAction[localize"STR_MAR_Cop_BrigadierChef_Weapon_Shop",life_fnc_weaponShopMenu,"cop_brigadierchef"];  
+_this addAction[localize"STR_MAR_Cop_Major_Weapon_Shop",life_fnc_weaponShopMenu,"cop_major"];  
+_this addAction[localize"STR_MAR_Cop_Lieutenant_Weapon_Shop",life_fnc_weaponShopMenu,"cop_lieutenant"];  
+_this addAction[localize"STR_MAR_Cop_Capitaine_Weapon_Shop",life_fnc_weaponShopMenu,"cop_capitaine"];  
+_this addAction[localize"STR_MAR_Cop_Commandant_Weapon_Shop",life_fnc_weaponShopMenu,"cop_commandant"];  
+_this addAction[localize"STR_MAR_Cop_Commissaire_Weapon_Shop",life_fnc_weaponShopMenu,"cop_commissaire"];  
+_this addAction[localize"STR_MAR_Cop_Bri_Weapon_Shop",life_fnc_weaponShopMenu,"cop_bri"];  
+_this addAction[localize"STR_MAR_Cop_Raid_Weapon_Shop",life_fnc_weaponShopMenu,"cop_raid"];  
+_this addAction[format["%1 (%2€)",localize (getText(missionConfigFile >> "Licenses" >> "cAir" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "cAir" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cAir",0,false,false,"",' !license_cop_cAir && playerSide == west '];  
+_this addAction[format["%1 (%2€)",localize (getText(missionConfigFile >> "Licenses" >> "cg" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "cg" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cg",0,false,false,"",' !license_cop_cg && playerSide == west '];
+_this addAction["<t color='#ADFF2F'>ATM</t>",life_fnc_atmMenu,"",0,FALSE,FALSE,"",' vehicle player == player && player distance _target < 4 '];
