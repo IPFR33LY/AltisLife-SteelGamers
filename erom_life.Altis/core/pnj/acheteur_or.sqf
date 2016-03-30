@@ -1,1 +1,0 @@
-_this addAction[localize"STR_MAR_Gold_Bars_Buyer",life_fnc_virt_menu,"gold"];

@@ -17,6 +17,7 @@ class Life_Settings {
 
     /* Cop related settings */
     cops_online_min = 5; //minimum cops online for robbing a bank
+	life_callBackup = true; //Appel de Renforts
 
     /* Medic related settings*/
     allow_medic_weapons = true; // true allows medics to hold/use weapons - false disallows

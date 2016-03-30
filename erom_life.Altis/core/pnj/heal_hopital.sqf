@@ -1,1 +1,0 @@
-_this addAction[localize"STR_MAR_Medical_Assistance",life_fnc_healHospital];

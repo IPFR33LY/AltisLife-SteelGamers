@@ -1,1 +1,0 @@
-_this addAction[localize "STR_MAR_Fish_Market",life_fnc_virt_menu,"fishmarket"];

@@ -1,1 +1,0 @@
-_this addAction["<t color='#ADFF2F'>Banque</t>",life_fnc_atmMenu,"",0,FALSE,FALSE,"",' vehicle player == player && player distance _target < 4 '];

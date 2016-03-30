@@ -1,1 +1,0 @@
-_this addAction[localize"STR_MAR_Get_Delivery_Mission",life_fnc_getDPMission,"dp_1",0,false,false,"",' isNil "life_dp_point" && !life_delivery_in_progress '];

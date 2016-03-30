@@ -2609,6 +2609,10 @@
 	<Key ID="STR_MAR_Cop_Raid_Weapon_Shop">
       <Original>Armurerie R.A.I.D</Original>
     </Key>
+	<Key ID="STR_Item_backup">
+		<Original>Un collègue a besoin de renforts !</Original>
+		<French>Un collègue a besoin de renforts !</French>
+	</Key>
     <Key ID="STR_MAR_W_E_Vehicle Shop">
       <Original>Vehicle Shop</Original>
 

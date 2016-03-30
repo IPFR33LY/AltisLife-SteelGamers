@@ -1,1 +1,0 @@
-_this addAction[localize"STR_MAR_Glass_Trader",life_fnc_virt_menu,"glass"];

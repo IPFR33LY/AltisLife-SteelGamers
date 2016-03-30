@@ -1,1 +1,0 @@
-_this addAction[localize"STR_MAR_Wong_Food_Cart",life_fnc_virt_menu,"wongs"];

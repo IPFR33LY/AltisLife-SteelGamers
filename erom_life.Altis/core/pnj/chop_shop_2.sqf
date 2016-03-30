@@ -1,1 +1,0 @@
-_this addAction[localize"STR_ChopShop_Title",life_fnc_chopShopMenu,"chop_shop_2"];

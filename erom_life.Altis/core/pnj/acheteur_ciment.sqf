@@ -1,1 +1,0 @@
-_this addAction[localize"STR_MAR_Cement_Trader",life_fnc_virt_menu,"cement"];
