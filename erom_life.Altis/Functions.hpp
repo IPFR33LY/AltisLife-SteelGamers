@@ -346,6 +346,7 @@ class Life_Client_Core
 		class placestorageBig {};
 		class placestorageSmall {};
 		class placedefinestorage {};
+		class gpsTracker {};
 	};
 
 	class Dialog_Controls

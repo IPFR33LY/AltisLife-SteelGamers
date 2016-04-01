@@ -13,7 +13,7 @@ format["Bienvenue %1,",profileName] hintC
 	"Shift + V = Se Rendre",
 	"Shift + Espace = Sauter",
 	"Tir en Zone Safe = -500 € sur le compte",
-	"Teamspeak : ts.steel-gamers.fr"
+	"Teamspeak : ts.steel-gamers.fr",
 	"",
 	"Merci de lire les règles sur le site (www.steel-gamers.fr) et bon jeux sur le serveur"
 ];

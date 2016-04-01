@@ -14,6 +14,7 @@ _item = CONTROL_DATA(2005);
 switch (true) do {
 	case (_item in ["waterBottle","coffee","redgull"]): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
+			playSound "drink";		
 			life_thirst = 100;
 			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
 			if(EQUAL(_item,"redgull") && {EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)}) then {
@@ -72,6 +73,7 @@ switch (true) do {
 			if([false,_item,1] call life_fnc_handleInv) then {
 				_val = M_CONFIG(getNumber,"VirtualItems",_item,"edible");
 				_sum = life_hunger + _val;
+				playSound "eat";				
 				switch (true) do {
 					case (_val < 0 && _sum < 1): {life_hunger = 5;}; //This adds the ability to set the entry edible to a negative value and decrease the hunger without death
 					case (_sum > 100): {life_hunger = 100;};
@@ -83,8 +85,14 @@ switch (true) do {
 
 	case (EQUAL(_item,"pickaxe")): {
 		[] spawn life_fnc_pickAxeUse;
+		playSound "mining";		
 	};
 
+	case (EQUAL(_item,"gpstracker")): 
+	{
+		[cursorTarget] spawn life_fnc_gpsTracker;
+	}; 
+	
 	default {
 		hint localize "STR_ISTR_NotUsable";
 	};

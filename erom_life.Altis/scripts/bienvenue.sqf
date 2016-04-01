@@ -38,8 +38,10 @@ sleep 3; //Wait in seconds before the credits start after player is in-game
  
 _role1 = "Bienvenue sur Altis Erom-Life";
 _role1names = ["Serveur FR"];
-_role2 = "Site WEB";
-_role2names = ["www.steel-gamers.fr"];
+_role2 = "Site WEB Altis";
+_role2names = ["altis.steel-gamers.fr"];
+_role6 = "Site WEB Communautaire";
+_role6names = ["www.steel-gamers.fr"];
 _role3 = "TeamSpeak 3";
 _role3names = ["ts.steel-gamers.fr"];
 _role4 = "Attention";
@@ -52,7 +54,7 @@ _role5names = ["Les règles sont sur le Forum, Merci d'en prendre connaissance. 
 sleep 2;
 _memberFunction = _x select 0;
 _memberNames = _x select 1;
-_finalText = format ["<t size='0.60' color='#007e00' align='center'>%1<br /></t>", _memberFunction];
+_finalText = format ["<t size='0.60' color='#ff6a00' align='center'>%1<br /></t>", _memberFunction];
 _finalText = _finalText + "<t size='0.80' color='#FFFFFF' align='center'>";
 {_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 _finalText = _finalText + "</t>";
@@ -69,6 +71,7 @@ sleep (_onScreenTime);
 //The list below should have exactly the same amount of roles as the list above
 [_role1, _role1names],
 [_role2, _role2names],
+[_role6, _role6names],
 [_role3, _role3names],
 [_role4, _role4names],
 [_role5, _role5names]

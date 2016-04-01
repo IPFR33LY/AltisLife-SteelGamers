@@ -20,16 +20,16 @@ class osefStatusBarAdmin {
 			h = 0.06;
 			shadow = false;
 			colorBackground[] = { 0.074, 0.082, 0.105, 0.85 };
-			font = "OrbitronLight";
+			font = "PuristaSemibold";
 			size = 0.032;
 			type = 13;
 			style = 2;
 			colorText[] = {1, 1, 1, 1};
-			text="Carregando Barra de Status,aguarde.";
+			text="Merci d'attendre quelque instants...";
 			class Attributes {
 				align="center";
 				color = "#ffffff";
-				font = "OrbitronLight";
+				font = "PuristaSemibold";
 			};
 		};
 	};
@@ -54,7 +54,7 @@ class osefStatusBar {
 			w = 1.3;
 			h = 0.07;
 			shadow = false;
-			font = "OrbitronLight";
+			font = "PuristaSemibold";
 			size = 0.032;
 			type = 13;
 			style = 2;
