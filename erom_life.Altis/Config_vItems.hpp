@@ -10,7 +10,7 @@ class VirtualShops {
     //Virtual Shops
  	class market {
 		name = "STR_Shops_Market";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "coffee", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig" };
+		items[] = { "waterBottle", "apple", "redgull", "coffee", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig" };
 	};
 	
 	class artefact {
@@ -20,12 +20,12 @@ class VirtualShops {
 
 	class rebel {
 		name = "STR_Shops_Rebel";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+		items[] = { "waterBottle", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
 	};
 
 	class gang {
 		name = "STR_Shops_Gang";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+		items[] = { "waterBottle", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
 	};
 
 	class wongs {
@@ -201,7 +201,7 @@ class VirtualItems {
         sellPrice = 1000;
         illegal = true;
         edible = -1;
-        icon = "sg_pack\sg-icons\items\boltcutters.paa";
+        icon = "sg_pack\sg-icons\items\boltcutter.paa";
     };
 
     class defusekit {

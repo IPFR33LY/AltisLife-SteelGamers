@@ -100,15 +100,15 @@ disableSerialization;
 	//Icons and position
 		((uiNamespace getVariable "osefStatusBarAdmin")displayCtrl 55554)ctrlSetStructuredText parseText
 			format["
-			<t color='%10'><img size='1.0' image='sg_pack\icons\jogadores.paa' color='%19'/> %2</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\policia.paa' color='%19'/> %11</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\resgate.paa' color='%19'/> %12</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\desempenho.paa' color='%19'/> %4</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\compass.paa' color='%19'/> %7</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\health.paa' color='%19'/> %3%1</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\bank.paa' color='%19'/> %8</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\money.paa' color='%19'/> %10</t>
-			<t color='%10'><img size='1.0' image='sg_pack\icons\uptime.paa' color='%19'/> %9</t>",
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\jogadores.paa' color='%19'/> %2</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\policia.paa' color='%19'/> %11</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\resgate.paa' color='%19'/> %12</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\desempenho.paa' color='%19'/> %4</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\items\gpstracker.paa' color='%19'/> %7</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\health.paa' color='%19'/> %3%1</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\bank.paa' color='%19'/> %8</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\money.paa' color='%19'/> %10</t>
+			<t color='%10'><img size='1.0' image='sg_pack\sg-icons\uptime.paa' color='%19'/> %9</t>",
 
 
 			//Position 2

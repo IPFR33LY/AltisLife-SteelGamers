@@ -87,7 +87,6 @@ class CarShops {
 			{ "shounka_f430_spider" , 40000, { "driver" }, { "", "", -1 } },
 			{ "cl3_f150repo_black" , 40000, { "driver" }, { "", "", -1 } },
 			{ "Jonzie_Viper" , 40000, { "driver" }, { "", "", -1 } },
-			{ "cl3_batmobile" , 40000, { "driver" }, { "", "", -1 } },
 			{ "Jonzie_Datsun_Z432" , 40000, { "driver" }, { "", "", -1 } },
 			{ "Jonzie_Datsun_510" , 40000, { "driver" }, { "", "", -1 } },
 			{ "Mrshounka_corbillard_c" , 40000, { "driver" }, { "", "", -1 } },
@@ -184,11 +183,28 @@ class CarShops {
     class cop_car {
         side = "cop";
         vehicles[] = {
-            { "C_Offroad_01_F", 5000, { "" }, { "", "", -1 } },
-            { "C_SUV_01_F", 20000, { "" }, { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", 30000, { "" }, { "life_coplevel", "SCALAR", 1 } },
-            { "B_MRAP_01_F", 30000, { "" }, { "life_coplevel", "SCALAR", 2 } },
-            { "B_MRAP_01_hmg_F", 750000, { "" }, { "life_coplevel", "SCALAR", 3 } }
+			{ "DAR_TahoePolice", 50000, { "" }, { "", "", -1 } },
+			{ "DAR_CVPIPolice", 50000, { "" }, { "", "", -1 } },
+			{ "C_Hatchback_01_sport_F", 50000, { "" }, { "", "", -1 } },
+			{ "DAR_ChargerPolice", 50000, { "" }, { "", "", -1 } },
+			{ "DAR_TaurusPolice", 50000, { "" }, { "", "", -1 } },
+			{ "DAR_ImpalaPolice", 50000, { "" }, { "", "", -1 } },
+			{ "cl3_dodge_charger_patrol", 50000, { "" }, { "", "", -1 } },
+			{ "Mrshounka_a3_308_gend", 50000, { "" }, { "", "", -1 } },		
+			{ "DAR_TahoePoliceDet", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+			{ "DAR_TaurusCiv", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+			{ "DAR_ImpalaPoliceDet", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "Jonzie_Tow_Truck", 100000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "cl3_q7_clpd_patrol", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "B_MRAP_01_F", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "DAR_CVPIAux", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+			{ "DAR_ChargerPoliceState", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+            { "DAR_ExplorerPolice", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },			
+			{ "DAR_TaurusPoliceState", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+			{ "cl3_suv_black", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+			{ "shounka_a3_suburbangign_transport", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+			{ "DAR_SWATPolice", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } },
+			{ "shounka_a3_suburbangign", 50000, { "" }, { "life_coplevel", "SCALAR", 5 } }
         };
     };
 
@@ -735,15 +751,6 @@ class LifeCfgVehicles {
 	};
 	
 	class DAR_ChallengerCivWhite {
-        vItemSpace = 20;
-        storageFee[] = { 0, 0, 1500, 0 };
-        garageSell[] = { 0, 0, 5000, 0 };
-        insurance = 2500;
-        chopShop = 12500;
-        textures[] = {};
-	};
-	
-	class DAR_TahoePoliceDet {
         vItemSpace = 20;
         storageFee[] = { 0, 0, 1500, 0 };
         garageSell[] = { 0, 0, 5000, 0 };
@@ -1757,5 +1764,96 @@ class LifeCfgVehicles {
         insurance = 2500;
         chopShop = 75000;
         textures[] = {};
+    };
+
+////////////////////////////////////// POLICE VEHICULES //////////////////////////////////	
+	class DAR_TahoePoliceDet {
+		vItemSpace = 20;
+		storageFee[] = { 0, 0, 0, 0 };
+		garageSell[] = { 0, 0, 0, 0 };
+		insurance = 5000;
+		chopShop = 0;
+		textures[] = { };
+    };
+	
+	class cl3_DAR_TahoePoliceDet {
+		vItemSpace = 20;
+		storageFee[] = { 4200, 0, 0, 0 };
+		garageSell[] = { 18000, 850, 0, 0 };
+		insurance = 2500;
+		chopShop = 230000;
+		textures[] = { };
+    };
+	
+	class DAR_TahoePolice {
+		vItemSpace = 20;
+		storageFee[] = { 0, 0, 0, 0 };
+		garageSell[] = { 0, 0, 0, 0 };
+		insurance = 5000;
+		chopShop = 0;
+		textures[] = { };
+    };
+
+	class DAR_ImpalaPolice {
+		vItemSpace = 55;
+		storageFee[] = { 0, 2500, 0, 0 };
+		garageSell[] = { 2500, 850, 0, 0 };
+		insurance = 2500;
+		chopShop = 5000;
+		textures[] = { };
+    };	
+	
+	class Mrshounka_a3_308_gend {
+		vItemSpace = 55;
+		storageFee[] = { 0, 2500, 0, 0 };
+		garageSell[] = { 2500, 850, 0, 0 };
+		insurance = 2500;
+		chopShop = 5000;
+		textures[] = { };
+    };	
+	
+	class cl3_dodge_charger_patrol {
+		vItemSpace = 55;
+		storageFee[] = { 0, 2500, 0, 0 };
+		garageSell[] = { 2500, 850, 0, 0 };
+		insurance = 2500;
+		chopShop = 5000;
+		textures[] = { };
+    };	
+	
+	class DAR_ChargerPoliceState {
+		vItemSpace = 55;
+		storageFee[] = { 0, 2500, 0, 0 };
+		garageSell[] = { 2500, 850, 0, 0 };
+		insurance = 2500;
+		chopShop = 5000;
+		textures[] = { };
+    };	
+	
+	class cl3_q7_clpd_patrol {
+		vItemSpace = 55;
+		storageFee[] = { 0, 2500, 0, 0 };
+		garageSell[] = { 2500, 850, 0, 0 };
+		insurance = 2500;
+		chopShop = 5000;
+		textures[] = { };
+    };	
+	
+	class cl3_reventon_clpd {
+		vItemSpace = 45;
+		storageFee[] = { 0, 2500, 0, 0 };
+		garageSell[] = { 2500, 850, 0, 0 };
+		insurance = 2500;
+		chopShop = 5000;
+		textures[] = { };
+	};	
+	
+	class DAR_SWATPolice {
+		vItemSpace = 20;
+		storageFee[] = { 0, 0, 0, 0 };
+		garageSell[] = { 0, 0, 0, 0 };
+		insurance = 5000;
+		chopShop = 0;
+		textures[] = { };
     };
 };
