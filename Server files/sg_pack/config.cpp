@@ -59,6 +59,7 @@ class CfgSounds
 	class intro
 	{
 		name = "intro";
+		sound[] = {"sg_pack\sounds\intro.ogg", 0.8, 1};
 		titles[] = {};
 	};
 	

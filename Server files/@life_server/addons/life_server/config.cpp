@@ -101,6 +101,17 @@ class CfgFunctions {
 			class setObjVar {};
 			class keyManagement {};
 		};
+		
+        class Bourse
+        {
+            file = "\life_server\Functions\Bourse";
+            class calculatePrices {};
+            class config {};
+            class getUpdate {};
+            class HandleDB {};
+            class playerLogged {};
+            class sleeper {};
+        };
 
 		class Housing {
 			file = "\life_server\Functions\Housing";

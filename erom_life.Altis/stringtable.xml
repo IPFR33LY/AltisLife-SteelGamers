@@ -595,6 +595,12 @@
     <Key ID="STR_PM_AdminMenu">
       <French>Menu Admin</French>
     </Key>
+    <Key ID="STR_PM_BourseMenu">
+      <French>La Bourse</French>
+    </Key>
+    <Key ID="STR_PM_BourseAdminMenu">
+      <French>Admin Bourse</French>
+    </Key>
     <Key ID="STR_PM_SyncData">
       <French>Sync Data</French>
     </Key>

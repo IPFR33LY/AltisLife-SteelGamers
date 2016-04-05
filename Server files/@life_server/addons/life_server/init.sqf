@@ -135,3 +135,6 @@ PVAR_ALL("life_server_isReady");
 
 /* Initialize hunting zone(s) */
 ["hunting_zone",30] spawn TON_fnc_huntingZone;
+
+/* Lancement de la Bourse */
+[] execVM "\life_server\Functions\Bourse\fn_config.sqf";

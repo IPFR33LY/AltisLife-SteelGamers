@@ -28,6 +28,17 @@ class Life_Client_Core
 		class welcomeNotification {};
 		class survival {};
 	};
+	
+    class Bourse
+    {
+        file = "core\bourse";
+        class bought {};
+        class update {};
+        class DisplayPrices {};
+        class LoadIntoListbox {};
+        class ForcePrice {};
+        class DYNMARKET_getPrice {};
+    };
 
 	class Admin
 	{

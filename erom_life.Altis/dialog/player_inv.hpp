@@ -292,8 +292,28 @@ class playerSettings {
 		class ButtonAdminMenu : Life_RscButtonMenu {
 			idc = 2021;
 			text = "$STR_PM_AdminMenu";
-			onButtonClick = "createDialog ""life_admin_menu"";";
+			onButtonClick = "createDialog ""life_dynmarket_prices"";";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.805;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		
+		class ButtonBourseMenu : Life_RscButtonMenu {
+			idc = 2022;
+			text = "$STR_PM_BourseMenu";
+			onButtonClick = "createDialog ""life_dynmarket_prices"";";
+			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.805;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		
+		class ButtonBourseMenu : Life_RscButtonMenu {
+			idc = 2023;
+			text = "$STR_PM_BourseAdminMenu";
+			onButtonClick = "createDialog ""life_dynmarket_changeprice"";";
+			x = 0.46 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;
 			w = (6.25 / 40);
 			h = (1 / 25);

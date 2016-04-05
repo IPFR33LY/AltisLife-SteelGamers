@@ -26,3 +26,5 @@
 #include "federalReserve.hpp"
 #include "compensate.hpp"
 #include "FuelStat.hpp"
+#include "bourse_changeprice.hpp"
+#include "bourse_prices.hpp"
